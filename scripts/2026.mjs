@@ -53,7 +53,6 @@ const projects = [
     org: org.rama,
     title: 'Tūī',
     type: type.androidApp,
-    // preview: 'img-preview.webp',
     tags: [tag.kotlin],
     description: [
       '[p](*Tūī* is a minimal, privacy-first *local music player* that skips metadata entirely. What you see is exactly what you name, no hidden tags, no surprises.)',
@@ -73,7 +72,6 @@ const projects = [
     org: org.rama,
     title: 'Txori',
     type: type.androidApp,
-    // preview: 'img-preview.webp',
     tags: [tag.kotlin],
     description: [
       '[p](*Txori* is a minimal, privacy-first *focus session app* designed to help you stay present and intentional with your time.)',
@@ -93,7 +91,6 @@ const projects = [
     org: org.rama,
     title: 'Mako',
     type: type.androidApp,
-    // preview: 'img-preview.webp',
     tags: [tag.kotlin],
     description: [
       '[p](*Mako* is a minimal, privacy-first *android launcher* designed for focus, speed, and simplicity.)',
