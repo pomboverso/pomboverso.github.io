@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Jersey 25';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/jersey25_regular.ttf) format('ttf');
+}
+
+:root {
+  --background: #2e2c42;
+  --foreground: #ece3f6;
+  --header: #6e6580;
+  --project: #b7afd1;
+  --accent: #b78ed7;
+
+  --content-area: #2c2336;
+  --content-area-border: #6c489b;
+  --content-area-color: #a499b9;
+
+  --space-between-blocks: 0.75rem;
+  --space-between-inline: 0.25rem;
+  --padding: 1rem;
+
+  --font-size-h1: 45px;
+  --font-size-content: 18px;
+
+  /* --text-muted: #666666;
+  --accent: #0066ff;
+  --accent-hover: #0055dd;
+  --border: #dddddd;
+  --shadow: rgb(0 0 0 / 0.15); */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+  font-family: 'Jersey 25', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: dark;
+  color: var(--foreground);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  color: var(--accent);
+}
+
+p {
+  font-size: var(--font-size-content);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Columns */
+header,
+section,
+body,
+main,
+section.projects ul,
+section.projects ul li,
+.content-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--space-between-blocks);
+  align-items: start;
+  width: 100%;
+}
+
+/* Rows */
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-between-blocks);
+  width: 100%;
+  justify-content: end;
+}
+
+.tag {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 3px 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+}
+
+section.projects {
+  button {
+    &.header-btn,
+    &.project-btn {
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      font-size: var(--font-size-content);
+    }
+
+    &.header-btn {
+      color: var(--header);
+    }
+
+    &.project-btn {
+      color: var(--project);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .content-area {
+    background-color: var(--content-area);
+    border: 1px solid var(--content-area-border);
+    padding: var(--padding);
+    color: var(--content-area-color);
+
+    &:empty {
+      display: none;
+    }
+  }
+}
