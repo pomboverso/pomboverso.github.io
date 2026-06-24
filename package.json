@@ -1,0 +1,12 @@
+{
+  "name": "pomboverso.github.io",
+  "version": "2026.1",
+  "description": "portfolio",
+  "main": "index.js",
+  "type": "module",
+  "author": "",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+
+  }
+}
