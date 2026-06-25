@@ -162,6 +162,10 @@ pv-list {
     &:empty {
       display: none;
     }
+
+    &.open {
+      display: block;
+    }
   }
 
   .collapse-indicator {

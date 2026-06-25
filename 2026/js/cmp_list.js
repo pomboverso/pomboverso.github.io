@@ -1,5 +1,5 @@
 import { getPrefix } from './_helpers.js'
-import projects from "./arr_projects.js"
+import projects from './arr_projects.js'
 
 customElements.define(
   getPrefix('list'),
@@ -8,8 +8,9 @@ customElements.define(
       super()
     }
 
+    #initialized = false
+
     #html = {
-      body: undefined,
       $ul: undefined,
     }
 
@@ -23,86 +24,29 @@ customElements.define(
           [+] ------- 2026
         </button>
       </li>
-      <li>
-        <button
-          class="project-btn"
-          type="button"
-        >
-          [+] Rama :: Mako (Android App)
-        </button>
-        <div class="content-area">
-          <p>Ola</p>
-          <p>Ola 2</p>
-          <div class="tags">
-            <button
-              type="button"
-              class="tag"
-            >
-              kotlin
-            </button>
-            <button
-              type="button"
-              class="tag"
-            >
-              vue
-            </button>
-          </div>
-        </div>
-      </li>
-      <li>
-        <button
-          class="project-btn"
-          type="button"
-        >
-          [+] Rama :: Mako (Android App)
-        </button>
-        
-      </li>
-      <li>
-        <button
-          class="project-btn"
-          type="button"
-        >
-          [+] Rama :: Mako (Android App)
-        </button>
-        <div class="content-area">
-          <p>Ola</p>
-          <p>Ola 2</p>
-          <div class="tags">
-            <button
-              type="button"
-              class="tag"
-            >
-              kotlin
-            </button>
-            <button
-              type="button"
-              class="tag"
-            >
-              vue
-            </button>
-          </div>
-        </div>
-      </li>
     </ul>
     `
 
+    #renderTags(tags) {
+      return tags
+        .map(
+          tag => `
+      <button type="button" class="tag">
+        ${tag}
+      </button>
+    `
+        )
+        .join('')
+    }
+
+    #renderDescription(description) {
+      return description.map(p => `<p>${p}</p>`).join('')
+    }
+
     refreshList() {
-      this.#html.$ul.innerHTML = ""
-
-      projects.forEach(({org, name, category, tags, description}) => {
-        const descriptionHTML = description.map(p => {
-          return `<p>${p}</p>`
-        }).join('')
-
-        const tagsHTML = tags.map(tag => {
+      this.#html.$ul.innerHTML = projects
+        .map(({ org, name, category, tags, description }) => {
           return `
-          <button type="button" class="tag">
-            ${tag}
-          </button>`
-        }).join('')
-
-        this.#html.$ul.innerHTML += `
         <li>
           <button
             class="project-btn"
@@ -111,20 +55,36 @@ customElements.define(
             <span class="collapse-indicator">+</span> ${org} :: ${name} (${category})
           </button>
           <div class="content-area">
-            ${descriptionHTML}
+            ${this.#renderDescription(description)}
             <div class="tags">
-             ${tagsHTML}              
+             ${this.#renderTags(tags)}              
             </div>
           </div>
         </li>
         `
-      })
+        })
+        .join('')
     }
 
     connectedCallback() {
+      if (this.#initialized) return
+      this.#initialized = true
+
       this.innerHTML = this.#template
       this.#html.$ul = this.querySelector('ul.list')
       this.refreshList()
+
+      this.#html.$ul.addEventListener('click', event => {
+        const $btn = event.target.closest('.project-btn')
+        if (!$btn) return
+
+        const $content = $btn.nextElementSibling
+        if (!$content) return
+        const isOpen = $content.classList.toggle('open')
+
+        const $indicator = $btn.querySelector('.collapse-indicator')
+        $indicator.textContent = isOpen ? '-' : '+'
+      })
 
       console.log(this.#html)
     }
