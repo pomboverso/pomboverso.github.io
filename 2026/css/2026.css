@@ -6,6 +6,17 @@
   src: url('../fonts/jersey25_regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'pomboverso';
+  src:
+    url('../fonts/pomboverso.woff2') format('woff2'),
+    url('../fonts/pomboverso.ttf') format('truetype'),
+    url('../fonts/pomboverso.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 :root {
   --background: #2e2c42;
   --foreground: #ece3f6;
@@ -60,7 +71,8 @@ p {
   font-size: var(--font-size-content);
 }
 
-strong, em {
+strong,
+em {
   color: var(--highlight);
   font-style: normal;
   font-weight: 400;
@@ -101,6 +113,17 @@ pv-search {
   background: transparent;
 }
 
+.icon {
+  font-family: 'pomboverso' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 pv-search {
   background-color: var(--content-area);
   border: 1px solid var(--content-area-border);
@@ -112,8 +135,16 @@ pv-search {
   }
 
   &::before {
-    content: '0';
+    content: 'f';
     padding-inline: 0.5rem;
+    font-family: 'pomboverso' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: var(--content-area-color);
   }
 
@@ -127,6 +158,11 @@ pv-search {
     outline: transparent;
     padding: 0.5rem 0.5rem 0.5rem 0;
     font-size: var(--font-size-content);
+  }
+
+  input::placeholder {
+    color: var(--content-area-color);
+    opacity: 1;
   }
 }
 
