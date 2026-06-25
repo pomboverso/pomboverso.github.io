@@ -14,7 +14,13 @@
       name="description"
       content="Pomboverso Portfolio"
     />
+    <meta
+      name="theme-color"
+      content="#2e2c42"
+    />
     <title>Pomboverso</title>
+
+    <!-- Favicon -->
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -23,32 +29,8 @@
     <link
       rel="icon"
       type="image/png"
-      sizes="256x256"
-      href="./img/icon_256x256.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="./img/icon_128x128.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="./img/icon_64x64.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="48x48"
-      href="./img/icon_48x48.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/icon_32x32.png"
+      sizes="16x16"
+      href="./img/icon_16x16.png"
     />
     <link
       rel="icon"
@@ -59,22 +41,58 @@
     <link
       rel="icon"
       type="image/png"
-      sizes="16x16"
-      href="./img/icon_16x16.png"
+      sizes="32x32"
+      href="./img/icon_32x32.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="./img/icon_48x48.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./img/icon_64x64.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="./img/icon_128x128.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="256x256"
+      href="./img/icon_256x256.png"
+    />
+
+    <!-- Apple -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="./img/icon_180x180.png"
     />
+
+    <!-- Windows -->
     <meta
       name="msapplication-TileColor"
-      content="#e9c200"
+      content="#2e2c42"
     />
     <meta
       name="msapplication-TileImage"
       content="./img/icon_128x128.png"
     />
+
+    <!-- PWA -->
+    <link
+      rel="manifest"
+      href="./manifest.json"
+    />
+
+    <!-- Open Graph -->
     <meta
       property="og:image"
       content="./img/preview.webp"
@@ -91,6 +109,7 @@
       property="og:image:height"
       content="630"
     />
+
     <link
       rel="stylesheet"
       href="./css/2026.css"
@@ -99,6 +118,13 @@
       type="module"
       src="./js/2026.js"
     ></script>
+
+    <!-- Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+      }
+    </script>
   </head>
   <body>
     <header>
