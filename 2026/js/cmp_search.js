@@ -1,4 +1,4 @@
-import { getPrefix } from './_helpers.js'
+import { getPrefix, EVENT_SEARCH } from './_helpers.js'
 
 customElements.define(
   getPrefix('search'),
@@ -7,10 +7,18 @@ customElements.define(
       super()
     }
 
-    #template = `<input type="search" />`
+    #template = `<input type="search" placeholder="filter by..." />`
 
     connectedCallback() {
-        this.innerHTML = this.#template
+      this.innerHTML = this.#template
+
+      this.querySelector('input').addEventListener('input', event => {
+        document.dispatchEvent(
+          new CustomEvent(EVENT_SEARCH, {
+            detail: { query: event.target.value.trim().toLowerCase() },
+          })
+        )
+      })
     }
   }
 )

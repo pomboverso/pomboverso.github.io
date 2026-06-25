@@ -1,4 +1,4 @@
-import { getPrefix } from './_helpers.js'
+import { getPrefix, EVENT_SEARCH } from './_helpers.js'
 import projects from './arr_projects.js'
 
 customElements.define(
@@ -51,8 +51,21 @@ customElements.define(
       ).sort((a, b) => b.year - a.year)
     }
 
-    refreshList() {
-      this.#html.$ul.innerHTML = this.#groupProjectsByYear(projects)
+    #matchesQuery(project, query) {
+      if (!query) return true
+      return (
+        project.date.getFullYear().toString().includes(query) ||
+        project.org.toLowerCase().includes(query) ||
+        project.name.toLowerCase().includes(query) ||
+        project.category.toLowerCase().includes(query) ||
+        project.tags.some(tag => tag.toLowerCase().includes(query))
+      )
+    }
+
+    refreshList(query = '') {
+      const filtered = projects.filter(p => this.#matchesQuery(p, query))
+
+      this.#html.$ul.innerHTML = this.#groupProjectsByYear(filtered)
         .map(({ year, projects }) => {
           const projectsHtml = projects
             .map(({ org, name, category, tags, description }) => {
@@ -106,6 +119,10 @@ customElements.define(
 
         const $indicator = $btn.querySelector('.collapse-indicator')
         $indicator.textContent = isOpen ? '-' : '+'
+      })
+
+      document.addEventListener(EVENT_SEARCH, event => {
+        this.refreshList(event.detail.query)
       })
     }
   }
