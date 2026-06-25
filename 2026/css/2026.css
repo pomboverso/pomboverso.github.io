@@ -139,10 +139,6 @@ pv-list {
       font-size: var(--font-size-content);
     }
 
-    &.header-btn {
-      color: var(--header);
-    }
-
     &.project-btn {
       color: var(--project);
     }
@@ -150,6 +146,10 @@ pv-list {
     &:hover {
       cursor: pointer;
     }
+  }
+
+  .header-btn {
+    color: var(--header);
   }
 
   .content-area {

@@ -5,7 +5,7 @@ import license from "./obj_license.js"
 
 export default [
   {
-    date: '2026-06-06',
+    date: new Date('2026-06-06'),
     org: org.rama,
     name: 'Teyin',
     category: category.androidApp,
@@ -25,7 +25,7 @@ export default [
     license: license.gplv3,
   },
   {
-    date: '2026-04-25',
+    date: new Date('2026-04-25'),
     org: org.rama,
     name: 'Tūī',
     category: category.androidApp,
@@ -44,7 +44,7 @@ export default [
     license: license.gplv3,
   },
   {
-    date: '2026-03-07',
+    date: new Date('2026-03-07'),
     org: org.rama,
     name: 'Txori',
     category: category.androidApp,
@@ -63,7 +63,7 @@ export default [
     license: license.gplv3,
   },
   {
-    date: '2025-12-19',
+    date: new Date('2025-12-19'),
     org: org.rama,
     name: 'Mako',
     category: category.androidApp,

@@ -15,16 +15,7 @@ customElements.define(
     }
 
     #template = `
-    <ul class="list">
-      <li>
-        <button
-          class="header-btn"
-          type="button"
-        >
-          [+] ------- 2026
-        </button>
-      </li>
-    </ul>
+    <ul class="list"></ul>
     `
 
     #renderTags(tags) {
@@ -43,25 +34,56 @@ customElements.define(
       return description.map(p => `<p>${p}</p>`).join('')
     }
 
+    #groupProjectsByYear(projects) {
+      return Object.values(
+        projects.reduce((acc, project) => {
+          const year = project.date.getFullYear()
+
+          acc[year] ??= {
+            year,
+            projects: [],
+          }
+
+          acc[year].projects.push(project)
+
+          return acc
+        }, {})
+      ).sort((a, b) => b.year - a.year)
+    }
+
     refreshList() {
-      this.#html.$ul.innerHTML = projects
-        .map(({ org, name, category, tags, description }) => {
+      this.#html.$ul.innerHTML = this.#groupProjectsByYear(projects)
+        .map(({ year, projects }) => {
+          const projectsHtml = projects
+            .map(({ org, name, category, tags, description }) => {
+              return `
+            <li>
+              <button
+                class="project-btn"
+                type="button"
+              >
+                <span class="collapse-indicator">+</span>
+                ${org} :: ${name} (${category})
+              </button>
+
+              <div class="content-area">
+                ${this.#renderDescription(description)}
+
+                <div class="tags">
+                  ${this.#renderTags(tags)}
+                </div>
+              </div>
+            </li>
+          `
+            })
+            .join('')
+
           return `
-        <li>
-          <button
-            class="project-btn"
-            type="button"
-          >
-            <span class="collapse-indicator">+</span> ${org} :: ${name} (${category})
-          </button>
-          <div class="content-area">
-            ${this.#renderDescription(description)}
-            <div class="tags">
-             ${this.#renderTags(tags)}              
-            </div>
-          </div>
+        <li class="header-btn">
+            ------- ${year}
         </li>
-        `
+        ${projectsHtml}
+      `
         })
         .join('')
     }
@@ -85,8 +107,6 @@ customElements.define(
         const $indicator = $btn.querySelector('.collapse-indicator')
         $indicator.textContent = isOpen ? '-' : '+'
       })
-
-      console.log(this.#html)
     }
   }
 )
