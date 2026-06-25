@@ -1,5 +1,6 @@
 import { getPrefix, EVENT_SEARCH } from './_helpers.js'
 import projects from './arr_projects.js'
+import { parse } from './parser.js'
 
 customElements.define(
   getPrefix('list'),
@@ -31,7 +32,7 @@ customElements.define(
     }
 
     #renderDescription(description) {
-      return description.map(p => `<p>${p}</p>`).join('')
+      return description.map(p => parse(p)).join('')
     }
 
     #groupProjectsByYear(projects) {
@@ -109,7 +110,21 @@ customElements.define(
       this.#html.$ul = this.querySelector('ul.list')
       this.refreshList()
 
+      document.addEventListener(EVENT_SEARCH, event => {
+        this.refreshList(event.detail.query)
+      })
+
       this.#html.$ul.addEventListener('click', event => {
+        const $tag = event.target.closest('.tag')
+        if ($tag) {
+          document.dispatchEvent(
+            new CustomEvent(EVENT_SEARCH, {
+              detail: { query: $tag.textContent.trim().toLowerCase() },
+            })
+          )
+          return
+        }
+
         const $btn = event.target.closest('.project-btn')
         if (!$btn) return
 
@@ -119,10 +134,6 @@ customElements.define(
 
         const $indicator = $btn.querySelector('.collapse-indicator')
         $indicator.textContent = isOpen ? '-' : '+'
-      })
-
-      document.addEventListener(EVENT_SEARCH, event => {
-        this.refreshList(event.detail.query)
       })
     }
   }

@@ -1,7 +1,7 @@
-import org from "./obj_org.js"
-import category from "./obj_category.js"
-import skill from "./obj_skill.js"
-import license from "./obj_license.js"
+import org from './obj_org.js'
+import category from './obj_category.js'
+import skill from './obj_skill.js'
+import license from './obj_license.js'
 
 export default [
   {
@@ -12,8 +12,8 @@ export default [
     // preview: 'img-preview.webp',
     tags: [skill.kotlin],
     description: [
-      '[p](*Teyin* is a lightweight, privacy-first *File manager* designed for speed, and simplicity.)',
-      '[p](Built entirely in native *Kotlin*, Teyin runs fully *on-device* and avoids tracking.)',
+      '[p](**Teyin** is a lightweight, privacy-first **File manager** designed for speed, and simplicity.)',
+      '[p](Built entirely in native **Kotlin**, Teyin runs fully **on-device** and avoids tracking.)',
     ],
     link: {
       web: 'https://rama-io.github.io/teyin.html',
@@ -31,8 +31,8 @@ export default [
     category: category.androidApp,
     tags: [skill.kotlin],
     description: [
-      '[p](*Tūī* is a minimal, privacy-first *local music player* that skips metadata entirely. What you see is exactly what you name, no hidden tags, no surprises.)',
-      '[p](Built entirely in native *Kotlin*, Tūī runs fully *on-device*, avoids tracking, no internet access, and no external APIs.)',
+      '[p](**Tūī** is a minimal, privacy-first **local music player** that skips metadata entirely. What you see is exactly what you name, no hidden tags, no surprises.)',
+      '[p](Built entirely in native **Kotlin**, Tūī runs fully **on-device**, avoids tracking, no internet access, and no external APIs.)',
     ],
     link: {
       web: 'https://rama-io.github.io/tui.html',
@@ -50,8 +50,8 @@ export default [
     category: category.androidApp,
     tags: [skill.kotlin],
     description: [
-      '[p](*Txori* is a minimal, privacy-first *focus session app* designed to help you stay present and intentional with your time.)',
-      '[p](Built entirely in native *Kotlin*, Txori runs fully *on-device*, avoids tracking, no internet access, and no external APIs.)',
+      '[p](**Txori** is a minimal, privacy-first **focus session app** designed to help you stay present and intentional with your time.)',
+      '[p](Built entirely in native **Kotlin**, Txori runs fully **on-device**, avoids tracking, no internet access, and no external APIs.)',
     ],
     link: {
       web: 'https://rama-io.github.io/txori.html',
@@ -69,8 +69,8 @@ export default [
     category: category.androidApp,
     tags: [skill.kotlin],
     description: [
-      '[p](*Mako* is a minimal, privacy-first *android launcher* designed for focus, speed, and simplicity.)',
-      '[p](Built entirely in native *Kotlin*, Mako runs fully *on-device*, avoids tracking, and keeps distractions to a minimum by emphasizing clarity and intentional interaction.)',
+      '[p](**Mako** is a minimal, privacy-first **android launcher** designed for focus, speed, and simplicity.)',
+      '[p](Built entirely in native **Kotlin**, Mako runs fully **on-device**, avoids tracking, and keeps distractions to a minimum by emphasizing clarity and intentional interaction.)',
     ],
     link: {
       web: 'https://rama-io.github.io/mako.html',

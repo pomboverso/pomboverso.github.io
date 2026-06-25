@@ -12,6 +12,7 @@
   --header: #6e6580;
   --project: #b7afd1;
   --accent: #b78ed7;
+  --highlight: #e081d8;
 
   --content-area: #2c2336;
   --content-area-border: #6c489b;
@@ -57,6 +58,12 @@ h1 {
 
 p {
   font-size: var(--font-size-content);
+}
+
+strong, em {
+  color: var(--highlight);
+  font-style: normal;
+  font-weight: 400;
 }
 
 ul {
@@ -113,7 +120,7 @@ pv-search {
   input {
     background: transparent;
     border: 0;
-    color: var(--content-area-color);
+    color: var(--foreground);
     flex-grow: 1;
     outline: transparent;
     flex-grow: 1;
