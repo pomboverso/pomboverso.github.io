@@ -70,7 +70,7 @@ p,
 blockquote,
 li,
 .project-btn,
-.searchbar {
+pv-search {
   margin-block-end: var(--space-between-blocks);
 }
 
@@ -94,7 +94,7 @@ li,
   background: transparent;
 }
 
-.searchbar {
+pv-search {
   background-color: var(--content-area);
   border: 1px solid var(--content-area-border);
   display: flex;
@@ -129,7 +129,7 @@ li,
   margin: 0 auto;
 }
 
-section.projects {
+pv-list {
   button {
     &.header-btn,
     &.project-btn {
@@ -157,9 +157,23 @@ section.projects {
     border: 1px solid var(--content-area-border);
     padding: var(--space-between-blocks);
     color: var(--content-area-color);
+    display: none;
 
     &:empty {
       display: none;
     }
+  }
+
+  .collapse-indicator {
+    &::before {
+      content: '[';
+    }
+    &::after {
+      content: ']';
+    }
+  }
+
+  li.is-open .content-area {
+    display: block;
   }
 }
