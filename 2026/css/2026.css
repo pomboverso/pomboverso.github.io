@@ -31,7 +31,7 @@
   --placeholder-color: #a499b9;
 
   --space-between-blocks: 1rem;
-  --space-between-inline: 0.25rem;
+  --space-between-inline: 0.5rem;
 
   --font-size-h1: 45px;
   --font-size-content: 18px;
@@ -179,6 +179,20 @@ pv-search {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul.contact {
+  li,
+  li a {
+    display: flex;
+    gap: var(--space-between-inline);
+    align-items: center;
+    text-decoration: none;
+  }
+
+  li a {
+    color: var(--accent);
+  }
 }
 
 pv-search {
