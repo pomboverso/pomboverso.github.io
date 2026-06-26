@@ -33,7 +33,7 @@
   --space-between-blocks: 1rem;
   --space-between-inline: 0.5rem;
 
-  --font-size-h1: 45px;
+  --font-size-h1: 55px;
   --font-size-content: 18px;
 }
 
@@ -83,6 +83,10 @@ h1 {
   font-size: var(--font-size-h1);
   font-weight: 400;
   color: var(--accent);
+}
+
+.avatar {
+  vertical-align: bottom;
 }
 
 p {
