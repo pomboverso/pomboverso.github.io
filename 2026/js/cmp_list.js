@@ -15,6 +15,8 @@ customElements.define(
       $ul: undefined,
     }
 
+    #currentList = []
+
     #template = `
     <ul class="list"></ul>
     `
@@ -89,6 +91,14 @@ customElements.define(
 
     refreshList(query = '') {
       const filtered = projects.filter(p => this.#matchesQuery(p, query))
+
+      const isSame =
+        filtered.length === this.#currentList.length &&
+        filtered.every((p, i) => p === this.#currentList[i])
+
+      if (isSame) return
+
+      this.#currentList = filtered
 
       this.#html.$ul.innerHTML = this.#groupProjectsByYear(filtered)
         .map(({ year, projects }) => {

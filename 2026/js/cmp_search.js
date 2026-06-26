@@ -55,12 +55,6 @@ customElements.define(
       history.replaceState(null, '', next)
     }
 
-    #setActiveTag(query) {
-      this.#html.$tags.forEach($tag => {
-        $tag.classList.toggle('active', $tag.dataset.tag === query)
-      })
-    }
-
     connectedCallback() {
       if (this.#initialized) return
       this.#initialized = true
@@ -72,18 +66,15 @@ customElements.define(
 
       this.#html.$input.addEventListener('input', event => {
         const query = event.target.value
-        this.#setActiveTag(query)
         this.#updateUrl(query)
         this.#dispatch(query)
       })
 
       this.#html.$tags.forEach($tag => {
         $tag.addEventListener('click', () => {
-          const isActive = $tag.classList.contains('active')
-          const query = isActive ? '' : $tag.dataset.tag
+          const query = $tag.dataset.tag
 
           this.#html.$input.value = query
-          this.#setActiveTag(query)
           this.#updateUrl(query)
           this.#dispatch(query)
         })
@@ -94,14 +85,12 @@ customElements.define(
         this.#updateUrl(query)
         if (document.activeElement !== this.#html.$input) {
           this.#html.$input.value = query
-          this.#setActiveTag(query)
         }
       })
 
       const initial = new URLSearchParams(window.location.search).get(PARAM)
       if (initial) {
         this.#html.$input.value = initial
-        this.#setActiveTag(initial)
         this.#dispatch(initial)
       }
     }

@@ -1,6 +1,6 @@
 export default {
-  vue: 'vue',
-  kotlin: 'kotlin',
-  svg: 'svg',
-  webComponents: 'web components',
+  vue: 'Vue',
+  kotlin: 'Kotlin',
+  svg: 'SVG',
+  webComponents: 'Web Components',
 }
