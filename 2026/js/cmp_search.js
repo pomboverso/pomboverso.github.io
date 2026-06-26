@@ -13,6 +13,11 @@ customElements.define(
 
     #initialized = false
 
+    #html = {
+      $input: undefined,
+      $tags: undefined
+    }
+
     #template = `
     <div class="searchbar">
       <input type="search" placeholder="filter by..." />
@@ -23,7 +28,6 @@ customElements.define(
     `
 
     #generateTags() {
-      console.log(Object.values(skill))
       return [...Object.values(category), ...Object.values(skill)]
         .map(tag => `<button type="button" class="tag">${tag}</button>`)
         .join('')
@@ -56,9 +60,9 @@ customElements.define(
 
       this.innerHTML = this.#template
 
-      const $input = this.querySelector('input')
+      this.#html.$input = this.querySelector('input')
 
-      $input.addEventListener('input', event => {
+      this.#html.$input.addEventListener('input', event => {
         const query = event.target.value.trim().toLowerCase()
         this.#updateUrl(query)
         this.#dispatch(query)
@@ -67,14 +71,14 @@ customElements.define(
       document.addEventListener(EVENT_SEARCH, event => {
         const query = event.detail.query
         this.#updateUrl(query)
-        if (document.activeElement !== $input) {
-          $input.value = query
+        if (document.activeElement !== this.#html.$input) {
+          this.#html.$input.value = query
         }
       })
 
       const initial = new URLSearchParams(window.location.search).get(PARAM)
       if (initial) {
-        $input.value = initial
+        this.#html.$input.value = initial
         this.#dispatch(initial)
       }
     }

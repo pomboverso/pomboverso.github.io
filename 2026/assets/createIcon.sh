@@ -1,5 +1,6 @@
 sizes=(
   16   # favicon
+  24
   32   # favicon
   48   # favicon / Windows
   64   # generic
@@ -12,8 +13,13 @@ sizes=(
 )
 files=("icon")
 
-for f in ${files[@]}; do
-  for s in ${sizes[@]}; do
-    convert ${f}.svg -resize ${s}x${s} ${f}_${s}x${s}.png
+for f in "${files[@]}"; do
+  for s in "${sizes[@]}"; do
+    convert \
+      -background none \
+      -alpha on \
+      "${f}.svg" \
+      -resize "${s}x${s}" \
+      "${f}_${s}x${s}.png"
   done
 done
