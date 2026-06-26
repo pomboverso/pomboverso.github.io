@@ -121,7 +121,7 @@ customElements.define(
 
           return `
         <li class="header-btn">
-            ------- ${year}
+          ${year}
         </li>
         ${projectsHtml}
       `

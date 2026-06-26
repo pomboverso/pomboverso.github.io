@@ -1,4 +1,6 @@
 import { getPrefix, EVENT_SEARCH } from './_helpers.js'
+import skill from './obj_skill.js'
+import category from './obj_category.js'
 
 const PARAM = 'filterby'
 
@@ -11,7 +13,21 @@ customElements.define(
 
     #initialized = false
 
-    #template = `<input type="search" placeholder="filter by..." />`
+    #template = `
+    <div class="searchbar">
+      <input type="search" placeholder="filter by..." />
+    </div>
+    <div class="tags">
+      ${this.#generateTags()}
+    </div>
+    `
+
+    #generateTags() {
+      console.log(Object.values(skill))
+      return [...Object.values(category), ...Object.values(skill)]
+        .map(tag => `<button type="button" class="tag">${tag}</button>`)
+        .join('')
+    }
 
     #dispatch(query) {
       document.dispatchEvent(
