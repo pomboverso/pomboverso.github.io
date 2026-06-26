@@ -116,7 +116,7 @@ pv-search {
 .gallery {
   overflow-x: auto;
   justify-content: center;
-  
+
   img {
     flex-basis: calc(100% / 3 - var(--space-between-blocks));
     max-width: calc(100% / 3 - var(--space-between-blocks));
