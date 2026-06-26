@@ -144,9 +144,10 @@ customElements.define(
       this.#html.$ul.addEventListener('click', event => {
         const $tag = event.target.closest('.tag')
         if ($tag) {
+          const normalized = $tag.textContent.trim().toLowerCase()
           document.dispatchEvent(
             new CustomEvent(EVENT_SEARCH, {
-              detail: { query: $tag.textContent.trim().toLowerCase() },
+              detail: { query: normalized },
             })
           )
           return

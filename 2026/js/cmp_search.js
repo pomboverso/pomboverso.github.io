@@ -15,7 +15,7 @@ customElements.define(
 
     #html = {
       $input: undefined,
-      $tags: undefined
+      $tags: undefined,
     }
 
     #template = `
@@ -29,14 +29,15 @@ customElements.define(
 
     #generateTags() {
       return [...Object.values(category), ...Object.values(skill)]
-        .map(tag => `<button type="button" class="tag">${tag}</button>`)
+        .map(tag => `<button type="button" class="tag" data-tag="${tag}">${tag}</button>`)
         .join('')
     }
 
     #dispatch(query) {
+      const normalized = query.trim().toLowerCase()
       document.dispatchEvent(
         new CustomEvent(EVENT_SEARCH, {
-          detail: { query },
+          detail: { query: normalized },
         })
       )
     }
@@ -54,6 +55,12 @@ customElements.define(
       history.replaceState(null, '', next)
     }
 
+    #setActiveTag(query) {
+      this.#html.$tags.forEach($tag => {
+        $tag.classList.toggle('active', $tag.dataset.tag === query)
+      })
+    }
+
     connectedCallback() {
       if (this.#initialized) return
       this.#initialized = true
@@ -61,11 +68,25 @@ customElements.define(
       this.innerHTML = this.#template
 
       this.#html.$input = this.querySelector('input')
+      this.#html.$tags = [...this.querySelectorAll('.tag')]
 
       this.#html.$input.addEventListener('input', event => {
-        const query = event.target.value.trim().toLowerCase()
+        const query = event.target.value
+        this.#setActiveTag(query)
         this.#updateUrl(query)
         this.#dispatch(query)
+      })
+
+      this.#html.$tags.forEach($tag => {
+        $tag.addEventListener('click', () => {
+          const isActive = $tag.classList.contains('active')
+          const query = isActive ? '' : $tag.dataset.tag
+
+          this.#html.$input.value = query
+          this.#setActiveTag(query)
+          this.#updateUrl(query)
+          this.#dispatch(query)
+        })
       })
 
       document.addEventListener(EVENT_SEARCH, event => {
@@ -73,12 +94,14 @@ customElements.define(
         this.#updateUrl(query)
         if (document.activeElement !== this.#html.$input) {
           this.#html.$input.value = query
+          this.#setActiveTag(query)
         }
       })
 
       const initial = new URLSearchParams(window.location.search).get(PARAM)
       if (initial) {
         this.#html.$input.value = initial
+        this.#setActiveTag(initial)
         this.#dispatch(initial)
       }
     }
