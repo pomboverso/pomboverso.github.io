@@ -62,21 +62,21 @@ body {
   font-weight: 400;
   color-scheme: dark;
   color: var(--foreground);
+  scrollbar-gutter: stable;
 }
 
 body {
   padding-block: 3rem;
   display: grid;
   grid-template-columns: 300px 1fr;
-  max-width: 1000px;
+  max-width: 1200px;
+  min-height: 100svh;
   margin: auto;
 }
 
-header {
-  border-right: 1px solid var(--border);
-}
-
 main {
+  border: 1px solid var(--border);
+  padding-block-start: 1rem;
 }
 
 h1 {
@@ -194,7 +194,7 @@ pv-search {
 
     &::before {
       content: 'f';
-      padding-inline: 1rem;
+      padding-inline: 0.5rem;
       font-family: 'pomboverso' !important;
       font-style: normal;
       font-weight: normal;
@@ -214,7 +214,7 @@ pv-search {
       outline: transparent;
       flex-grow: 1;
       outline: transparent;
-      padding: 1rem 1rem 1rem 0;
+      padding: 0.5rem 0.5rem 0.5rem 0;
       font-size: var(--font-size-content);
 
       &:focus-visible {
@@ -231,22 +231,19 @@ pv-search {
 
 .container {
   padding: 0 var(--space-between-blocks);
-  max-width: 850px;
   margin: 0 auto;
 }
 
 pv-list {
   button {
-    &.header-btn,
     &.project-btn {
       background: transparent;
       border: 0;
       padding: 0;
       font-size: var(--font-size-content);
-    }
-
-    &.project-btn {
       color: var(--project);
+      width: 100%;
+      text-align: left;
     }
 
     &:hover {
@@ -255,6 +252,7 @@ pv-list {
   }
 
   .header-btn {
+    font-size: var(--font-size-content);
     color: var(--header);
 
     &::before {
