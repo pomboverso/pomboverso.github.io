@@ -24,6 +24,7 @@
   --project: #b7afd1;
   --accent: #b78ed7;
   --highlight: #e081d8;
+  --outline: #fff;
 
   --content-area: #2c2336;
   --content-area-border: #6c489b;
@@ -41,6 +42,11 @@
 *::after {
   box-sizing: border-box;
   font-family: inherit;
+}
+
+*:focus-visible {
+  outline-color: var(--outline);
+  outline-style: solid;
 }
 
 *:not(dialog) {
@@ -165,7 +171,7 @@ pv-search {
   align-items: center;
 
   &:focus-within {
-    outline: 1px solid #ffffff;
+    outline: 1px solid var(--outline);
   }
 
   &::before {
@@ -192,6 +198,10 @@ pv-search {
     outline: transparent;
     padding: 1rem 1rem 1rem 0;
     font-size: var(--font-size-content);
+    
+    &:focus-visible {
+      outline: 0 none transparent;
+    }
   }
 
   input::placeholder {
