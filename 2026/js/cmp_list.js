@@ -35,6 +35,16 @@ customElements.define(
       return description.map(p => parse(p)).join('')
     }
 
+    #renderCta(links) {
+      console.log(Object.entries(links))
+      return Object.entries(links)
+        .map(
+          ([name, link]) =>
+            `<a href="${link}" rel="noopener noreferrer" target="_blank" class="cta">${name}</a>`
+        )
+        .join('')
+    }
+
     #groupProjectsByYear(projects) {
       return Object.values(
         projects.reduce((acc, project) => {
@@ -69,7 +79,7 @@ customElements.define(
       this.#html.$ul.innerHTML = this.#groupProjectsByYear(filtered)
         .map(({ year, projects }) => {
           const projectsHtml = projects
-            .map(({ org, name, category, tags, description }) => {
+            .map(({ org, name, category, tags, description, link }) => {
               return `
             <li>
               <button
@@ -84,6 +94,8 @@ customElements.define(
                 ${this.#renderDescription(description)}
 
                 <div class="tags">
+                  ${this.#renderCta(link)}
+                  <span class="separator"></span>
                   ${this.#renderTags(tags)}
                 </div>
               </div>

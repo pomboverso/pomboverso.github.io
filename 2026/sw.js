@@ -1,8 +1,6 @@
 const CACHE = 'pv-v1'
 
 const PRECACHE = [
-  '/',
-  './index.html',
   './css/2026.css',
   './js/2026.js',
   './js/_helpers.js',
@@ -23,6 +21,9 @@ const PRECACHE = [
   './img/icon_512x512.png',
 ]
 
+const isHtml = request =>
+  request.headers.get('accept')?.includes('text/html')
+
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE).then(cache => cache.addAll(PRECACHE))
@@ -40,6 +41,11 @@ self.addEventListener('activate', event => {
 })
 
 self.addEventListener('fetch', event => {
+  if (isHtml(event.request)) {
+    event.respondWith(fetch(event.request))
+    return
+  }
+
   event.respondWith(
     caches.match(event.request).then(cached => cached ?? fetch(event.request))
   )
