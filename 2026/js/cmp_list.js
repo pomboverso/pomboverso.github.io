@@ -111,7 +111,7 @@ customElements.define(
                 <div class="tags">
                   ${this.#renderCta(link)}
                   <span class="separator"></span>
-                  ${this.#renderTags(tags)}
+                  ${this.#renderTags([...tags, category])}
                 </div>
               </div>
             </li>

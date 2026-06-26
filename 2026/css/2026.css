@@ -202,7 +202,7 @@ pv-search {
 
 .container {
   padding: 0 var(--space-between-blocks);
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
