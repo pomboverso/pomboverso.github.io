@@ -36,13 +36,27 @@ customElements.define(
     }
 
     #renderCta(links) {
-      console.log(Object.entries(links))
       return Object.entries(links)
         .map(
           ([name, link]) =>
             `<a href="${link}" rel="noopener noreferrer" target="_blank" class="cta">${name}</a>`
         )
         .join('')
+    }
+
+    #renderPreview({ preview, screenshots = [] } = {}) {
+      let $html
+      if (preview) {
+        $html = `<img alt="project preview" class="preview" src="${preview}">`
+      }
+      if (screenshots?.length > 0) {
+        const imgs = screenshots
+          .map(img => `<img alt="project preview" class="preview" src="${img}">`)
+          .join('')
+
+        $html += `<div class="gallery">${imgs}</div>`
+      }
+      return $html
     }
 
     #groupProjectsByYear(projects) {
@@ -79,7 +93,7 @@ customElements.define(
       this.#html.$ul.innerHTML = this.#groupProjectsByYear(filtered)
         .map(({ year, projects }) => {
           const projectsHtml = projects
-            .map(({ org, name, category, tags, description, link }) => {
+            .map(({ org, name, category, tags, description, link, preview, screenshots }) => {
               return `
             <li>
               <button
@@ -91,6 +105,7 @@ customElements.define(
               </button>
 
               <div class="content-area">
+                ${this.#renderPreview({ preview, screenshots })}
                 ${this.#renderDescription(description)}
 
                 <div class="tags">

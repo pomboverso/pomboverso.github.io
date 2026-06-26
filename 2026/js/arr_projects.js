@@ -9,7 +9,7 @@ export default [
     org: org.rama,
     name: 'Teyin',
     category: category.androidApp,
-    // preview: 'img-preview.webp',
+    preview: 'https://github.com/rama-io/teyin/raw/master/docs/img/teyin_header_1200x630.svg',
     tags: [skill.kotlin],
     description: [
       '[p](**Teyin** is a lightweight, privacy-first **File manager** designed for speed, and simplicity.)',
@@ -29,6 +29,8 @@ export default [
     org: org.rama,
     name: 'Tūī',
     category: category.androidApp,
+    preview:
+      'https://raw.githubusercontent.com/rama-io/tui/master/docs/img/tui_header_1200x630.svg',
     tags: [skill.kotlin],
     description: [
       '[p](**Tūī** is a minimal, privacy-first **local music player** that skips metadata entirely. What you see is exactly what you name, no hidden tags, no surprises.)',
@@ -48,6 +50,13 @@ export default [
     org: org.rama,
     name: 'Txori',
     category: category.androidApp,
+    preview:
+      'https://raw.githubusercontent.com/rama-io/txori/main/docs/img/txori_header_1280x630.svg',
+    screenshots: [
+      'https://raw.githubusercontent.com/rama-io/tui/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png',
+      'https://raw.githubusercontent.com/rama-io/tui/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png',
+      'https://raw.githubusercontent.com/rama-io/tui/master/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png',
+    ],
     tags: [skill.kotlin],
     description: [
       '[p](**Txori** is a minimal, privacy-first **focus session app** designed to help you stay present and intentional with your time.)',
@@ -67,6 +76,8 @@ export default [
     org: org.rama,
     name: 'Mako',
     category: category.androidApp,
+    preview:
+      'https://raw.githubusercontent.com/rama-io/mako/master/docs/img/mako_header_1200x630.svg',
     tags: [skill.kotlin],
     description: [
       '[p](**Mako** is a minimal, privacy-first **android launcher** designed for focus, speed, and simplicity.)',

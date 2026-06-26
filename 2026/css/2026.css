@@ -83,30 +83,49 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Blocks */
 h1,
 p,
 blockquote,
 li,
+img.preview,
 .project-btn,
 pv-search {
   margin-block-end: var(--space-between-blocks);
 }
 
 /* Rows */
+.gallery,
 .tags {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: var(--space-between-blocks);
   width: 100%;
-  justify-content: start;
   align-items: end;
 
   .separator {
     flex-grow: 1;
     flex-shrink: 1;
   }
+}
+
+.gallery {
+  overflow-x: auto;
+  justify-content: center;
+  
+  img {
+    flex-basis: calc(100% / 3 - var(--space-between-blocks));
+    max-width: calc(100% / 3 - var(--space-between-blocks));
+  }
+}
+
+.tags {
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
 .tag {
