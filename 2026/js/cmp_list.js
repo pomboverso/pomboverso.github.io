@@ -38,6 +38,7 @@ customElements.define(
     }
 
     #renderCta(links) {
+      if (!links) return ''
       return Object.entries(links)
         .map(
           ([name, link]) =>
@@ -47,14 +48,12 @@ customElements.define(
     }
 
     #renderPreview({ preview, screenshots = [] } = {}) {
-      let $html
+      let $html = ''
       if (preview) {
         $html = `<img alt="project preview" class="preview" src="${preview}">`
       }
       if (screenshots?.length > 0) {
-        const imgs = screenshots
-          .map(img => `<img alt="project preview" class="preview" src="${img}">`)
-          .join('')
+        const imgs = screenshots.map(img => `<img alt="project preview" src="${img}">`).join('')
 
         $html += `<div class="gallery">${imgs}</div>`
       }
@@ -116,12 +115,14 @@ customElements.define(
 
               <div class="content-area">
                 ${this.#renderPreview({ preview, screenshots })}
+                <div class="tags">
+                  ${this.#renderTags([...tags, category])}
+                </div>
+                <br>
                 ${this.#renderDescription(description)}
 
                 <div class="tags">
                   ${this.#renderCta(link)}
-                  <span class="separator"></span>
-                  ${this.#renderTags([...tags, category])}
                 </div>
               </div>
             </li>

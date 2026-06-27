@@ -10,4 +10,5 @@ export default {
   descubria: 'Descubria',
   apap: 'APAP',
   avante: 'Avante',
+  lomdb: 'LoM DB',
 }

@@ -19,14 +19,14 @@
 
 :root {
   --background: #2e2c42;
+  --background-2: #2c2336;
+  --background-3: #342a44;
   --foreground: #ece3f6;
   --header: #6e6580;
   --project: #b7afd1;
   --accent: #b78ed7;
   --highlight: #e081d8;
   --outline: #fff;
-
-  --background-2: #2c2336;
   --border: #6c489b;
   --placeholder-color: #a499b9;
 
@@ -116,7 +116,6 @@ blockquote,
 li,
 .searchbar,
 img.preview,
-.project-btn,
 pv-search {
   margin-block-end: var(--space-between-blocks);
 }
@@ -138,11 +137,12 @@ pv-search {
 
 .gallery {
   overflow-x: auto;
-  justify-content: center;
+  background: var(--background-3);
+  padding: var(--space-between-blocks);
+  margin-block-end: var(--space-between-blocks);
 
   img {
-    flex-basis: calc(100% / 3 - var(--space-between-blocks));
-    max-width: calc(100% / 3 - var(--space-between-blocks));
+    height: 370px;
   }
 }
 
@@ -253,19 +253,23 @@ pv-search {
 }
 
 pv-list {
-  button {
-    &.project-btn {
-      background: transparent;
-      border: 0;
-      padding: 0;
-      font-size: var(--font-size-content);
-      color: var(--project);
-      width: 100%;
-      text-align: left;
-    }
+  .project-btn {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-size: var(--font-size-content);
+    color: var(--project);
+    width: 100%;
+    text-align: left;
 
     &:hover {
       cursor: pointer;
+    }
+  }
+
+  li:has(.open) {
+    .project-btn {
+      margin-block-end: var(--space-between-blocks);
     }
   }
 
