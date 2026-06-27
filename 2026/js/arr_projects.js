@@ -169,10 +169,18 @@ export default [
     category: category.webApp,
     preview: '',
     screenshots: [],
-    tags: [skill.vue2, skill.rails, skill.css, skill.typescript, skill.bootstrap, skill.jQuery],
+    tags: [
+      skill.vue2,
+      skill.rails,
+      skill.css,
+      skill.typescript,
+      skill.bootstrap,
+      skill.konva,
+      skill.jQuery,
+    ],
     description: ['[p]()', '[p]()'],
     link: {
-      web: 'https://formability.com'
+      web: 'https://formability.com',
     },
     license: license.propietary,
   },

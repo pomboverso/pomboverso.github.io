@@ -1,6 +1,6 @@
 export default {
   androidApp: 'Android App',
   website: 'Website',
-  webApp: 'WebApp',
+  webApp: 'Web App',
   nodeModule: 'Node Module'
 }

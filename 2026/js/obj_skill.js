@@ -1,6 +1,6 @@
 export default {
   html: 'HTML',
-  erb: 'HTML/ERB',
+  // erb: 'HTML/ERB',
   // pug: 'Pug',
   // jade: 'Pug',
   // haml: 'Haml',
@@ -22,6 +22,7 @@ export default {
   // node: 'Nodejs',
 
   javascript: 'Javascript',
+  js: 'Javascript',
   vue: 'Vue',
   vue2: 'Vue2',
   vue3: 'Vue3',

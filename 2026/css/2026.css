@@ -21,6 +21,7 @@
   --background: #2e2c42;
   --background-2: #2c2336;
   --background-3: #342a44;
+  --background-hover: #ec7ca7;
   --foreground: #ece3f6;
   --header: #6e6580;
   --project: #b7afd1;
@@ -66,9 +67,9 @@ body {
 }
 
 body {
-  padding-block: 3rem;
+  padding-block: 2rem;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 350px 1fr;
   max-width: 1200px;
   min-height: 100svh;
   margin: auto;
@@ -162,6 +163,9 @@ pv-search {
 
   &:hover {
     cursor: pointer;
+    background: var(--background-hover);
+    border-color: var(--background-hover);
+    color: var(--background);
   }
 }
 
@@ -172,6 +176,11 @@ pv-search {
   padding: 0.5rem 1rem;
   font-size: var(--font-size-content);
   text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    background: var(--background-hover);
+  }
 }
 
 .icon {
@@ -196,6 +205,10 @@ ul.contact {
 
   li a {
     color: var(--accent);
+
+    &:hover {
+      color: var(--highlight);
+    }
   }
 }
 
@@ -264,6 +277,7 @@ pv-list {
 
     &:hover {
       cursor: pointer;
+      color: var(--highlight);
     }
   }
 
