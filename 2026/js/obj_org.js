@@ -4,6 +4,7 @@ export default {
   teamup: 'TeamUp',
   pixelPerfectTree: 'PixelPerfectTree',
   drLogic: 'DrLogic',
+  plantTherapy: 'Plant Therapy',
   vcg: 'VoxelCubeGames',
   capital: 'Capital',
   presidente: 'Presidente',

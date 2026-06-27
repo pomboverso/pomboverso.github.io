@@ -123,7 +123,7 @@ pv-search {
 
 /* Rows */
 .gallery,
-.tags {
+.row-list {
   display: flex;
   flex-direction: row;
   gap: var(--space-between-blocks);
@@ -147,9 +147,13 @@ pv-search {
   }
 }
 
-.tags {
+.row-list {
   flex-wrap: wrap;
   justify-content: start;
+
+  &:not(:last-child) {
+    margin-block-end: var(--space-between-blocks);
+  }
 }
 
 .tag {

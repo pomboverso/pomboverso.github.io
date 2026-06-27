@@ -22,7 +22,7 @@ customElements.define(
     `
 
     #renderTags(tags) {
-      return tags
+      const result = tags
         .map(
           tag => `
       <button type="button" class="tag">
@@ -31,20 +31,25 @@ customElements.define(
     `
         )
         .join('')
+
+      return `<div class="row-list">${result}</div>`
     }
 
     #renderDescription(description) {
-      return description.map(p => parse(p)).join('')
+      return !description ? '' : description.map(p => parse(p)).join('')
     }
 
     #renderCta(links) {
       if (!links) return ''
-      return Object.entries(links)
+
+      const result = Object.entries(links)
         .map(
           ([name, link]) =>
             `<a href="${link}" rel="noopener noreferrer" target="_blank" class="cta">${name}</a>`
         )
         .join('')
+
+      return `<div class="row-list">${result}</div>`
     }
 
     #renderPreview({ preview, screenshots = [] } = {}) {
@@ -115,15 +120,12 @@ customElements.define(
 
               <div class="content-area">
                 ${this.#renderPreview({ preview, screenshots })}
-                <div class="tags">
-                  ${this.#renderTags([...tags, category])}
-                </div>
-                <br>
+                
+                ${this.#renderTags([...tags, category])}
+                
                 ${this.#renderDescription(description)}
 
-                <div class="tags">
-                  ${this.#renderCta(link)}
-                </div>
+                ${this.#renderCta(link)}
               </div>
             </li>
           `

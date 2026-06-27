@@ -1,7 +1,7 @@
 export default {
   html: 'HTML',
   // erb: 'HTML/ERB',
-  // pug: 'Pug',
+  pug: 'Pug',
   // jade: 'Pug',
   // haml: 'Haml',
   // slim: 'Slim',
@@ -12,7 +12,7 @@ export default {
   css: 'CSS',
   // cssFull: 'CSS/SCSS/UnoCSS',
   // sass: 'SCSS',
-  // scss: 'SCSS',
+  scss: 'SCSS',
   // less: 'Less',
 
   rails: 'Ruby on Rails',
@@ -21,7 +21,7 @@ export default {
   // facebook: 'Facebook App',
   // node: 'Nodejs',
 
-  javascript: 'Javascript',
+  // javascript: 'Javascript',
   js: 'Javascript',
   vue: 'Vue',
   vue2: 'Vue2',

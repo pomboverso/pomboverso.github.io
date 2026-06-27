@@ -22,7 +22,7 @@ customElements.define(
     <div class="searchbar">
       <input type="search" placeholder="filter by..." />
     </div>
-    <div class="tags">
+    <div class="row-list tags">
       ${this.#generateTags()}
     </div>
     `
