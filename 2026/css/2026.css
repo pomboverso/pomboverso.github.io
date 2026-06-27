@@ -147,6 +147,19 @@ pv-search {
   }
 }
 
+.open-settings {
+  background: transparent;
+  border: none;
+  color: var(--placeholder-color);
+  padding: 0.5rem;
+  font-size: var(--font-size-content);
+
+  &:hover {
+    cursor: pointer;
+    color: var(--highlight);
+  }
+}
+
 .row-list {
   flex-wrap: wrap;
   justify-content: start;
