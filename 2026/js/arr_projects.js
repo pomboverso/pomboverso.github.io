@@ -48,6 +48,7 @@ export default [
     ],
     link: {
       web: 'https://rama-io.github.io/tui.html',
+      youtube: 'https://www.youtube.com/watch?v=We8xXVLiVI4',
       github: 'https://github.com/rama-io/tui',
       fdroid: 'https://f-droid.org/app/com.rama.tui',
       obtanium:
