@@ -1,4 +1,4 @@
-import { getPrefix, EVENT_SEARCH } from './_helpers.js'
+import { getPrefix, EVENT_SEARCH, normalize } from './_helpers.js'
 import skill from './obj_skill.js'
 import category from './obj_category.js'
 
@@ -34,10 +34,9 @@ customElements.define(
     }
 
     #dispatch(query) {
-      const normalized = query.trim().toLowerCase()
       document.dispatchEvent(
         new CustomEvent(EVENT_SEARCH, {
-          detail: { query: normalized },
+          detail: { query: normalize(query) },
         })
       )
     }

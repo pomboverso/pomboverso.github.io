@@ -1,9 +1,9 @@
-import { getPrefix, EVENT_SEARCH } from './_helpers.js'
+import { getPrefix, EVENT_SEARCH, normalize } from './_helpers.js'
 import projects from './arr_projects.js'
 import { parse } from './parser.js'
 
 customElements.define(
-  getPrefix('list'),
+  getPrefix('home'),
   class extends HTMLElement {
     constructor() {
       super()
@@ -157,10 +157,9 @@ customElements.define(
       this.#html.$ul.addEventListener('click', event => {
         const $tag = event.target.closest('.tag')
         if ($tag) {
-          const normalized = $tag.textContent.trim().toLowerCase()
           document.dispatchEvent(
             new CustomEvent(EVENT_SEARCH, {
-              detail: { query: normalized },
+              detail: { query: normalize($tag) },
             })
           )
           return
