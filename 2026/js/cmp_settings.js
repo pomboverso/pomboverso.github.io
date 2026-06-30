@@ -23,7 +23,6 @@ customElements.define(
       'Mako',
       'Teyin',
       'Catppuccin Mocha',
-      'Catppuccin Latte',
       'Dracula',
       'Mélange Dark',
       'Tokyo Night',

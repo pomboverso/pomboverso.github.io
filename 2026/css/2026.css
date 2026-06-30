@@ -63,15 +63,6 @@ body {
   color-scheme: dark;
   color: var(--foreground);
   scrollbar-gutter: stable;
-}
-
-body {
-  padding-block: 2rem;
-  display: grid;
-  grid-template-columns: 350px 1fr;
-  max-width: 1200px;
-  min-height: 100svh;
-  margin: auto;
 
   &:has(.catppuccin-mocha:checked) {
     --background: #1e1e2e;
@@ -86,21 +77,6 @@ body {
     --outline: #cdd6f3;
     --border: #585b70;
     --placeholder-color: #6c7086;
-  }
-
-  &:has(.catppuccin-latte:checked) {
-    --background: #eff1f5;
-    --background-2: #ccd0da;
-    --background-3: #bcc0cc;
-    --background-hover: #a16cf5;
-    --foreground: #4c4f69;
-    --header: #7287fd;
-    --project: #df8e1d;
-    --accent: #1e66f5;
-    --highlight: #d20f39;
-    --outline: #4c4f68;
-    --border: #bcc0cd;
-    --placeholder-color: #9ca0b0;
   }
 
   &:has(.rama:checked) {
@@ -222,6 +198,15 @@ body {
     --border: #feffff;
     --placeholder-color: #010001;
   }
+}
+
+body {
+  padding-block: 2rem;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  max-width: 1200px;
+  min-height: 100svh;
+  margin: auto;
 }
 
 main {
