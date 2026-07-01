@@ -14,6 +14,7 @@ customElements.define(
     }
 
     #template = `
+    <h2>Theme</h2>
     <ul class="themes"></ul>
     `
 

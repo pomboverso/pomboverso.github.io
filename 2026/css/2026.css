@@ -32,7 +32,7 @@
   --placeholder-color: #a499b9;
 
   --space-between-blocks: 1rem;
-  --space-between-inline: 0.5rem;
+  --space-between-inline: 0.25rem;
 
   --font-size-h1: 55px;
   --font-size-content: 18px;
@@ -246,6 +246,9 @@ img {
 
 /* Blocks */
 h1,
+h2,
+h3,
+.stars,
 p,
 blockquote,
 li,
@@ -480,6 +483,19 @@ pv-settings {
     input {
       vertical-align: middle;
       margin-inline-end: var(--space-between-inline);
+    }
+  }
+}
+
+pv-stats {
+  .stars {
+    .icon {
+      background: #574b06;
+      color: #f3e284;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      padding: 8px;
     }
   }
 }
