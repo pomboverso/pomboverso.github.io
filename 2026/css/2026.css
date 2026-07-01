@@ -64,7 +64,7 @@ body {
   color: var(--foreground);
   scrollbar-gutter: stable;
 
-  &:has(.catppuccin-mocha:checked) {
+  &:has([value='catppuccin-mocha']:checked) {
     --background: #1e1e2e;
     --background-2: #313244;
     --background-3: #45475a;
@@ -79,7 +79,7 @@ body {
     --placeholder-color: #6c7086;
   }
 
-  &:has(.rama:checked) {
+  &:has([value='rama']:checked) {
     --background: #0e190e;
     --background-2: #1f2920;
     --background-3: #2d3b24;
@@ -94,7 +94,7 @@ body {
     --placeholder-color: #888888;
   }
 
-  &:has(.dracula:checked) {
+  &:has([value='dracula']:checked) {
     --background: #282a36;
     --background-2: #363849;
     --background-3: #424450;
@@ -109,7 +109,7 @@ body {
     --placeholder-color: #6272a4;
   }
 
-  &:has(.teyin:checked) {
+  &:has([value='teyin']:checked) {
     --background: #0e181a;
     --background-2: #162a2e;
     --background-3: #1e383d;
@@ -124,7 +124,7 @@ body {
     --placeholder-color: #5d7a7c;
   }
 
-  &:has(.mako:checked) {
+  &:has([value='mako']:checked) {
     --background: #141417;
     --background-2: #1f1f29;
     --background-3: #24313b;
@@ -139,7 +139,7 @@ body {
     --placeholder-color: #888888;
   }
 
-  &:has(.tokyo-night:checked) {
+  &:has([value='tokyo-night']:checked) {
     --background: #1a1b26;
     --background-2: #24283b;
     --background-3: #292e42;
@@ -154,7 +154,7 @@ body {
     --placeholder-color: #565f89;
   }
 
-  &:has(.melange-dark:checked) {
+  &:has([value='melange-dark']:checked) {
     --background: #292522;
     --background-2: #352f2a;
     --background-3: #403a34;
@@ -169,7 +169,7 @@ body {
     --placeholder-color: #867462;
   }
 
-  &:has(.mono-dark:checked) {
+  &:has([value='mono-dark']:checked) {
     --background: #040100;
     --background-2: #040001;
     --background-3: #040101;
@@ -184,7 +184,7 @@ body {
     --placeholder-color: #fafeff;
   }
 
-  &:has(.mono-light:checked) {
+  &:has([value='mono-light']:checked) {
     --background: #ffffff;
     --background-2: #fffffe;
     --background-3: #fffeff;

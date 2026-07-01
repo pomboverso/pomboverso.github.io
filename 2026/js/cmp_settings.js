@@ -18,6 +18,8 @@ customElements.define(
     <ul class="themes"></ul>
     `
 
+    #currentTheme = ''
+
     #themes = [
       'Pomboverso',
       'Rama',
@@ -33,30 +35,57 @@ customElements.define(
 
     generateThemeList() {
       const list = this.#themes
-        .map(
-          theme => `
-          <li>
-            <label>
-              <input
-                type="radio"
-                name="theme"
-                class="${normalize(theme, true)}"
-                value="${normalize(theme, true)}"
-              >
-                ${theme}
-            </label>
-          </li>
-          `
-        )
+        .map(theme => {
+          const value = normalize(theme, true)
+
+          return `
+        <li>
+          <label>
+            <input
+              type="radio"
+              name="theme"
+              value="${value}"
+              ${theme === this.#currentTheme ? 'checked' : ''}
+            >
+            ${theme}
+          </label>
+        </li>
+      `
+        })
         .join('')
+
       this.#html.$ul.innerHTML = list
+    }
+
+    initializeTheme() {
+      const storedTheme = localStorage.getItem('theme')
+
+      if (storedTheme) {
+        this.#currentTheme = storedTheme
+      } else {
+        this.#currentTheme = this.#themes[Math.floor(Math.random() * this.#themes.length)]
+      }
     }
 
     connectedCallback() {
       if (this.#initialized) return
       this.#initialized = true
+
       this.innerHTML = this.#template
       this.#html.$ul = this.querySelector('ul.themes')
+
+      this.#html.$ul.addEventListener('change', e => {
+        if (e.target.name !== 'theme') return
+
+        const theme = this.#themes.find(t => normalize(t, true) === e.target.value)
+
+        if (!theme) return
+
+        this.#currentTheme = theme
+        localStorage.setItem('theme', theme)
+      })
+
+      this.initializeTheme()
       this.generateThemeList()
     }
   }
