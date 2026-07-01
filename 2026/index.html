@@ -156,7 +156,7 @@
 
         <ul class="contact">
           <li><span class="icon">📍</span> Spokane, WA</li>
-          <li><span class="icon">📝</span> rama-io.tuta.io</li>
+          <li><span class="icon">📝</span> rama.scyu0@simplelogin.fr</li>
           <li>
             <a
               href="https://github.com/pomboverso"
@@ -181,32 +181,33 @@
 
     <main>
       <div class="container">
-        <div class="row-list">
+        <nav class="row-list">
           <span class="separator"></span>
           <button
             class="icon nav-btn"
-            id="home-btn"
+            data-route="home"
+            aria-current="page"
           >
             🏠
           </button>
           <button
             class="icon nav-btn"
-            id="stats-btn"
+            data-route="stats"
           >
             ⭐
           </button>
           <button
             class="icon nav-btn"
-            id="settings-btn"
+            data-route="settings"
           >
             ⚙
           </button>
-        </div>
+        </nav>
 
         <div class="router">
-          <pv-home class="active"></pv-home>
-          <pv-settings></pv-settings>
-          <pv-stats></pv-stats>
+          <pv-home data-route="home" class="active"></pv-home>
+          <pv-settings data-route="settings"></pv-settings>
+          <pv-stats data-route="stats"></pv-stats>
         </div>
       </div>
     </main>

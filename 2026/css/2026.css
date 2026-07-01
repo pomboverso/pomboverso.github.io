@@ -295,6 +295,10 @@ pv-search {
     cursor: pointer;
     color: var(--highlight);
   }
+
+  &.active {
+    color: var(--accent);
+  }
 }
 
 .row-list {
@@ -372,7 +376,7 @@ ul.contact {
 }
 
 .router {
-  > * {
+  > [data-route] {
     display: none;
 
     &.active {
