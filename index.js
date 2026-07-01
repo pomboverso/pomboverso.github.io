@@ -1,3 +1,6 @@
+import fs from 'fs'
+import path from 'path'
+
 const REPOS = {
   mako: 'rama-io/mako',
   txori: 'rama-io/txori',
@@ -21,7 +24,6 @@ async function getRepoStats(repo) {
   const repoData = await ghFetch(base)
 
   return {
-    name: repo.split('/')[1].toUpperCase(),
     stars: repoData.stargazers_count ?? 0,
     issues: repoData.open_issues_count ?? 0,
   }
@@ -44,8 +46,14 @@ async function init() {
     }
 
     repoStats.push(result.value)
-
   }
+
+  const dir = path.join('2026', 'js')
+  const file = path.join(dir, 'data_stats.js')
+
+  fs.mkdirSync(dir, { recursive: true })
+
+  fs.writeFileSync(file, `export default ${JSON.stringify(repoStats, null, 2)}`, 'utf8')
 
   console.log(repoStats)
 }

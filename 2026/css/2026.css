@@ -489,6 +489,10 @@ pv-settings {
 
 pv-stats {
   .stars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-between-inline);
+
     .icon {
       background: #574b06;
       color: #f3e284;
