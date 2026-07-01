@@ -8,7 +8,6 @@ const REPOS = {
 const HEADERS = {
   Accept: 'application/vnd.github+json',
   'User-Agent': 'rama-build-script',
-  ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 }
 
 async function ghFetch(url) {
@@ -19,8 +18,7 @@ async function ghFetch(url) {
 
 async function getRepoStats(repo) {
   const base = `https://api.github.com/repos/${repo}`
-
-  const [repoData] = await Promise.all([ghFetch(base)])
+  const repoData = await ghFetch(base)
 
   return {
     name: repo.split('/')[1].toUpperCase(),
@@ -37,16 +35,19 @@ async function init() {
     })
   )
 
+  const repoStats = []
+
   for (const result of statsResults) {
     if (result.status === 'rejected') {
-      console.error(`✗ badge: ${result.reason.message}`)
+      console.error(`error: ${result.reason.message}`)
       continue
     }
 
-    const [key, stats] = result.value
+    repoStats.push(result.value)
 
-    console.log({ key, stats })
   }
+
+  console.log(repoStats)
 }
 
 init()

@@ -1,5 +1,12 @@
 import { getPrefix, normalize } from './_helpers.js'
 
+const repoData = [
+  ['mako', { name: 'MAKO', stars: 170, issues: 31 }],
+  ['txori', { name: 'TXORI', stars: 48, issues: 2 }],
+  ['tui', { name: 'TUI', stars: 34, issues: 5 }],
+  ['teyin', { name: 'TEYIN', stars: 16, issues: 3 }],
+]
+
 customElements.define(
   getPrefix('stats'),
   class extends HTMLElement {
@@ -10,43 +17,41 @@ customElements.define(
     #initialized = false
 
     #html = {
-      $ul: undefined,
+      $repos: undefined,
     }
 
     #template = `
     <h2>Stars</h2>
 
-    <h3>Mako</h3>
-
-    <div class="stars">
-      <span class="icon">s</span>
-    </div>
-
-    <h3>Txori</h3>
-
-    <div class="stars">
-      <span class="icon">s</span>
-    </div>
-
-    <h3>Tui</h3>
-
-    <div class="stars">
-      <span class="icon">s</span>
-    </div>
-
-    <h3>Teyin</h3>
-
-    <div class="stars">
-      <span class="icon">s</span>
-      <span class="icon">s</span>
-      <span class="icon">s</span>
-    </div>
+    <div class="repos"></div>
     `
+
+    generateReposData() {
+      const result = Object.values(repoData)
+        .map(([key, stats]) => {
+          const stars = Array.from(
+            { length: stats.stars },
+            () => '<span class="icon">★</span>'
+          ).join('')
+
+          return `
+            <h3>${key} :: ${stats.stars}</h3>
+
+            <div class="stars">
+              ${stars}
+            </div>`
+        })
+        .join('')
+
+      this.#html.$repos.innerHTML = result
+    }
 
     connectedCallback() {
       if (this.#initialized) return
       this.#initialized = true
       this.innerHTML = this.#template
+      this.#html.$repos = this.querySelector('.repos')
+      this.generateReposData()
     }
   }
 )
