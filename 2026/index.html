@@ -155,14 +155,14 @@
         </p>
 
         <ul class="contact">
-          <li><span class="icon">l</span> Spokane, WA</li>
-          <li><span class="icon">e</span> rama-io.tuta.io</li>
+          <li><span class="icon">📍</span> Spokane, WA</li>
+          <li><span class="icon">📝</span> rama-io.tuta.io</li>
           <li>
             <a
               href="https://github.com/pomboverso"
               rel="noopener noreferrer"
               target="_blank"
-              ><span class="icon">g</span> pomboverso
+              ><span class="icon">🐱</span> pomboverso
             </a>
           </li>
           <li>
@@ -170,7 +170,7 @@
               href="https://mastodon.social/@pombo_proibido"
               rel="noopener noreferrer"
               target="_blank"
-              ><span class="icon">m</span> pombo_proibido
+              ><span class="icon">💬</span> pombo_proibido
             </a>
           </li>
         </ul>
@@ -183,12 +183,31 @@
       <div class="container">
         <div class="row-list">
           <span class="separator"></span>
-          <button class="icon open-settings">c</button>
+          <button
+            class="icon nav-btn"
+            id="home-btn"
+          >
+            🏠
+          </button>
+          <button
+            class="icon nav-btn"
+            id="stats-btn"
+          >
+            ⭐
+          </button>
+          <button
+            class="icon nav-btn"
+            id="settings-btn"
+          >
+            ⚙
+          </button>
         </div>
 
-        <pv-home></pv-home>
-        <pv-settings></pv-settings>
-        <pv-stats></pv-stats>
+        <div class="router">
+          <pv-home class="active"></pv-home>
+          <pv-settings></pv-settings>
+          <pv-stats></pv-stats>
+        </div>
       </div>
     </main>
   </body>

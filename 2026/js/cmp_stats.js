@@ -25,7 +25,7 @@ customElements.define(
         .map(([key, stats]) => {
           const stars = Array.from(
             { length: stats.stars },
-            () => '<span class="icon">★</span>'
+            () => '<span class="icon">⭐</span>'
           ).join('')
 
           return `

@@ -284,7 +284,7 @@ pv-search {
   }
 }
 
-.open-settings {
+.nav-btn {
   background: transparent;
   border: none;
   color: var(--placeholder-color);
@@ -371,6 +371,16 @@ ul.contact {
   }
 }
 
+.router {
+  > * {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
 pv-search {
   .searchbar {
     background-color: var(--background-2);
@@ -383,7 +393,7 @@ pv-search {
     }
 
     &::before {
-      content: 'f';
+      content: '🔎';
       padding-inline: 0.5rem;
       font-family: 'pomboverso' !important;
       font-style: normal;
