@@ -29,8 +29,8 @@ customElements.define(
       'Dracula',
       'Mélange Dark',
       'Tokyo Night',
-      'Mono Dark',
-      'Mono Light',
+      // 'Mono Dark',
+      // 'Mono Light',
     ]
 
     generateThemeList() {
