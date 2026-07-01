@@ -508,12 +508,20 @@ pv-stats {
     gap: var(--space-between-inline);
 
     .icon {
-      background: #574b06;
-      color: #f3e284;
+      background: #302a04;
+      color: #c9b85b;
       display: inline-block;
       width: 32px;
       height: 32px;
       padding: 8px;
+      transition:
+        background ease 200ms,
+        color ease 200ms;
+
+      &:hover {
+        background-color: #574b06;
+        color: #f3e284;
+      }
     }
   }
 }
