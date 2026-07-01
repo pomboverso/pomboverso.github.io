@@ -125,28 +125,28 @@ export default [
     },
     license: license.gplv3,
   },
-  {
-    date: new Date('2024-12-24'),
-    org: org.rama,
-    name: 'LoM DB',
-    category: category.website,
-    preview: 'https://lomdb.github.io/img/svg/lom_header-draco.svg',
-    screenshots: [
-      'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/0-min.webp',
-      'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/1-min.webp',
-      'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/2-min.webp',
-    ],
-    tags: [skill.webComponents, skill.svg, skill.css, skill.three, skill.js],
-    description: [
-      '[p](**LoM DB** is a community-driven database for tracking and exploring merged servers, top players, and timelines across regions.)',
-      '[p](This project is built to help players, analysts, and enthusiasts get a clearer view of evolving server data, elite players, and historical merges, all in one place.)',
-    ],
-    link: {
-      web: 'https://lomdb.github.io/',
-      github: 'https://github.com/lomdb/lomdb.github.io',
-    },
-    license: license.gplv3,
-  },
+  // {
+  //   date: new Date('2024-12-24'),
+  //   org: org.rama,
+  //   name: 'LoM DB',
+  //   category: category.website,
+  //   preview: 'https://lomdb.github.io/img/svg/lom_header-draco.svg',
+  //   screenshots: [
+  //     'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/0-min.webp',
+  //     'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/1-min.webp',
+  //     'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/2-min.webp',
+  //   ],
+  //   tags: [skill.webComponents, skill.svg, skill.css, skill.three, skill.js],
+  //   description: [
+  //     '[p](**LoM DB** is a community-driven database for tracking and exploring merged servers, top players, and timelines across regions.)',
+  //     '[p](This project is built to help players, analysts, and enthusiasts get a clearer view of evolving server data, elite players, and historical merges, all in one place.)',
+  //   ],
+  //   link: {
+  //     web: 'https://lomdb.github.io/',
+  //     github: 'https://github.com/lomdb/lomdb.github.io',
+  //   },
+  //   license: license.gplv3,
+  // },
   {
     date: new Date('2022-09-01'), //TODO
     org: org.teamup,
