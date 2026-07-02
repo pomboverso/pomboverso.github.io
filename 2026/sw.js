@@ -1,4 +1,4 @@
-const CACHE = 'pv-v4'
+const CACHE = 'pv-v5'
 
 const PRECACHE = [
   './css/2026.css',

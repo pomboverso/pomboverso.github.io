@@ -155,9 +155,9 @@ body {
   }
 
   &:has([value='melange-dark']:checked) {
-    --background: #292522;
-    --background-2: #352f2a;
-    --background-3: #403a34;
+    --background: #161413;
+    --background-2: #221c18;
+    --background-3: #322b24;
     --background-hover: #f4d18d;
     --foreground: #ece1d7;
     --header: #ebc06b;
