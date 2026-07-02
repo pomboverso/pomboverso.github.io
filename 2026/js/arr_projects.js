@@ -434,12 +434,36 @@ export default [
     date: new Date('2016-02-22'),
     org: org.pixelPerfectTree,
     name: 'DrLogic',
-    completion: 0,
+    completion: 2,
     category: category.website,
-    // preview: '',
+    preview: './img/drlogic.jpg',
     // screenshots: [],
     tags: [skill.bootstrap, skill.rails, skill.scss, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      '[blockquote](Pixel Perfect Tree is a data-driven web and app development company that span a wide spectrum of audiences, technologies, and platforms, from consumer facing mobile apps to large enterprise custom web applications.)',
+    ],
+    features: [
+      [
+        'Polished Landing Experience',
+        'A clean, responsive homepage that quickly communicates Dr Logic’s mission and personality, optimized for both desktop and mobile users.',
+      ],
+      [
+        'About Page with a Human Touch',
+        'Highlights the team’s story, values, and Apple expertise, helping users connect with the brand on a personal level.',
+      ],
+      [
+        'Portfolio Integration',
+        'A visually rich portfolio section showcasing real client work and practical case studies, reinforcing credibility and technical expertise.',
+      ],
+      [
+        'Accessible Contact Pathways',
+        'A prominently placed Contact Us link and form, making it easy for prospective clients to get in touch or request support.',
+      ],
+      [
+        'Consistent Visual Identity',
+        'Cohesive use of color, typography, and layout across pages to reflect a professional yet approachable Apple-aligned brand.',
+      ],
+    ],
     license: license.propietary,
   },
   {
@@ -461,24 +485,29 @@ export default [
     date: new Date('2015-11-12'),
     org: org.apap,
     name: 'Mineriza a tu Familia',
-    completion: 0,
+    completion: 1,
     category: category.webApp,
-    // preview: '',
+    preview: './img/apap.jpg',
     // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      '[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.)',
+    ],
     license: license.propietary,
   },
   {
     date: new Date('2015-10-23'),
     org: org.presidente,
     name: 'Retrobrindis',
-    completion: 0,
+    completion: 1,
     category: category.webApp,
-    // preview: '',
+    preview: './img/retro.jpg',
     // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      `[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.
+      )`,
+    ],
     license: license.propietary,
   },
   {
@@ -490,7 +519,10 @@ export default [
     // preview: '',
     // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      `[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.
+      )`,
+    ],
     license: license.propietary,
   },
   {
@@ -502,19 +534,25 @@ export default [
     // preview: '',
     // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      `[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.
+      )`,
+    ],
     license: license.propietary,
   },
   {
     date: new Date('2014-06-16'),
     org: org.presidente,
     name: 'Detapa el Coro',
-    completion: 0,
+    completion: 1,
     category: category.webApp,
-    // preview: '',
+    preview: './img/destapa.jpg',
     // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      `[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.
+      )`,
+    ],
     license: license.propietary,
   },
   {
@@ -526,19 +564,25 @@ export default [
     // preview: '',
     // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      `[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.
+      )`,
+    ],
     license: license.propietary,
   },
   {
     date: new Date('2014-01-14'),
     org: org.avante,
     name: 'Descubria',
-    completion: 0,
+    completion: 1,
     category: category.website,
-    // preview: '',
+    preview: './img/descubria.jpg',
     // screenshots: [],
     tags: [skill.html, skill.css, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      `[blockquote](Descubria was an interactive children's park where young minds could step into the shoes of grown-ups and explore the world of work through play. In a vibrant, mini-city environment, kids took on roles like chefs, firefighters, builders, and healthcare workers—earning play money for their efforts and discovering new passions along the way. Through hands-on experiences and realistic job simulations, Descubria offered a fun and educational glimpse into adult life, inspiring curiosity, responsibility, and imagination.
+      )`,
+    ],
     license: license.propietary,
   },
 ]
