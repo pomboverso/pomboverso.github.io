@@ -39,6 +39,38 @@ customElements.define(
       return !description ? '' : description.map(p => parse(p)).join('')
     }
 
+    #renderFeatures(str) {
+      if (!str) return ''
+      return `<h3>Features</h3>
+      <ul class="unordered-list">
+        ${str.map(li => `<li><strong>${li[0]}${li?.[1] && ':'}</strong> ${li[1]}</li>`).join('')}
+      </ul>
+      `
+    }
+
+    #renderFeaturesList(str) {
+      if (!str) return ''
+      return `<h3>Features</h3>
+      <ul class="unordered-list">
+        ${str.map(li => `<li>${li}</li>`).join('')}
+      </ul>
+      `
+    }
+
+    #renderContribution(contributions) {
+      if (!contributions) return ''
+      return `<h3>Contributions</h3>
+      <ul class="unordered-list">
+        ${contributions.map(li => `<li>${li}</li>`).join('')}
+      </ul>
+      `
+    }
+
+    #renderStars(stars) {
+      if (!stars) return ''
+      return Array.from({length: stars}).map(s => `<span class="icon">⭐</span>`).join('')
+    }
+
     #renderCta(links) {
       if (!links) return ''
 
@@ -107,15 +139,29 @@ customElements.define(
       this.#html.$ul.innerHTML = this.#groupProjectsByYear(filtered)
         .map(({ year, projects }) => {
           const projectsHtml = projects
-            .map(({ org, name, category, tags, description, link, preview, screenshots }) => {
-              return `
+            .map(
+              ({
+                org,
+                name,
+                category,
+                features,
+                featuresList,
+                tags,
+                description,
+                contributions,
+                link,
+                completion,
+                preview,
+                screenshots,
+              }) => {
+                return `
             <li>
               <button
                 class="project-btn"
                 type="button"
               >
                 <span class="collapse-indicator">+</span>
-                ${org} :: ${name} (${category})
+                ${org} :: ${name} (${category}) ${this.#renderStars(completion)}
               </button>
 
               <div class="content-area">
@@ -125,11 +171,18 @@ customElements.define(
                 
                 ${this.#renderDescription(description)}
 
+                ${this.#renderFeatures(features)}
+
+                ${this.#renderFeaturesList(featuresList)}
+
+                ${this.#renderContribution(contributions)}
+
                 ${this.#renderCta(link)}
               </div>
             </li>
           `
-            })
+              }
+            )
             .join('')
 
           return `

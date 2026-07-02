@@ -244,6 +244,17 @@ img {
   max-width: 100%;
 }
 
+blockquote {
+  background: rgb(0 0 0 / 35%);
+  padding: var(--space-between-blocks);
+  color: var(--placeholder-color);
+}
+
+ul.unordered-list {
+  list-style: disc;
+  padding-inline-start: var(--space-between-blocks);
+}
+
 /* Blocks */
 h1,
 h2,
@@ -441,6 +452,11 @@ pv-home {
     width: 100%;
     text-align: left;
 
+    .icon {
+      vertical-align: bottom;
+      color: var(--accent);
+    }
+
     &:hover {
       cursor: pointer;
       color: var(--highlight);
@@ -466,7 +482,7 @@ pv-home {
     background-color: var(--background-2);
     border: 1px solid var(--border);
     padding: var(--space-between-blocks);
-    color: var(--placeholder-color);
+    color: var(--foreground);
     display: none;
 
     &:empty {
