@@ -475,7 +475,9 @@ export default [
     // preview: '',
     // screenshots: [],
     tags: [skill.bootstrap, skill.rails, skill.scss, skill.jQuery, skill.js],
-    // description: ['[p]()', '[p]()'],
+    description: [
+      '[blockquote](Pixel Perfect Tree is a data-driven web and app development company that span a wide spectrum of audiences, technologies, and platforms, from consumer facing mobile apps to large enterprise custom web applications.)',
+    ],
     link: {
       web: 'https://www.bprbank.com',
     },
