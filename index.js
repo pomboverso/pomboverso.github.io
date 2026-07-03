@@ -48,7 +48,7 @@ async function init() {
     repoStats.push(result.value)
   }
 
-  const dir = path.join('2026', 'js')
+  const dir = path.join('js')
   const file = path.join(dir, 'data_stats.js')
 
   fs.mkdirSync(dir, { recursive: true })
