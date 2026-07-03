@@ -227,7 +227,7 @@ export default [
     date: new Date('2022-09-01'), //TODO
     org: org.teamup,
     name: 'DaysmartVueComponents',
-    completion: 2,
+    completion: 1,
     category: category.nodeModule,
     // preview: '',
     // screenshots: [],
@@ -310,7 +310,7 @@ export default [
     date: new Date('2020-05-05'),
     org: org.enovational,
     name: 'Popkern',
-    completion: 2,
+    completion: 1,
     category: category.nodeModule,
     // preview: '',
     // screenshots: [],
