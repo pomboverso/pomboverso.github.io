@@ -2,33 +2,29 @@ export default [
   [
     "mako",
     {
-      "name": "MAKO",
-      "stars": 170,
-      "issues": 31
+      "stars": 171,
+      "issues": 32
     }
   ],
   [
     "txori",
     {
-      "name": "TXORI",
       "stars": 48,
-      "issues": 2
+      "issues": 3
     }
   ],
   [
     "tui",
     {
-      "name": "TUI",
-      "stars": 34,
-      "issues": 5
+      "stars": 35,
+      "issues": 7
     }
   ],
   [
     "teyin",
     {
-      "name": "TEYIN",
-      "stars": 17,
-      "issues": 3
+      "stars": 18,
+      "issues": 4
     }
   ]
 ]
