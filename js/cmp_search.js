@@ -20,7 +20,7 @@ customElements.define(
 
     #template = `
     <div class="searchbar">
-      <input type="search" placeholder="filter by..." />
+      <input type="search" id="search" placeholder="filter by..." />
     </div>
     <div class="row-list tags">
       ${this.#generateTags()}
@@ -60,7 +60,7 @@ customElements.define(
 
       this.innerHTML = this.#template
 
-      this.#html.$input = this.querySelector('input')
+      this.#html.$input = this.querySelector('#search')
       this.#html.$tags = [...this.querySelectorAll('.tag')]
 
       this.#html.$input.addEventListener('input', event => {
