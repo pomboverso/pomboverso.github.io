@@ -102,10 +102,10 @@ customElements.define(
     #renderPreview({ preview, screenshots = [] } = {}) {
       let $html = ''
       if (preview) {
-        $html = `<img alt="project preview" class="preview" src="${preview}">`
+        $html = `<pv-img alt="project preview" class="preview" src="${preview}"></pv-img>`
       }
       if (screenshots?.length > 0) {
-        const imgs = screenshots.map(img => `<img alt="project preview" src="${img}">`).join('')
+        const imgs = screenshots.map(img => `<pv-img alt="project preview" src="${img}"></pv-img>`).join('')
 
         $html += `<div class="gallery">${imgs}</div>`
       }
