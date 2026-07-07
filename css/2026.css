@@ -207,6 +207,10 @@ body {
   max-width: 1200px;
   min-height: 100svh;
   margin: auto;
+
+  @media (max-width: 850px) {
+    display: block;
+  }
 }
 
 main {
@@ -401,6 +405,8 @@ ul.contact {
 }
 
 pv-search {
+  display: block;
+
   .searchbar {
     background-color: var(--background-2);
     border: 1px solid var(--border);
