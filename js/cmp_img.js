@@ -3,42 +3,47 @@ import { getPrefix } from './_helpers.js'
 customElements.define(
   getPrefix('img'),
   class extends HTMLElement {
-    constructor() {
-      super()
-    }
-
-    static attrs = ['src', 'alt', 'uid']
+    static attrs = ['src', 'alt']
 
     #initialized = false
 
     #html = {
-      $img: undefined,
-      $dialogImg: undefined,
+      button: null,
+      dialog: null,
+      img: null,
+      dialogImg: null,
     }
-
-    #template = `
-    <button command="show-modal" commandfor="zoom-img">
-      <img src="" alt="">
-    </button>
-
-    <dialog id="zoom-img" closedby="any">
-      <img src="" alt="">
-    </dialog>
-    `
 
     connectedCallback() {
       if (this.#initialized) return
       this.#initialized = true
 
-      this.innerHTML = this.#template
+      this.innerHTML = `
+        <button type="button">
+          <img>
+        </button>
 
-      this.#html.$img = this.querySelector('button img')
-      this.#html.$dialogImg = this.querySelector('dialog img')
+        <dialog closedby="any">
+          <img>
+        </dialog>
+      `
 
-      this.constructor.attrs.forEach(key => {
-        const value = this.getAttribute(key)
-        this.#html.$img.setAttribute(key, value)
-        this.#html.$dialogImg.setAttribute(key, value)
+      this.#html.button = this.querySelector('button')
+      this.#html.dialog = this.querySelector('dialog')
+      this.#html.img = this.querySelector('button img')
+      this.#html.dialogImg = this.querySelector('dialog img')
+
+      for (const attr of this.constructor.attrs) {
+        const value = this.getAttribute(attr)
+
+        if (value !== null) {
+          this.#html.img.setAttribute(attr, value)
+          this.#html.dialogImg.setAttribute(attr, value)
+        }
+      }
+
+      this.#html.button.addEventListener('click', () => {
+        this.#html.dialog.showModal()
       })
     }
   }
