@@ -110,6 +110,10 @@ export default [
       obtanium:
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/mako',
     },
+    externalLink: {
+      'Top 10 Android Apps July 2026': 'https://youtu.be/Hqp60tdtE2A&t=336s',
+      '8 Incredible Android Apps July 2026': 'https://youtu.be/KQdL4ehLhcg?t=321',
+    },
     license: license.gplv3,
   },
   {

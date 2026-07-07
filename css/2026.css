@@ -346,6 +346,10 @@ pv-search {
   font-size: var(--font-size-content);
   text-decoration: none;
 
+  &.promo {
+    background-color: var(--highlight);
+  }
+
   &:hover {
     cursor: pointer;
     background: var(--background-hover);

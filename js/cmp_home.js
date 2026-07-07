@@ -68,7 +68,9 @@ customElements.define(
 
     #renderStars(stars) {
       if (!stars) return ''
-      return Array.from({length: stars}).map(s => `<span class="icon">⭐</span>`).join('')
+      return Array.from({ length: stars })
+        .map(s => `<span class="icon">⭐</span>`)
+        .join('')
     }
 
     #renderCta(links) {
@@ -78,6 +80,19 @@ customElements.define(
         .map(
           ([name, link]) =>
             `<a href="${link}" rel="noopener noreferrer" target="_blank" class="cta">${name}</a>`
+        )
+        .join('')
+
+      return `<div class="row-list">${result}</div>`
+    }
+
+    #renderPromoLinks(links) {
+      if (!links) return ''
+
+      const result = Object.entries(links)
+        .map(
+          ([name, link]) =>
+            `<a href="${link}" rel="noopener noreferrer" target="_blank" class="cta promo">${name}</a>`
         )
         .join('')
 
@@ -150,6 +165,7 @@ customElements.define(
                 description,
                 contributions,
                 link,
+                externalLink,
                 completion,
                 preview,
                 screenshots,
@@ -178,6 +194,8 @@ customElements.define(
                 ${this.#renderContribution(contributions)}
 
                 ${this.#renderCta(link)}
+
+                 ${this.#renderPromoLinks(externalLink)}
               </div>
             </li>
           `
