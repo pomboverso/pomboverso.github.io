@@ -25,7 +25,7 @@ customElements.define(
       const result = tags
         .map(
           tag => `
-      <button type="button" class="tag">
+      <button type="button" class="tag" data-tag="${normalize(tag)}">
         ${tag}
       </button>
     `
@@ -210,9 +210,10 @@ customElements.define(
       this.#html.$ul.addEventListener('click', event => {
         const $tag = event.target.closest('.tag')
         if ($tag) {
+          const query = $tag.dataset.tag
           document.dispatchEvent(
             new CustomEvent(EVENT_SEARCH, {
-              detail: { query: normalize($tag) },
+              detail: { query: query },
             })
           )
           return
