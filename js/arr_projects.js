@@ -5,6 +5,32 @@ import license from './obj_license.js'
 
 export default [
   {
+    date: new Date('2026-07-10'),
+    org: org.rama,
+    name: 'Okapi',
+    completion: 2,
+    category: category.androidApp,
+    preview: 'https://github.com/rama-io/okapi/raw/master/docs/img/okapi_header_1200x630.svg',
+    screenshots: [
+      'https://raw.githubusercontent.com/rama-io/okapi/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png',
+      'https://raw.githubusercontent.com/rama-io/okapi/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png',
+      'https://raw.githubusercontent.com/rama-io/okapi/master/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png',
+    ],
+    tags: [skill.kotlin],
+    description: [
+      '[p](**Okapi** is a minimal, privacy-first Android **communication aid** designed to make one-on-one conversations easier for deaf and hard-of-hearing people, and anyone talking in loud or noisy places.)',
+      '[p](Built entirely in native **Kotlin**, Okapi runs fully **on-device**, avoids tracking, and keeps the message on screen as large and legible as possible so it can be read at a glance.)',
+    ],
+    link: {
+      web: 'https://rama-io.github.io/okapi.html',
+      github: 'https://github.com/rama-io/okapi',
+      fdroid: 'https://f-droid.org/app/com.rama.okapi',
+      obtanium:
+        'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/okapi',
+    },
+    license: license.gplv3,
+  },
+  {
     date: new Date('2026-06-06'),
     org: org.rama,
     name: 'Teyin',

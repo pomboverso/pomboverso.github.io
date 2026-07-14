@@ -6,6 +6,7 @@ const REPOS = {
   txori: 'rama-io/txori',
   tui: 'rama-io/tui',
   teyin: 'rama-io/teyin',
+  okapi: 'rama-io/okapi',
 }
 
 const HEADERS = {
