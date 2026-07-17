@@ -5,5 +5,10 @@
   "main": "index.js",
   "type": "module",
   "author": "Pombo",
-  "license": "GPL-3.0-only"
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1"
+  },
+  "scripts": {}
 }
