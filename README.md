@@ -1,5 +1,11 @@
 # Pomboverso
 
+## Update github data
+
+```
+node .
+```
+
 ## Tests
 
 Install Playwright dependencies:
