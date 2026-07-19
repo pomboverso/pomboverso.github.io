@@ -2,8 +2,8 @@ export default [
   [
     "mako",
     {
-      "stars": 195,
-      "issues": 24
+      "stars": 196,
+      "issues": 23
     }
   ],
   [
@@ -16,15 +16,15 @@ export default [
   [
     "tui",
     {
-      "stars": 37,
-      "issues": 7
+      "stars": 40,
+      "issues": 8
     }
   ],
   [
     "teyin",
     {
       "stars": 22,
-      "issues": 5
+      "issues": 6
     }
   ],
   [
