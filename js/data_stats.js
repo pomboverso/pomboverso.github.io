@@ -3,7 +3,7 @@ export default [
     "mako",
     {
       "stars": 198,
-      "issues": 25
+      "issues": 23
     }
   ],
   [
@@ -30,7 +30,7 @@ export default [
   [
     "okapi",
     {
-      "stars": 2,
+      "stars": 3,
       "issues": 1
     }
   ]
