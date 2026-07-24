@@ -145,6 +145,9 @@ export default [
       'El Launcher SECRETO para curar tu adicción al celular': 'https://www.youtube.com/watch?v=D11o4i9nScg',
       'Top 10 Android Apps July 2026': 'https://youtu.be/Hqp60tdtE2A&t=336s',
       '8 Incredible Android Apps July 2026': 'https://youtu.be/KQdL4ehLhcg?t=321',
+    // https://www.youtube.com/shorts/lqCA7QabgXc?t=82
+    // https://youtu.be/8VPVEi5kAJA?t=520
+    // https://nuneztech.pro/top-aplicaciones-codigo-abierto-herramientas-android/
     },
     license: license.gplv3,
   },
