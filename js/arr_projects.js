@@ -22,6 +22,7 @@ export default [
       '[p](Built entirely in native **Kotlin**, Okapi runs fully **on-device**, avoids tracking, and keeps the message on screen as large and legible as possible so it can be read at a glance.)',
     ],
     link: {
+      promo: 'https://www.youtube.com/watch?v=u0R5YNajFHY',
       web: 'https://rama-io.github.io/okapi.html',
       github: 'https://github.com/rama-io/okapi',
       fdroid: 'https://f-droid.org/app/com.rama.okapi',
@@ -48,6 +49,7 @@ export default [
       '[p](Built entirely in native **Kotlin**, Teyin runs fully **on-device** and avoids tracking.)',
     ],
     link: {
+      promo: 'https://www.youtube.com/watch?v=u0R5YNajFHY',
       web: 'https://rama-io.github.io/teyin.html',
       github: 'https://github.com/rama-io/teyin',
       fdroid: 'https://f-droid.org/app/com.rama.teyin',
@@ -75,6 +77,7 @@ export default [
       '[p](Built entirely in native **Kotlin**, Tūī runs fully **on-device**, avoids tracking, no internet access, and no external APIs.)',
     ],
     link: {
+      promo: 'https://www.youtube.com/watch?v=u0R5YNajFHY',
       web: 'https://rama-io.github.io/tui.html',
       youtube: 'https://www.youtube.com/watch?v=We8xXVLiVI4',
       github: 'https://github.com/rama-io/tui',
@@ -103,6 +106,7 @@ export default [
       '[p](Built entirely in native **Kotlin**, Txori runs fully **on-device**, avoids tracking, no internet access, and no external APIs.)',
     ],
     link: {
+      promo: 'https://www.youtube.com/watch?v=u0R5YNajFHY',
       web: 'https://rama-io.github.io/txori.html',
       github: 'https://github.com/rama-io/txori',
       fdroid: 'https://f-droid.org/app/com.rama.txori',
@@ -130,6 +134,7 @@ export default [
       '[p](Built entirely in native **Kotlin**, Mako runs fully **on-device**, avoids tracking, and keeps distractions to a minimum by emphasizing clarity and intentional interaction.)',
     ],
     link: {
+      promo: 'https://www.youtube.com/watch?v=u0R5YNajFHY',
       web: 'https://rama-io.github.io/mako.html',
       github: 'https://github.com/rama-io/mako',
       fdroid: 'https://f-droid.org/app/com.rama.mako',
@@ -137,6 +142,7 @@ export default [
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/mako',
     },
     externalLink: {
+      'El Launcher SECRETO para curar tu adicción al celular': 'https://www.youtube.com/watch?v=D11o4i9nScg',
       'Top 10 Android Apps July 2026': 'https://youtu.be/Hqp60tdtE2A&t=336s',
       '8 Incredible Android Apps July 2026': 'https://youtu.be/KQdL4ehLhcg?t=321',
     },
