@@ -3,27 +3,27 @@ export default [
     "mako",
     {
       "stars": 198,
-      "issues": 25
+      "issues": 23
     }
   ],
   [
     "txori",
     {
       "stars": 49,
-      "issues": 3
+      "issues": 2
     }
   ],
   [
     "tui",
     {
       "stars": 39,
-      "issues": 9
+      "issues": 10
     }
   ],
   [
     "teyin",
     {
-      "stars": 24,
+      "stars": 25,
       "issues": 6
     }
   ],
