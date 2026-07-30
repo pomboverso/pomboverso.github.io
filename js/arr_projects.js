@@ -5,6 +5,31 @@ import license from './obj_license.js'
 
 export default [
   {
+    date: new Date('2026-07-25'),
+    org: org.rama,
+    name: 'Jaguar',
+    completion: 2,
+    category: category.androidApp,
+    preview: 'https://github.com/rama-io/jaguar/raw/master/docs/img/jaguar_header_1200x630.svg',
+    screenshots: [
+      'https://raw.githubusercontent.com/rama-io/jaguar/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png',
+      'https://raw.githubusercontent.com/rama-io/jaguar/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png',
+      'https://raw.githubusercontent.com/rama-io/jaguar/master/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png',
+    ],
+    tags: [skill.kotlin],
+    description: [
+      '[p](**Jaguar** is an Android app for practicing braille by touch-typing it. Instead of reading braille, you build it: each round shows you a word and you enter its braille cells one at a time on a 6-dot input, cell by cell, until the whole word is spelled out correctly.)',
+    ],
+    link: {
+      promo: 'https://www.youtube.com/watch?v=u0R5YNajFHY',
+      // web: 'https://rama-io.github.io/jaguar.html',
+      github: 'https://github.com/rama-io/jaguar',
+      obtainium:
+        'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/jaguar',
+    },
+    license: license.gplv3,
+  },
+  {
     date: new Date('2026-07-10'),
     org: org.rama,
     name: 'Okapi',
@@ -25,7 +50,6 @@ export default [
       promo: 'https://www.youtube.com/watch?v=u0R5YNajFHY',
       web: 'https://rama-io.github.io/okapi.html',
       github: 'https://github.com/rama-io/okapi',
-      // fdroid: 'https://f-droid.org/app/com.rama.okapi',
       obtainium:
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/okapi',
     },

@@ -7,6 +7,7 @@ const REPOS = {
   tui: 'rama-io/tui',
   teyin: 'rama-io/teyin',
   okapi: 'rama-io/okapi',
+  jaguar: 'rama-io/jaguar',
 }
 
 const HEADERS = {
