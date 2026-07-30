@@ -25,8 +25,8 @@ export default [
       promo: 'https://www.youtube.com/watch?v=u0R5YNajFHY',
       web: 'https://rama-io.github.io/okapi.html',
       github: 'https://github.com/rama-io/okapi',
-      fdroid: 'https://f-droid.org/app/com.rama.okapi',
-      obtanium:
+      // fdroid: 'https://f-droid.org/app/com.rama.okapi',
+      obtainium:
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/okapi',
     },
     license: license.gplv3,
@@ -53,7 +53,7 @@ export default [
       web: 'https://rama-io.github.io/teyin.html',
       github: 'https://github.com/rama-io/teyin',
       fdroid: 'https://f-droid.org/app/com.rama.teyin',
-      obtanium:
+      obtainium:
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/teyin',
     },
     license: license.gplv3,
@@ -82,7 +82,7 @@ export default [
       youtube: 'https://www.youtube.com/watch?v=We8xXVLiVI4',
       github: 'https://github.com/rama-io/tui',
       fdroid: 'https://f-droid.org/app/com.rama.tui',
-      obtanium:
+      obtainium:
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/tui',
     },
     license: license.gplv3,
@@ -110,7 +110,7 @@ export default [
       web: 'https://rama-io.github.io/txori.html',
       github: 'https://github.com/rama-io/txori',
       fdroid: 'https://f-droid.org/app/com.rama.txori',
-      obtanium:
+      obtainium:
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/txori',
     },
     license: license.gplv3,
@@ -138,16 +138,20 @@ export default [
       web: 'https://rama-io.github.io/mako.html',
       github: 'https://github.com/rama-io/mako',
       fdroid: 'https://f-droid.org/app/com.rama.mako',
-      obtanium:
+      obtainium:
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/mako',
     },
     externalLink: {
       'El Launcher SECRETO para curar tu adicción al celular': 'https://www.youtube.com/watch?v=D11o4i9nScg',
       'Top 10 Android Apps July 2026': 'https://youtu.be/Hqp60tdtE2A&t=336s',
       '8 Incredible Android Apps July 2026': 'https://youtu.be/KQdL4ehLhcg?t=321',
-    // https://www.youtube.com/shorts/lqCA7QabgXc?t=82
+    // https://postroyka.org/obzor-mako-ultraminimalistichnyiy-launcher-dlya-spaseniya-staryih-android-ustroystv/
+      // https://gadgetdrop.reinforz.co.jp/articles/mako-minimalist-android-launcher-hands-on
+      // https://www.youtube.com/shorts/lqCA7QabgXc?t=82
     // https://youtu.be/8VPVEi5kAJA?t=520
     // https://nuneztech.pro/top-aplicaciones-codigo-abierto-herramientas-android/
+    // https://electronics.alibaba.com/buyingguides/cool-android-apps-in-2026-utility,-vertical-video-minimalism
+    // https://electronics.alibaba.com/buyingguides/cool-free-android-apps-minimalist,-ai-micro-drama-picks
     },
     license: license.gplv3,
   },
