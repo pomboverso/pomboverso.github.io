@@ -9,8 +9,8 @@ export default [
   [
     "txori",
     {
-      "stars": 49,
-      "issues": 4
+      "stars": 50,
+      "issues": 6
     }
   ],
   [
@@ -23,7 +23,7 @@ export default [
   [
     "teyin",
     {
-      "stars": 25,
+      "stars": 26,
       "issues": 6
     }
   ],
@@ -37,7 +37,7 @@ export default [
   [
     "jaguar",
     {
-      "stars": 0,
+      "stars": 1,
       "issues": 0
     }
   ]
