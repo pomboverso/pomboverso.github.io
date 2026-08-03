@@ -37,7 +37,7 @@ export default [
   [
     "jaguar",
     {
-      "stars": 2,
+      "stars": 3,
       "issues": 0
     }
   ]
