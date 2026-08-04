@@ -2,42 +2,42 @@ export default [
   [
     "mako",
     {
-      "stars": 204,
-      "issues": 24
+      "stars": 206,
+      "issues": 25
     }
   ],
   [
     "txori",
     {
-      "stars": 49,
+      "stars": 52,
       "issues": 4
     }
   ],
   [
     "tui",
     {
-      "stars": 39,
+      "stars": 40,
       "issues": 10
     }
   ],
   [
     "teyin",
     {
-      "stars": 26,
+      "stars": 27,
       "issues": 6
     }
   ],
   [
     "okapi",
     {
-      "stars": 4,
+      "stars": 5,
       "issues": 1
     }
   ],
   [
     "jaguar",
     {
-      "stars": 3,
+      "stars": 4,
       "issues": 0
     }
   ]
