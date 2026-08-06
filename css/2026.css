@@ -428,7 +428,7 @@ pv-img {
 
     &:hover {
       img {
-        opacity: .8;
+        opacity: 0.8;
       }
     }
   }
@@ -536,6 +536,7 @@ pv-home {
 
     &::before {
       content: '------------------------------------------------------------------';
+      word-break: break-all;
     }
   }
 
