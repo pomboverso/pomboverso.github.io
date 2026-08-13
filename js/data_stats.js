@@ -9,14 +9,14 @@ export default [
   [
     "txori",
     {
-      "stars": 52,
+      "stars": 51,
       "issues": 3
     }
   ],
   [
     "tui",
     {
-      "stars": 38,
+      "stars": 37,
       "issues": 9
     }
   ],
@@ -37,7 +37,7 @@ export default [
   [
     "jaguar",
     {
-      "stars": 4,
+      "stars": 3,
       "issues": 1
     }
   ]
