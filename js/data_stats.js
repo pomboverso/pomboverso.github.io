@@ -17,20 +17,20 @@ export default [
     "tui",
     {
       "stars": 37,
-      "issues": 9
+      "issues": 10
     }
   ],
   [
     "teyin",
     {
-      "stars": 30,
+      "stars": 31,
       "issues": 6
     }
   ],
   [
     "okapi",
     {
-      "stars": 4,
+      "stars": 5,
       "issues": 1
     }
   ],
