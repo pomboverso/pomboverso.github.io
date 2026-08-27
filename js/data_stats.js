@@ -2,7 +2,7 @@ export default [
   [
     "mako",
     {
-      "stars": 225,
+      "stars": 229,
       "issues": 19
     }
   ],
@@ -23,7 +23,7 @@ export default [
   [
     "teyin",
     {
-      "stars": 30,
+      "stars": 31,
       "issues": 5
     }
   ],
