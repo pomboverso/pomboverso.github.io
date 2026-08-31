@@ -3,7 +3,7 @@ export default [
     "mako",
     {
       "stars": 230,
-      "issues": 18
+      "issues": 17
     }
   ],
   [
