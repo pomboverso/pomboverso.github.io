@@ -2,14 +2,14 @@ export default [
   [
     "mako",
     {
-      "stars": 230,
-      "issues": 17
+      "stars": 231,
+      "issues": 21
     }
   ],
   [
     "txori",
     {
-      "stars": 48,
+      "stars": 49,
       "issues": 2
     }
   ],
@@ -23,7 +23,7 @@ export default [
   [
     "teyin",
     {
-      "stars": 33,
+      "stars": 34,
       "issues": 5
     }
   ],
