@@ -24,7 +24,7 @@ export default [
     "teyin",
     {
       "stars": 34,
-      "issues": 5
+      "issues": 7
     }
   ],
   [
