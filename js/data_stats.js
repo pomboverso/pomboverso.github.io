@@ -2,15 +2,15 @@ export default [
   [
     "mako",
     {
-      "stars": 241,
-      "issues": 26
+      "stars": 243,
+      "issues": 27
     }
   ],
   [
     "txori",
     {
       "stars": 50,
-      "issues": 2
+      "issues": 3
     }
   ],
   [
@@ -31,14 +31,14 @@ export default [
     "okapi",
     {
       "stars": 6,
-      "issues": 0
+      "issues": 1
     }
   ],
   [
     "jaguar",
     {
       "stars": 4,
-      "issues": 0
+      "issues": 1
     }
   ]
 ]
