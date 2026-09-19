@@ -2,21 +2,21 @@ export default [
   [
     "mako",
     {
-      "stars": 249,
+      "stars": 250,
       "issues": 27
     }
   ],
   [
     "txori",
     {
-      "stars": 50,
+      "stars": 51,
       "issues": 3
     }
   ],
   [
     "tui",
     {
-      "stars": 40,
+      "stars": 41,
       "issues": 10
     }
   ],
