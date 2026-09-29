@@ -9,7 +9,7 @@ export default [
   [
     "txori",
     {
-      "stars": 53,
+      "stars": 54,
       "issues": 3
     }
   ],
