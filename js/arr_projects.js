@@ -169,6 +169,7 @@ export default [
       'El Launcher SECRETO para curar tu adicción al celular': 'https://www.youtube.com/watch?v=D11o4i9nScg',
       'Top 10 Android Apps July 2026': 'https://youtu.be/Hqp60tdtE2A&t=336s',
       '8 Incredible Android Apps July 2026': 'https://youtu.be/KQdL4ehLhcg?t=321',
+      'Básicos OPEN-SOURCE: 10 apps ESENCIALES para tu Android': 'https://youtu.be/51junHoL-d0?t=534'
     // https://postroyka.org/obzor-mako-ultraminimalistichnyiy-launcher-dlya-spaseniya-staryih-android-ustroystv/
       // https://gadgetdrop.reinforz.co.jp/articles/mako-minimalist-android-launcher-hands-on
       // https://www.youtube.com/shorts/lqCA7QabgXc?t=82
