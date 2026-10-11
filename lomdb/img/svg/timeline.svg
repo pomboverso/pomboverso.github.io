@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="320" height="280" viewBox="0 0 84.667 74.083">
+  <metadata>
+    Created by Pombo — Learn more at github.com/pomboverso
+  </metadata>
+  <rect class="pomboverso-github-io" width="78.599" height="43.812" x="2.708" y="16.307" fill="#4b6581" ry="4.35"/>
+  <rect width="69.802" height="34.902" x="7.106" y="20.762" fill="#feffe1" ry="3.609"/>
+  <path fill="#e38d81" d="M67.388 10.764a1.09 1.09 0 0 0-.632.232L51.532 22.942a1.09 1.09 0 0 0 .266 1.868l5.543 2.225-6.317 9.067-12.625-2.566a2.173 2.173 0 0 0-2.414 1.238l-5.889 13.082-13.316-.63a2.173 2.173 0 0 0-2.248 1.817l-1.955 11.83a2.173 2.173 0 0 0 1.789 2.498 2.173 2.173 0 0 0 2.5-1.789l1.639-9.922 12.863.608a2.173 2.173 0 0 0 2.086-1.28l5.78-12.847 12.323 2.505a2.173 2.173 0 0 0 2.217-.886l7.706-11.062 8.276 3.323a1.09 1.09 0 0 0 1.484-1.165l-1.366-9.579-1.367-9.578a1.09 1.09 0 0 0-.672-.857 1.09 1.09 0 0 0-.447-.078z" class="linea" transform-origin="50% 50%">
+    <animateTransform attributeName="transform" attributeType="XML" calcMode="spline" dur="2s" keySplines=".42,0,.58,1; .42,0,.58,1" keyTimes="0; 0.5; 1" repeatCount="indefinite" type="rotate" values="0; 5; 0"/>
+  </path>
+</svg>

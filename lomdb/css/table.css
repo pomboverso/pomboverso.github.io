@@ -1,0 +1,89 @@
+.table {
+  --leading-server: light-dark(#4e5d85, #2c2c44);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+  text-align: center;
+
+  nn-pilar.empty {
+    padding: 1rem;
+    background-color: hsl(240 6% 17% / 1);
+  }
+
+  .table-header {
+    nn-pilar {
+      padding: 1rem;
+      color: var(--foreground-color);
+      background: light-dark(
+        rgb(233 233 233),
+        rgb(37 39 55)
+      );
+      text-transform: uppercase;
+    }
+  }
+
+  .table-body {
+    [role='table'],
+    [role='rowgroup'],
+    [role='group'] {
+      height: 100%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .leading-server {
+      background: var(--leading-server);
+      align-items: stretch;
+
+      .index {
+        font-size: 4rem;
+      }
+
+      .index-group {
+        background-color: #222233;
+        flex-direction: column;
+        display: flex;
+        line-height: 1;
+        padding: 1rem;
+        border-radius: 10px;
+      }
+
+      .pill.white {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .players-group {
+      --nn-fila-gap: 1px;
+      min-height: 100%;
+
+      .fusion {
+        padding: 1rem;
+      }
+    }
+
+    .separator {
+      background: #416370;
+      height: 1rem;
+    }
+
+    .merge-group {
+      --nn-fila-gap: 1px;
+      min-height: 100%;
+
+      .fusion {
+        --nn-pilar-size: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 1rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

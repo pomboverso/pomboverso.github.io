@@ -8,7 +8,9 @@
   "license": "GPL-3.0-only",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.1"
+    "@types/node": "^26.1.1",
+    "cheerio": "^1.2.0",
+    "dayjs": "^1.11.13"
   },
   "scripts": {}
 }

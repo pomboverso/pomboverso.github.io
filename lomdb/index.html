@@ -1,0 +1,775 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="An interactive visual archive tracking all known server merges and top player data across regions in Legend of Mushroom, built for clarity and community insight.">
+    <title>Legend of Mushroom Database | LoM DB</title>
+    <script src="./js/component_loading.js"></script>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="256x256" href="./img/favicon_256x256.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./img/favicon_128x128.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="./img/favicon_64x64.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./img/favicon_48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="./img/favicon_24x24.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_180x180.png"> -->
+    <meta name="msapplication-TileColor" content="#e9c200">
+    <!-- <meta name="msapplication-TileImage" content="https://pomboverso.github.io/lomdb/img/favicon_128x128.png">
+    <meta property="og:image" content="https://pomboverso.github.io/lomdb/img/lomdb-preview.webp"> -->
+    <meta property="og:site_name" content="Legend of Mushrom Database | LoM DB">
+    <meta property="og:description" content="An interactive visual archive tracking all known server merges and top player data across regions in Legend of Mushroom, built for clarity and community insight.">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="stylesheet" href="css/lom.css">
+    <script type="module">
+      import './js/head.js'
+      import './js/component_cinematic.js'
+    </script>
+  </head>
+  <body class="lom-home">
+    <lom-loading></lom-loading>
+    <lom-navbar no-searchbar="" no-filters="">
+      <nn-caja padding="1rem">
+  <div class="nav-controls">
+    <nav>
+      <div class="mobile-controls">
+        <button type="button" class="toggle" tabindex="0" aria-label="mobile menu button">
+          <nn-icono class="bars"></nn-icono>
+        </button>
+        <button type="button" class="close-menu">
+          <nn-icono class="times"></nn-icono>
+        </button>
+      </div>
+      <ul>
+        <li>
+          <a target="_self" href="./index.html" class="logo">
+            <img width="112" height="35" src="./img/lomdb.svg" alt="lomdb logo">
+          </a>
+        </li>
+        <li class="searchbar-area">
+          <search>
+            <nn-fila class="search-bar">
+              <nn-pilar size="35px">
+                <nn-btn class="search-btn" aria-label="filter button">
+                  <nn-icono class="filter"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+              <nn-pilar size="100% - 35px * 3">
+                <input type="text" autocomplete="off" autofocus="" aria-label="search bar input">
+              </nn-pilar>
+              <nn-pilar size="35px">
+                <nn-btn class="clear-btn" aria-label="clear search bar button">
+                  <nn-icono class="times"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+              <nn-pilar size="35px">
+                <nn-btn class="share-btn" aria-label="share filterd table button">
+                  <nn-icono class="share-alt"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+            </nn-fila>
+          </search>
+        </li>
+        <li>
+          <a target="_self" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a target="_self" href="calendar.html">Calendar</a>
+        </li>
+        <li>
+          <nn-dropdown label="Servers">
+            <a target="_self" href="timeline.html">Server Compositions</a>
+            <a target="_self" href="age.html">Server Openings</a>
+            <a target="_self" href="merges.html">Merge Schedule</a>
+            <!-- <a
+              target="_self"
+              href="merges-blocks.html"
+              >Merges Blocks</a
+            > -->
+            <!-- <a
+              target="_self"
+              href="gaps.html"
+              >Merges Gaps</a
+            > -->
+            <a target="_self" href="3d-chart.html">3D Stack Comparison</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Players">
+            <a target="_self" href="players.html">Player List</a>
+            <a target="_self" href="leaderboard.html">Leaderboard</a>
+            <!-- <a
+              target="_self"
+              href="players-duplication.html"
+              >UID Duplications</a
+            > -->
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Items">
+            <a target="_self" href="artifacts.html">Artifacts</a>
+            <a target="_self" href="avians.html">Avians</a>
+            <a target="_self" href="back-accesories.html">Back Accesories</a>
+            <a target="_self" href="guardians.html">Guardians</a>
+            <a target="_self" href="mounts.html">Mounts</a>
+            <a target="_self" href="pals.html">Pals</a>
+            <a target="_self" href="parking-decorations.html">Parking Decorations</a>
+            <a target="_self" href="star-array.html">Star Array</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Calculators">
+            <a target="_self" href="mount-calculator.html">Mount</a>
+            <a target="_self" href="ring-calculator.html">Ring</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Developer Tools">
+            <a target="_self" href="normalizer.html">Normalizer</a>
+            <a target="_self" href="changelog.html">Changelog</a>
+            <a target="_self" href="design.html">Design</a>
+            <a target="_self" href="about.html">About LoM DB</a>
+          </nn-dropdown>
+        </li>
+        <li class="hidden">
+          <input type="checkbox" id="theme">
+        </li>
+      </ul>
+    </nav>
+    <div class="filters"></div>
+  </div>
+  <ul class="notifications"></ul>
+</nn-caja>
+    </lom-navbar>
+    <lom-cinematic> </lom-cinematic>
+
+    <main>
+      <section class="intro">
+        <nn-caja max-width="900px" padding="5rem">
+          <h1>Legend of Mushrom Database</h1>
+
+          <p>
+            Welcome to LoM DB, a lightweight,
+            community-driven database for tracking and
+            exploring merged servers, top players, and
+            timelines across regions. This project is built
+            to help players, analysts, and enthusiasts get a
+            clearer view of evolving server data, elite
+            players, and historical merges all in one place.
+          </p>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img width="320" src="./img/svg/servers-state.svg" alt="a matrix of mushroms">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Event Calendar</h2>
+              <p>
+                A centralized calendar that tracks current
+                and upcoming game events, collaborations,
+                updates, and server merges. It provides a
+                chronological view of key changes and
+                limited-time activities, helping players and
+                observers understand how the game ecosystem
+                evolves over time.
+              </p>
+              <div>
+                <nn-btn href="calendar.html" color="#ffcf24" link="">
+                  Check Calendar
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img width="320" src="./img/svg/timeline.svg" alt="Path representing the merge transitions between servers">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Timeline</h2>
+              <p>
+                A comprehensive and intuitive visual
+                overview of all server merges that have
+                occurred in Legend of Mushroom. This
+                timeline consolidates every known merge
+                event into a single, easy-to-navigate table.
+                Each entry includes details like merge date,
+                servers involved, and regional
+                context—helping users track the evolution of
+                the server landscape at a glance.
+              </p>
+              <div>
+                <nn-btn href="timeline.html" color="#ffcf24" link="" data-lang-guard="">
+                  Check Timeline
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img width="320" src="./img/svg/web-components.svg" alt="2 mushroms fighting">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Player Leaderboard</h2>
+              <p>
+                A leaderboard that tracks the highest-level
+                players across all servers. It showcases top
+                progression milestones over time, making it
+                easier to compare player growth, and observe
+                long-term leveling trends within and across
+                servers.
+              </p>
+              <div>
+                <nn-btn href="leaderboard.html" color="#ffcf24" link="">
+                  Check Player's Leaderboard
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img width="320" src="./img/svg/players.svg" alt="3 mushroms posing for a picture">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Player List</h2>
+              <p>
+                A focused list of players tracked in the
+                project’s dedicated player database. This
+                list contributes additional context to both
+                the Timeline and Merges View. It highlights
+                selected players across servers, enabling
+                further insights into server populations or
+                notable player movements over time.
+              </p>
+              <div>
+                <nn-btn href="players.html" color="#ffcf24" link="">
+                  Check Player's List
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img src="./img/svg/servers-merges.svg" alt="Chart representing the merge transitions between servers">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Merges</h2>
+              <p>
+                A detailed table displaying the same merge
+                information as the public spreadsheet,
+                enhanced with language filters to tailor the
+                view by region or localization. This view is
+                especially useful for cross-referencing and
+                double-checking data between the internal
+                project database and the shared community
+                spreadsheet. Ideal for those who want a
+                deeper, verified look at the data source.
+              </p>
+              <div>
+                <nn-btn href="merges.html" color="#ffcf24" link="">
+                  Check Merges
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img src="./img/svg/mounts/twin-phoenix-glaives.svg" width="320" alt="twin phoenix claives">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Mount List</h2>
+              <p>
+                A visual overview of all mounts and their
+                availability across different regions.
+                Easily filterable by name or region, this
+                section is designed to help players quickly
+                spot version differences, track regional
+                releases, and plan collections accordingly.
+                Ideal for those comparing content rollout or
+                verifying which mounts are currently
+                accessible in their server.
+              </p>
+              <div>
+                <nn-btn href="mounts.html" color="#ffcf24" link="">
+                  Check List
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img src="./img/svg/artifacts/thunder-verdict.svg" alt="staff star" width="320">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Artifact List</h2>
+              <p>
+                A comprehensive view of all artifacts and
+                their distribution across regions. This
+                section allows for easy filtering by name
+                helping players identify release patterns,
+                spot region-exclusive items, and monitor
+                availability over time. Perfect for
+                collectors or anyone tracking content
+                progression.
+              </p>
+              <div>
+                <nn-btn href="artifacts.html" color="#ffcf24" link="">
+                  Check List
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img src="./img/svg/back-accesories/celestial-surprises.svg" alt="celestial surprises back accesory" width="320">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Back Accesory List</h2>
+              <p>
+                An organized showcase of all back
+                accessories and their availability in
+                different regions. With intuitive filters by
+                name, this section helps players recognize
+                rollout trends, uncover region-specific
+                items, and keep track of collection goals.
+                Especially useful for those monitoring
+                updates.
+              </p>
+              <div>
+                <nn-btn href="back-accesories.html" color="#ffcf24" link="">
+                  Check List
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img src="./img/svg/avians/owl.svg" width="320" alt="owl avian">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Avian List</h2>
+              <p>
+                A curated collection of all avian companions
+                and their regional availability. Easily
+                filterable by name, this section highlights
+                version differences and exclusive releases.
+                Ideal for players tracking their winged
+                companions or comparing region-specific
+                updates.
+              </p>
+              <div>
+                <nn-btn href="avians.html" color="#ffcf24" link="">
+                  Check List
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img src="./img/svg/shiba.svg" width="320" alt="shiba pal">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Pal List</h2>
+              <p>
+                A comprehensive index of every pal and their
+                unique skills across regions. With simple
+                filtering by name, this catalog makes it
+                easy to spot variations between versions and
+                discover region-exclusive companions.
+                Perfect for players aiming to complete their
+                collection or keep track of localized
+                differences.
+              </p>
+              <div>
+                <nn-btn href="pals.html" color="#ffcf24" link="">
+                  Check List
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img src="./img/svg/mounts/amethys-gourd.svg" alt="amethys gourd mount" width="320">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Mount Calculator</h2>
+              <p>
+                An interactive tool designed to calculate
+                the exact number of pink gems and
+                clockwinders required to reach a chosen
+                mount level. Featuring clear input controls
+                and dynamic results, it helps players plan
+                their progression efficiently. This
+                calculator is ideal for those aiming to
+                optimize resource usage and avoid over- or
+                under-investing while leveling up their
+                mounts.
+              </p>
+              <div>
+                <nn-btn href="mount-calculator.html" color="#ffcf24" link="">
+                  Check Calculator
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+
+      <!-- <section>
+        <nn-caja
+          max-width="1200px"
+          padding="5rem"
+        >
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img
+                src="./img/svg/mushroom-bruno.svg"
+                width="320"
+                alt="bruno"
+              />
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Assets Gallery</h2>
+              <p>
+                A gallery of downloadable visual assets used
+                across the site. This section is designed as
+                a resource for designers who want to reuse
+                or adapt these elements in related projects.
+                Ideal for maintaining visual consistency
+                across community tools, fan content, or
+                collaborations.
+              </p>
+              <div>
+                <nn-btn
+                  href="gallery.html"
+                  color="#ffcf24"
+                  link
+                >
+                  Check Gallery
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section> -->
+
+      <!-- <section>
+        <nn-caja max-width="1200px" padding="5rem">
+          <nn-fila break="md">
+            <nn-pilar size="30%">
+              <img src="./img/gaps.svg" width="320" alt="a sequence of numbers missing number 5.">
+            </nn-pilar>
+            <nn-pilar size="70%">
+              <h2>Merge's Gaps</h2>
+              <p>
+                A diagnostic view designed to identify
+                servers that have never appeared in any
+                known merge throughout the game's history.
+                This tool scans for gaps in the merge
+                timeline, helping to surface unmerged
+                servers, data inconsistencies, or potential
+                oversights in the merge records.
+              </p>
+              <div>
+                <nn-btn href="gaps.html" color="#ffcf24" link="">
+                  Check Merge's Gaps
+                </nn-btn>
+              </div>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section> -->
+
+      <section class="community">
+        <nn-caja padding="5rem">
+          <h2>Community</h2>
+          <br>
+          <nn-fila break="md">
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/avians/sheep-balloon.svg" alt="Path representing the merge transitions between servers">
+              <h3>Shroom Chronicles</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">Player Interviews</nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555">Live Chat</nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="amen">English</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#d34d4d" hreflang="EN" href="https://www.youtube.com/@ShroomChronicles" target="_blank">
+                    Youtube Channel
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/logos/pirola.webp" alt="Path representing the merge transitions between servers">
+              <h3>Pirola Talks</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">Player Guides</nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555">Live Chat</nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="pt">Portuguese</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#d34d4d" hreflang="PT" href="https://www.youtube.com/@PirolaTalks" target="_blank">
+                    Youtube Channel
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/avians/tomato-egg.svg" alt="Path representing the merge transitions between servers">
+              <h3>AhkTaar Prime</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">Player Guides</nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555">Live Chat</nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="euen">English</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#d34d4d" hreflang="EN" href="https://www.youtube.com/@ahktaarprime" target="_blank">
+                    Youtube Channel
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/staff-star.svg" alt="Path representing the merge transitions between servers">
+              <h3>LoM DB</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">
+                    Behind The Scenes
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555">Player Guides</nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="amen">English</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#d34d4d" hreflang="EN" href="https://www.youtube.com/@LoMDB" target="_blank">
+                    Youtube Channel
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/mounts/lotus-throne.svg" alt="Path representing the merge transitions between servers">
+              <h3>Neechan</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">
+                    Player Guides
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555">News</nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="pt">Portuguese</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#964baf" hreflang="PT" href="https://neechan.com.br/" target="_blank">
+                    Website
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/avians/smart-assistant.svg" alt="Path representing the merge transitions between servers">
+              <h3>Theria Games</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">
+                    Player Guides
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555"> News </nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="euen">English</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#964baf" hreflang="EN" href="https://theriagames.com/legend-of-mushroom-wiki/" target="_blank">
+                    Website
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/mushroom-bruno.svg" alt="mushrom">
+              <h3>LoM Guide</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">
+                    Player Guides
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555"> News </nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="amen">English</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#964baf" hreflang="EN" href="https://lomguide.com/" target="_blank">
+                    Website
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/mounts/lotus-leaf.svg" alt="mushrom">
+              <h3>NoobShroom</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">
+                    Player Guides
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555"> News </nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="euen">English</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#964baf" hreflang="EN" href="https://www.noobshroom.com/" target="_blank">
+                    Website
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/avians/astronaut-b-duck.svg" alt="mushrom">
+              <h3>Bird's LoM Lab</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">
+                    LoM Calculators
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555">
+                    ---
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="amen">English</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#964baf" hreflang="EN" href="https://birdslomlab.github.io/calcs/" target="_blank">
+                    Website
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+
+            <nn-pilar size="300px" class="flex-column">
+              <img width="320" src="./img/svg/avians/gleam-candle.svg" alt="mushrom">
+              <h3>LoM Guides by Grace</h3>
+              <ul class="flex-column">
+                <li>
+                  <nn-pill color="#555">
+                    Player Guides
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill color="#555">
+                    ---
+                  </nn-pill>
+                </li>
+                <li>
+                  <nn-pill class="euen">English</nn-pill>
+                </li>
+                <li>
+                  <nn-btn link="" color="#964baf" hreflang="EN" href="https://guidesbygrace.uk" target="_blank">
+                    Website
+                  </nn-btn>
+                </li>
+              </ul>
+            </nn-pilar>
+          </nn-fila>
+        </nn-caja>
+      </section>
+    </main>
+
+    <lom-footer></lom-footer>
+  
+
+</body></html>

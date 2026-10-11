@@ -1,0 +1,166 @@
+body.lom-mount-calculator {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .calculator {
+    width: 100%;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: light-dark(#f7f7f7, #212126);
+    border: 1px solid light-dark(#e8e8e8, #424242);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 2px 22px rgb(0 0 0 / 47%);
+
+    &.total {
+      gap: 0.5rem;
+      background-color: #371f2a;
+    }
+
+    img {
+      width: min(100%, 860px);
+    }
+
+    h3,
+    .star-counter,
+    .clockwinder-counter,
+    .gems-counter {
+      margin: 0;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+    .star-counter {
+      font-size: 6rem;
+      nn-icono {
+        font-size: 55%;
+      }
+    }
+    .clockwinder-counter {
+      font-size: 2rem;
+      nn-icono {
+        font-size: 80%;
+      }
+    }
+    .gems-counter {
+      font-size: 1rem;
+      nn-icono {
+        font-size: 80%;
+      }
+    }
+
+    nn-icono {
+      &.star-o {
+        color: #a7a77b;
+      }
+      &.star {
+        color: rgb(255, 255, 123);
+      }
+      &.cog {
+        color: rgb(223, 134, 61);
+      }
+      &.diamond {
+        color: rgb(197, 71, 170);
+      }
+    }
+
+    .preview {
+      flex-grow: 1;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .calc-card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        'hheader'
+        'main';
+
+      span {
+        text-align: center;
+        padding: 0.25rem;
+
+        nn-btn {
+          button {
+            nn-icono {
+              font-size: 1rem;
+
+              &.star {
+                display: none;
+              }
+            }
+
+            &.active,
+            &:hover {
+              nn-icono {
+                &.star {
+                  display: block;
+                }
+                &.star-o {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .heading {
+        &.horizontal {
+          grid-area: hheader;
+          display: grid;
+          grid-template-columns: repeat(11, 1fr);
+        }
+        &.vertical {
+          display: grid;
+          grid-template-rows: repeat(24, 1fr);
+          align-items: center;
+          padding-right: 5px;
+        }
+      }
+
+      .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+      }
+
+      .body {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(19, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  lom-mount-calculator {
+    .cards-container {
+      flex-direction: column !important;
+    }
+  }
+}

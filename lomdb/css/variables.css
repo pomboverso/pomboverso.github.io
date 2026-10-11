@@ -1,0 +1,177 @@
+:root {
+  color-scheme: dark;
+  --background-color: #202028;
+  --foreground-color: #fcfcfc;
+  --accent-color: #f6e794;
+  --header-color: #afbde4;
+  --tips-color: #53667c;
+  --link-color: #c1ff5f;
+  --border-color: #333;
+  --instructions-color: #1c2846;
+
+  --all: #595959;
+  --amen: #4f6618;
+  --es: #3a761e;
+  /* --espt: #227055; */
+  --pt: #1d634a;
+  --euen: hsl(210deg 55% 40%);
+  /* --mush: hsl(220deg 55% 40%); */
+  --de: hsl(240deg 55% 40%);
+  --fr: hsl(250deg 55% 40%);
+  --me: hsl(270deg 55% 40%);
+  --tr: hsl(280deg 55% 40%);
+  --ru: hsl(330deg 55% 35%);
+
+  --cn: hsl(10deg 45.55% 42.2%);
+  --vn: hsl(30, 59%, 35%);
+  --id: #5f6b19;
+  --en: #1c4377;
+  --th: #1c6f80;
+
+  --kr: hsl(300deg 47% 42.53%);
+  --jp: hsl(330deg 55% 40%);
+  --tw: hsl(0deg 55% 40%);
+
+  --angel: linear-gradient(
+    131deg,
+    rgb(0 99 157) 0%,
+    rgb(96 174 255) 100%
+  );
+  /* --shroom-chronicles: linear-gradient(131deg, rgb(42 79 151) 0%, rgb(62 110 31) 100%); */
+  --elite: linear-gradient(
+    131deg,
+    rgb(75 146 81) 0%,
+    rgb(24 90 48) 100%
+  );
+  --master: linear-gradient(
+    131deg,
+    rgb(182, 15, 15) 0%,
+    rgb(163, 13, 95) 100%
+  );
+  --top: linear-gradient(
+    131deg,
+    rgb(34, 34, 196) 0%,
+    rgb(179, 0, 255) 100%
+  );
+  /* --vmod: linear-gradient(131deg, rgb(97 31 202) 0%, rgb(14 173 145) 100%); */
+  --creator: linear-gradient(
+    131deg,
+    rgb(212, 49, 185) 0%,
+    rgb(14 173 145) 100%
+  );
+  --detective: linear-gradient(
+    131deg,
+    rgb(202 155 31) 0%,
+    rgb(246 216 83) 100%
+  );
+}
+
+/* .espt,
+.svespt {
+  background: linear-gradient(
+    131deg,
+     var(--es) 0% 25%,
+     var(--pt) 25% 50%,
+     var(--es) 50% 75%,
+     var(--pt) 75% 100%
+  );
+
+  background-size: 200% 200%;
+  animation: tag-animation 4s linear infinite;
+} */
+
+/* .amer,
+.svamer,
+.global,
+.svglobal {
+  background: linear-gradient(
+    131deg,
+    var(--amen) 0%,
+    var(--amen) 16.66%,
+
+     var(--es) 16.66%,
+    var(--es) 33.33%,
+
+     var(--pt) 33.33%,
+    var(--pt) 50%,
+
+     var(--amen) 50%,
+    var(--amen) 66.66%,
+
+     var(--amen) 66.66%,
+    var(--amen) 83.33%,
+
+    var(--es) 83.33%,
+    var(--es) 100%
+  );
+  background-size: 300% 300%;
+  animation: tag-animation 6s linear infinite;
+} */
+
+@keyframes tag-animation {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.espt,
+.svespt {
+  background: linear-gradient(
+    131deg,
+    var(--es) 0% 50%,
+    var(--pt) 50% 100%
+  );
+}
+
+.amer,
+.svamer {
+  background: linear-gradient(
+    131deg,
+    var(--amen) 0% 33.33%,
+    var(--es) 33.33% 66.66%,
+    var(--pt) 66.66% 100%
+  );
+}
+
+.mush,
+.svmush {
+  background: linear-gradient(
+    131deg,
+    var(--euen) 0% 20%,
+    var(--de) 20% 40%,
+    var(--fr) 40% 60%,
+    var(--me) 60% 80%,
+    var(--ru) 80% 100%
+  );
+}
+
+.global,
+.svglobal {
+  background: linear-gradient(
+    131deg,
+    var(--amen) 0% 12.5%,
+    var(--es)   12.5% 25%,
+    var(--pt)   25% 37.5%,
+    var(--euen) 37.5% 50%,
+    var(--de)   50% 62.5%,
+    var(--fr)   62.5% 75%,
+    var(--me)   75% 87.5%,
+    var(--ru)   87.5% 100%
+  );
+}
+
+
+.sea,
+.svsea {
+    background: linear-gradient(
+    131deg,
+    var(--cn) 0% 20%,
+    var(--vn) 20% 40%,
+    var(--id) 40% 60%,
+    var(--en) 60% 80%,
+    var(--th) 80% 100%
+  );
+}

@@ -1,0 +1,200 @@
+body.lom-calendar {
+  main {
+    border-radius: 10px;
+    background-color: #252737;
+    padding: 1rem;
+    gap: 1rem;
+
+    .controllers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 2rem;
+
+      span {
+        text-align: center;
+        min-width: 250px;
+      }
+
+      button {
+        font-size: 2rem;
+      }
+    }
+
+    hr {
+      flex-basis: 100%;
+      width: 100%;
+      border: 0px none transparent;
+      border-top: 4px dashed #28333e;
+    }
+
+    .heading {
+      display: flex;
+    }
+
+    .body {
+      display: flex;
+      flex-wrap: wrap;
+
+      lom-calendar-cell {
+        min-height: 200px;
+      }
+    }
+
+    .cell {
+      width: calc(100% / 7);
+      flex-basis: calc(100% / 7);
+      padding-inline: 1rem;
+    }
+
+    lom-calendar-cell {
+      width: calc(100% / 7);
+      flex-basis: calc(100% / 7);
+      padding: 2px;
+
+      &[data-outside='true'] {
+        opacity: 0.4;
+      }
+
+      .day.mobile {
+        display: none;
+      }
+
+      .container {
+        padding: 1rem;
+        background-color: #181920;
+        border-radius: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      /* summary {
+        font-size: .75rem;
+      } */
+
+      .events {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0;
+        list-style: none;
+      }
+
+      .event {
+        color: #80abe9;
+        word-break: break-word;
+        display: flex;
+        gap: 1rem;
+
+        /* default color */
+        --event-color: linear-gradient(
+          120deg,
+          rgb(162 40 221) 0%,
+          rgb(76 131 255) 100%
+        );
+
+        &::before {
+          content: '';
+          width: 1rem;
+          height: 1rem;
+          flex: 0 0 1rem;
+          margin-top: 3px;
+          border-radius: 10px;
+          background: var(--event-color);
+        }
+
+        &:has(a)::before {
+          display: none;
+        }
+
+        /* Standard Events */
+        &.mini_game_duel,
+        &.ice_fishing,
+        &.gourmet,
+        &.mini_event {
+          --event-color: #42495e;
+          color: var(--event-color);
+        }
+
+        /* Money Recharge Events */
+        &.cumulative_recharge,
+        &.fortune_cat,
+        &.limited_pack_reset {
+          --event-color: #ffe032;
+        }
+
+        /* Event color mapping */
+        &.update {
+          --event-color: #ace5fd;
+        }
+        &.anniversary {
+          --event-color: #ee669e;
+        }
+        &.starlight_award {
+          --event-color: #fc837a;
+        }
+
+        /* Free Gifts */
+         &.seven_day {
+          --event-color: #b4fc7a;
+        }
+
+        a {
+          flex-grow: 1;
+          text-align: center;
+          background-color: rgb(58, 201, 146);
+          border-radius: 10px;
+          padding: 2px 4px;
+          text-decoration: none;
+          color: var(--background-color) !important;
+          display: block;
+
+          &:hover {
+            background-color: rgb(118, 216, 178);
+          }
+        }
+      }
+
+      .day {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  body.lom-calendar {
+    main {
+      .heading {
+        display: none;
+      }
+
+      hr {
+        display: none;
+      }
+
+      .body {
+        lom-calendar-cell,
+        .cell {
+          min-height: auto;
+          width: 100%;
+          flex-basis: 100%;
+
+          &[data-outside='true'] {
+            display: none;
+          }
+
+          .day.mobile {
+            display: block;
+          }
+          .day.desktop {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 800 800.00003"
+   version="1.1"
+   id="svg5462"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="leaderboard2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5456">
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="762.3449"
+       height="126.98988"
+       id="rect454" />
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="292.6921"
+       height="35.347817"
+       id="rect468" />
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="292.6921"
+       height="35.347817"
+       id="rect480" />
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="292.6921"
+       height="35.347817"
+       id="rect492" />
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="292.6921"
+       height="35.347817"
+       id="rect504" />
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="762.3449"
+       height="126.98988"
+       id="rect2052" />
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="762.3449"
+       height="126.98988"
+       id="rect2145" />
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="762.3449"
+       height="126.98988"
+       id="rect2255" />
+    <rect
+       x="320.01425"
+       y="117.64575"
+       width="762.3449"
+       height="126.98988"
+       id="rect2269" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.30"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="356.42857"
+     inkscape:cy="462.85714"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:window-width="840"
+     inkscape:window-height="994"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5459">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text452"
+       style="font-weight:bold;font-size:32px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';white-space:pre;shape-inside:url(#rect454);display:inline;fill:#72c8b7;stroke-width:48.6;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-289.5837,-75.409041)"><tspan
+         x="320.01367"
+         y="147.24648"
+         id="tspan2441">user(['<tspan
+   style="fill:#ff0000"
+   id="tspan2439">BoringWu</tspan>'], 'AMEN_', '', [
+</tspan><tspan
+         x="320.01367"
+         y="187.24648"
+         id="tspan2447">    { rank: 'top', position: <tspan
+   style="fill:#ff0000"
+   id="tspan2443">1</tspan>, date: '<tspan
+   style="fill:#0000ff"
+   id="tspan2445">2025-04-25</tspan>' },
+</tspan><tspan
+         x="320.01367"
+         y="227.24648"
+         id="tspan2449"> ]),</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text2050"
+       style="font-weight:bold;font-size:32px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';white-space:pre;shape-inside:url(#rect2052);display:inline;fill:#72c8b7;stroke-width:48.6;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-289.5837,75.322036)"><tspan
+         x="320.01367"
+         y="147.24648"
+         id="tspan2453">user(['<tspan
+   style="fill:#ff0000"
+   id="tspan2451">Concrete</tspan>'], 'AMEN_', '', [
+</tspan><tspan
+         x="320.01367"
+         y="187.24648"
+         id="tspan2459">    { rank: 'top', position: <tspan
+   style="fill:#ff0000"
+   id="tspan2455">2</tspan>, date: '<tspan
+   style="fill:#0000ff"
+   id="tspan2457">2025-04-25</tspan>' },
+</tspan><tspan
+         x="320.01367"
+         y="227.24648"
+         id="tspan2461"> ]),</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text2143"
+       style="font-weight:bold;font-size:32px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';white-space:pre;shape-inside:url(#rect2145);display:inline;fill:#72c8b7;stroke-width:48.6;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-289.5837,226.03096)"><tspan
+         x="320.01367"
+         y="147.24648"
+         id="tspan2465">user(['<tspan
+   style="fill:#ff0000"
+   id="tspan2463">Leroy</tspan>'], 'AMEN_', '', [
+</tspan><tspan
+         x="320.01367"
+         y="187.24648"
+         id="tspan2471">    { rank: 'top', position: <tspan
+   style="fill:#ff0000"
+   id="tspan2467">3</tspan>, date: '<tspan
+   style="fill:#0000ff"
+   id="tspan2469">2025-04-25</tspan>' },
+</tspan><tspan
+         x="320.01367"
+         y="227.24648"
+         id="tspan2473"> ]),</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text2253"
+       style="font-weight:bold;font-size:32px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';white-space:pre;shape-inside:url(#rect2255);display:inline;fill:#72c8b7;stroke-width:48.6;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-289.5837,377.88204)"><tspan
+         x="320.01367"
+         y="147.24648"
+         id="tspan2477">user(['<tspan
+   style="fill:#ff0000"
+   id="tspan2475">Zeko</tspan>'], 'AMEN_', '', [
+</tspan><tspan
+         x="320.01367"
+         y="187.24648"
+         id="tspan2483">    { rank: 'top', position: <tspan
+   style="fill:#ff0000"
+   id="tspan2479">4</tspan>, date: '<tspan
+   style="fill:#0000ff"
+   id="tspan2481">2025-04-25</tspan>' },
+</tspan><tspan
+         x="320.01367"
+         y="227.24648"
+         id="tspan2485"> ]),</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text2267"
+       style="font-weight:bold;font-size:32px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';white-space:pre;shape-inside:url(#rect2269);display:inline;fill:#72c8b7;stroke-width:48.6;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-289.5837,528.59096)"><tspan
+         x="320.01367"
+         y="147.24648"
+         id="tspan2489">user(['<tspan
+   style="fill:#ff0000"
+   id="tspan2487">Vegas</tspan>'], 'AMEN_', '', [
+</tspan><tspan
+         x="320.01367"
+         y="187.24648"
+         id="tspan2495">    { rank: 'top', position: <tspan
+   style="fill:#ff0000"
+   id="tspan2491">5</tspan>, date: '<tspan
+   style="fill:#0000ff"
+   id="tspan2493">2025-04-25</tspan>' },
+</tspan><tspan
+         x="320.01367"
+         y="227.24648"
+         id="tspan2497"> ]),</tspan></text>
+  </g>
+</svg>

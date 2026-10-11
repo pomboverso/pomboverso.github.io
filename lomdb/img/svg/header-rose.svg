@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" width="25" height="9" viewBox="0 0 500 180">
+  <metadata >
+    Created by Pombo — Learn more at github.com/pomboverso
+  </metadata>
+  <style >
+    circle {
+      transform-origin: 50% 50%;
+    }
+
+    .heart {
+      transform-origin: 50% 50%;
+      transform-box: fill-box;
+    }
+  </style>
+
+  <rect width="500" height="180" fill="#ffbfb4" class="pomboverso-github-io" rx="0" ry="0"/>
+  <circle cx="250" cy="90" r="226.778" fill="#ffdbd6">
+    <animateTransform attributeName="transform" attributeType="XML" calcMode="spline" dur="12s" keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" keyTimes="0;0.5;1" repeatCount="indefinite" type="scale" values="1;1.05;1"/>
+  </circle>
+  <circle cx="250" cy="90" r="157.907" fill="#f3969d">
+    <animateTransform attributeName="transform" attributeType="XML" calcMode="spline" dur="12s" keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" keyTimes="0;0.5;1" repeatCount="indefinite" type="scale" values="1;1.05;1"/>
+  </circle>
+  <circle cx="250" cy="90" r="94.891" fill="#ee7f87">
+    <animateTransform attributeName="transform" attributeType="XML" calcMode="spline" dur="12s" keySplines="0.25 0.1 0.25 1;0.25 0.1 0.25 1" keyTimes="0;0.5;1" repeatCount="indefinite" type="scale" values="1;1.05;1"/>
+  </circle>
+
+  <g transform="translate(81.944 21.592) scale(.80611)">
+    <path fill="#ebd5ce" d="M171.042 99.938c-.385 34.688-6.616 41.281 38.9 41.266 45.517-.015 36.326-12.917 42.785-35.09-2.443-8.834-25.924-18.042-45.049-18.714-19.125-.671-31.071 5.101-36.637 12.538z"/>
+    <path fill="#c19890" d="M169.01 109.628c3.025-.842-1.747.084 5.817-10.462 6.5-9.06 51.825-6.466 67.041 1.597 7.111 3.768 4.548 7.444 8.427 7.301 3.878-.142 5.5-11.536 3.513-20.017-1.723-7.357-8.1-24.092-44.353-20.678-36.252 3.413-52.054 13.183-40.445 42.259z"/>
+    <path fill="#f1ab9c" d="M188.036 114.33c.673 3.604 7.806 2.516 7.03-.516-.779-3.03-7.702-3.09-7.03.516zm34.704.576c1.134 3.487 8.067 1.484 6.904-1.422-1.163-2.904-8.036-2.066-6.903 1.422z"/>
+    <path fill="#f39fae" d="M250.706 108.736c-6.348-3.181 5.387-11.367-29.495-16.57-11.078-1.651-43.372-3.274-48.139 4.676-4.767 7.952-.257 10.943-4.424 12.656-4.165 1.712-14.276-6.59-16.057-15.2-1.781-8.611.802-59.82 56.919-61.52 55.187-1.675 76.312 71.696 41.197 75.957z"/>
+    <ellipse cx="-199.831" cy="-5.435" fill="#ebd5ce" rx="9.75" ry="6.14" transform="scale(-1 1) rotate(-34.627)"/>
+    <path fill="none" stroke="#985757" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.537" d="M205.62 114.927s-.407 4.94 3.661 5.158c4.069.218 3.797-5.01 3.797-5.01"/>
+    <path fill="#ffc3cc" d="M208.028 33.033c-23.835 1.165-37.566 11.355-45.502 23.26a20.364 26.655 72.045 0 0 31.4 10.854 20.364 26.655 72.045 0 0 19.093-27.572 20.364 26.655 72.045 0 0-4.991-6.542zM196.98 72.284a18.194 15.59 0 0 0-18.221 15.603 18.194 15.59 0 0 0 1.6 5.04c9.381-2.584 23.44-2.042 33.58-1.114a18.194 15.59 0 0 0 1.212-3.926 18.194 15.59 0 0 0-18.172-15.603zm40.898-32.128a22.71 19.968 56.624 0 0-11.146 16.234 22.71 19.968 56.624 0 0 19.383 25.586 22.71 19.968 56.624 0 0 19.238-8.141c-3.908-12.98-13.306-25.834-27.475-33.679Z"/>
+    <path fill="none" stroke="#985757" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.537" d="M199.89 105.92s-.918-3.087-4.044-2.947c-3.126.14-3.383 3.626-3.383 3.626m32.865-.413s-.436-3.3-3.761-3.302c-3.326-.003-3.698 3.305-3.698 3.305"/>
+    <ellipse cx="146.912" cy="235.073" fill="#ebd5ce" rx="9.75" ry="6.14" transform="rotate(-34.627)"/>
+  </g>
+
+  <g>
+    <path fill="#cc2e36" d="M273.318 47.423s8.895-5.046 7.998-7.772c-.898-2.726-4.734-.96-4.734-.96s-1.302-3.53-3.253-2.792c-4.06 1.537-.01 11.524-.01 11.524z" class="heart">
+      <animateTransform additive="sum" attributeName="transform" dur="3s" repeatCount="indefinite" type="rotate" values="0; 15; 0"/>
+    </path>
+    <path fill="#cc2e36" d="M240.37 43.984s5.58-9.445 3.29-11.502c-2.291-2.057-4.917 1.634-4.917 1.634s-3.097-2.588-4.518-.859c-2.956 3.597 6.145 10.727 6.145 10.727z" class="heart">
+      <animateTransform additive="sum" attributeName="transform" dur="2s" repeatCount="indefinite" type="rotate" values="0; -15; 0"/>
+    </path>
+    <path fill="#cc2e36" d="M302.183 100.37s11.593-3.099 11.38-6.46c-.212-3.36-5.09-2.49-5.09-2.49s-.435-4.394-2.869-4.133c-5.064.544-3.42 13.083-3.42 13.083z" class="heart">
+      <animateTransform additive="sum" attributeName="transform" dur="5s" repeatCount="indefinite" type="rotate" values="0; 15; 0"/>
+    </path>
+    <path fill="#cc2e36" d="M197.96 99.39s.493-11.99-2.779-12.787c-3.271-.798-3.893 4.118-3.893 4.118s-4.324-.892-4.799 1.509c-.988 4.996 11.471 7.16 11.471 7.16z" class="heart">
+      <animateTransform additive="sum" attributeName="transform" dur="2s" repeatCount="indefinite" type="rotate" values="0; -15; 0"/>
+    </path>
+    <path fill="#cc2e36" d="M302.385 61.286s11.745-7.58 10.308-11.23c-1.436-3.65-6.534-.942-6.534-.942s-2.052-4.715-4.657-3.556c-5.42 2.413.883 15.728.883 15.728z" class="heart">
+      <animateTransform additive="sum" attributeName="transform" dur="8s" repeatCount="indefinite" type="rotate" values="0; 15; 0"/>
+    </path>
+    <path fill="#cc2e36" d="M201.604 61.983s9.159-13.334 5.996-16.59c-3.163-3.257-7.397 1.91-7.397 1.91s-4.296-4.12-6.56-1.719c-4.71 4.995 7.961 16.399 7.961 16.399z" class="heart">
+      <animateTransform additive="sum" attributeName="transform" dur="7s" repeatCount="indefinite" type="rotate" values="0; -15; 0"/>
+    </path>
+    <animateTransform attributeName="transform" calcMode="spline" dur="5s" keySplines=".42,0,.58,1; .42,0,.58,1" keyTimes="0; 0.5; 1" repeatCount="indefinite" type="translate" values="0,0; 0,2; 0,0"/>
+  </g>
+
+  <text xml:space="preserve" x="193.965" y="153.203" fill="#a13923" font-family="Quicksand" font-size="10.536" font-weight="700">
+    <tspan x="193.965" y="153.203">FOR ROSE, FOR HOPE.</tspan>
+  </text>
+  <text x="193.413" y="162.706" fill="#bd5740" font-family="Quicksand" font-size="7.196" font-weight="700">
+    <tspan x="193.413" y="162.706">FROM YOUR FAMILY AT MUSH-413</tspan>
+  </text>
+</svg>

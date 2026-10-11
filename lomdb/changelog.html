@@ -1,0 +1,703 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="An interactive visual archive tracking all known server merges and top player data across regions in Legend of Mushroom, built for clarity and community insight.">
+    <title>Legend of Mushroom Database | LoM DB</title>
+    <script src="./js/component_loading.js"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="256x256" href="./img/favicon_256x256.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./img/favicon_128x128.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="./img/favicon_64x64.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./img/favicon_48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="./img/favicon_24x24.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_180x180.png">
+    <meta name="msapplication-TileColor" content="#e9c200">
+    <meta name="msapplication-TileImage" content="https://pomboverso.github.io/lomdb/img/favicon_128x128.png">
+    <meta property="og:image" content="https://pomboverso.github.io/lomdb/img/lomdb-preview.webp">
+    <meta property="og:site_name" content="Legend of Mushrom Database | LoM DB">
+    <meta property="og:description" content="An interactive visual archive tracking all known server merges and top player data across regions in Legend of Mushroom, built for clarity and community insight.">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="stylesheet" href="./css/lom.css">
+    <script type="module">
+      import './js/head.js'
+    </script>
+  </head>
+  <body class="lom-changelog">
+    <lom-loading></lom-loading>
+    <lom-navbar no-filters="" no-searchbar="">
+      <nn-caja padding="1rem">
+  <div class="nav-controls">
+    <nav>
+      <div class="mobile-controls">
+        <button type="button" class="toggle" tabindex="0" aria-label="mobile menu button">
+          <nn-icono class="bars"></nn-icono>
+        </button>
+        <button type="button" class="close-menu">
+          <nn-icono class="times"></nn-icono>
+        </button>
+      </div>
+      <ul>
+        <li>
+          <a target="_self" href="./index.html" class="logo">
+            <img width="112" height="35" src="./img/lomdb.svg" alt="lomdb logo">
+          </a>
+        </li>
+        <li class="searchbar-area">
+          <search>
+            <nn-fila class="search-bar">
+              <nn-pilar size="35px">
+                <nn-btn class="search-btn" aria-label="filter button">
+                  <nn-icono class="filter"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+              <nn-pilar size="100% - 35px * 3">
+                <input type="text" autocomplete="off" autofocus="" aria-label="search bar input">
+              </nn-pilar>
+              <nn-pilar size="35px">
+                <nn-btn class="clear-btn" aria-label="clear search bar button">
+                  <nn-icono class="times"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+              <nn-pilar size="35px">
+                <nn-btn class="share-btn" aria-label="share filterd table button">
+                  <nn-icono class="share-alt"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+            </nn-fila>
+          </search>
+        </li>
+        <li>
+          <a target="_self" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a target="_self" href="calendar.html">Calendar</a>
+        </li>
+        <li>
+          <nn-dropdown label="Servers">
+            <a target="_self" href="timeline.html">Server Compositions</a>
+            <a target="_self" href="age.html">Server Openings</a>
+            <a target="_self" href="merges.html">Merge Schedule</a>
+            <!-- <a
+              target="_self"
+              href="merges-blocks.html"
+              >Merges Blocks</a
+            > -->
+            <!-- <a
+              target="_self"
+              href="gaps.html"
+              >Merges Gaps</a
+            > -->
+            <a target="_self" href="3d-chart.html">3D Stack Comparison</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Players">
+            <a target="_self" href="players.html">Player List</a>
+            <a target="_self" href="leaderboard.html">Leaderboard</a>
+            <!-- <a
+              target="_self"
+              href="players-duplication.html"
+              >UID Duplications</a
+            > -->
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Items">
+            <a target="_self" href="artifacts.html">Artifacts</a>
+            <a target="_self" href="avians.html">Avians</a>
+            <a target="_self" href="back-accesories.html">Back Accesories</a>
+            <a target="_self" href="guardians.html">Guardians</a>
+            <a target="_self" href="mounts.html">Mounts</a>
+            <a target="_self" href="pals.html">Pals</a>
+            <a target="_self" href="parking-decorations.html">Parking Decorations</a>
+            <a target="_self" href="star-array.html">Star Array</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Calculators">
+            <a target="_self" href="mount-calculator.html">Mount</a>
+            <a target="_self" href="ring-calculator.html">Ring</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Developer Tools">
+            <a target="_self" href="normalizer.html">Normalizer</a>
+            <a target="_self" href="changelog.html">Changelog</a>
+            <a target="_self" href="design.html">Design</a>
+            <a target="_self" href="about.html">About LoM DB</a>
+          </nn-dropdown>
+        </li>
+        <li class="hidden">
+          <input type="checkbox" id="theme">
+        </li>
+      </ul>
+    </nav>
+    <div class="filters"></div>
+  </div>
+  <ul class="notifications"></ul>
+</nn-caja>
+    </lom-navbar>
+
+    <nn-caja max-width="1200px" padding="1rem">
+      <main>
+        <header>
+          <h1>Changelog</h1>
+        </header>
+
+        <section>
+          <h2 id="2024-12">
+            <time datetime="2024-12-01"> 2024 Dec </time>
+          </h2>
+          <ul>
+            <li>
+              <nn-pill color="#a73b53">Started the project
+              </nn-pill>
+            </li>
+            <li>Added Global Merge Data</li>
+            <li>Added AM players' data (first draft)</li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="merges.html" target="_BLANK" link="">Merge List</nn-btn>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-01">
+            <time datetime="2025-01-01"> 2025 Jan </time>
+          </h2>
+          <ul>
+            <li>
+              Refactor project for a
+              <nn-pill color="#6526a5">
+                Discord release
+              </nn-pill>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-02">
+            <time datetime="2025-02-01"> 2025 Feb </time>
+          </h2>
+          <ul>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="timeline.html" target="_BLANK" link="">Timeline (Merge Tracker)</nn-btn>
+            </li>
+            <li>
+              <nn-pill color="#6526a5">Discord release</nn-pill>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-03">
+            <time datetime="2025-03-01"> 2025 Mar </time>
+          </h2>
+          <ul>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="gaps.html" target="_BLANK" link="">Merge Gaps Checker</nn-btn>
+            </li>
+            <li>Added AM elite players' data</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-04">
+            <time datetime="2025-04-01"> 2025 Apr </time>
+          </h2>
+          <ul>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="players.html" target="_BLANK" link="">Players Leaderboard</nn-btn>
+            </li>
+            <li>Added EU Top 100 players' data</li>
+            <li>Added SEA merges data</li>
+            <li>Added SEA Top 100 players' data</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-05">
+            <time datetime="2025-05-01"> 2025 May </time>
+          </h2>
+          <ul>
+            <li>
+              Moved project from
+              <nn-pill color="#ded688">github.com/pomboverso</nn-pill>
+              to
+              <nn-pill color="#ded688">lomdb.github.io</nn-pill>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="./index.html" target="_BLANK" link="">Home</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="3d-chart.html" target="_BLANK" link="">3D Chart</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="state.html" target="_BLANK" link="">DB State</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="normalizer.html" target="_BLANK" link="">Normalizer</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="mounts.html" target="_BLANK" link="">Mount's list</nn-btn>
+            </li>
+            <li>Added KR Top 100 players' data</li>
+            <li>Added TW Top 100 players' data</li>
+            <li>Added TW merges data</li>
+            <li>Added JP Top 100 players' data</li>
+            <li>Added OCR script</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-06">
+            <time datetime="2025-06-01"> 2025 Jun </time>
+          </h2>
+
+          <ul>
+            <li>
+              Added new animated summer header: summer
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="avians.html" target="_BLANK" link="">Avian List</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="parking-decorations.html" target="_BLANK" link="">Parking Decoration List</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="changelog.html" target="_BLANK" link="">Changelog Section</nn-btn>
+            </li>
+            <li>
+              Added Mount descriptions [Global and SEA]
+            </li>
+            <li>Improved search bar styles</li>
+            <li>
+              Improved search bar functionality so it can be
+              able to look for the following formats in the
+              following sections:
+              <dl>
+                <dt>Timeline/Merges/3D Graph</dt>
+                <dd class="grid">
+                  <span>AMEN-280</span>
+                  <span>AMEN 280</span>
+                  <span>AMEN_280</span>
+                  <span>amen-280</span>
+                  <span>amen 280</span>
+                  <span>amen_280</span>
+                </dd>
+
+                <dt>Merges</dt>
+                <dd class="grid">
+                  <span>AMEN-280</span>
+                  <span>AMEN 280</span>
+                  <span>AMEN_280</span>
+                  <span>amen-280</span>
+                  <span>amen 280</span>
+                  <span>amen_280</span>
+                  <span>{DATE}</span>
+                </dd>
+
+                <dt>Merge Gaps</dt>
+                <dd class="grid">
+                  <span>AMEN</span>
+                  <span>amen</span>
+                </dd>
+
+                <dt>Players Leaderboard/UID Duplication</dt>
+                <dd class="grid">
+                  <span>{SERVER_NAME}</span>
+                  <span>{UID}</span>
+                  <span>{USER_NAME}</span>
+                </dd>
+
+                <dt>Mounts/Parking Decorations/Avians</dt>
+                <dd class="grid">
+                  <span>{REGION}</span>
+                  <span>{NAME}</span>
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              Added a dictionary for Mount descriptions with
+              consistent terminology:
+              <ul class="grid">
+                <li>DEF</li>
+                <li>ATK</li>
+                <li>DMG</li>
+                <li>HP</li>
+                <li>MAX_HP</li>
+                <li>MOV_SPD</li>
+                <li>EVASION</li>
+                <li>KNOCKUP</li>
+                <li>STUNS</li>
+                <li>AOE_DMG</li>
+                <li>DMG_RES</li>
+                <li>CRIT_RES</li>
+                <li>SKILL_DMG</li>
+                <li>PAL_DMG</li>
+                <li>COUNTER_DMG</li>
+                <li>COMBO_DMG</li>
+                <li>BASIC_ATK</li>
+                <li>BASIC_ATK_DMG</li>
+                <li>PAL_BASIC_ATK</li>
+                <li>COMBO</li>
+                <li>COUNTER</li>
+                <li>SKILL</li>
+                <li>ACTIVE_SKILL</li>
+                <li>CRIT_DMG</li>
+                <li>SKILL_CRIT</li>
+                <li>SKILL_CRIT_DMG</li>
+                <li>PAL_CRIT_DMG</li>
+                <li>CRIT_RATE</li>
+                <li>SKILL_CRIT_RATE</li>
+                <li>PAL_CRIT_RATE</li>
+                <li>ATK_SPD</li>
+                <li>PAL_ATK_SPD</li>
+                <li>ENERGY_REGEN_SPD</li>
+                <li>REGEN_SPD</li>
+                <li>PAL_REGEN_SPD</li>
+                <li>CTR</li>
+                <li>CTR_TIME</li>
+                <li>CTR_TIME_RED</li>
+                <li>ACT_SKILL_TIME</li>
+                <li>AREA_ENEMIES</li>
+              </ul>
+            </li>
+
+            <li>Added Google Analytics</li>
+
+            <li>
+              Moved heavy data processing to the backend to
+              improve page load time
+            </li>
+
+            <li>
+              Added functionality to retrieve the current
+              server from the original server
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-07">
+            <time datetime="2025-07-01"> 2025 Jul </time>
+          </h2>
+
+          <ul>
+            <li>
+              Added new animated header: draco ascension
+            </li>
+            <li>Added new animated header: rose</li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="mount-calculator.html" target="_BLANK" link="">Mount Calculator</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="gallery.html" target="_BLANK" link="">Assets Gallery</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="artifacts.html" target="_BLANK" link="">Artifact List</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="back-accesories.html" target="_BLANK" link="">Back accesory List</nn-btn>
+            </li>
+            <li>
+              Added functionality that allow searching by
+              multiple keys and url search using
+              <nn-pill>filterby</nn-pill>
+            </li>
+            <li>
+              Added functionality that allows sharing
+              filtered views
+            </li>
+            <li>Added notifications</li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="index.html" target="_BLANK" link="">home</nn-btn>
+              <ul class="grid">
+                <li>Performance: 83</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="timeline.html" target="_BLANK" link="">timeline</nn-btn>
+              <ul class="grid">
+                <li>Performance: 92</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="merges.html" target="_BLANK" link="">merges</nn-btn>
+              <ul class="grid">
+                <li>Performance: 85</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="gaps.html" target="_BLANK" link="">gaps</nn-btn>
+              <ul class="grid">
+                <li>Performance: 79</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="3d-chart.html" target="_BLANK" link="">3d chart</nn-btn>
+              <ul class="grid">
+                <li>Performance: 99</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="players.html" target="_BLANK" link="">players leaderboard</nn-btn>
+              <ul class="grid">
+                <li>Performance: 91</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="players-duplication.html" target="_BLANK" link="">players duplication</nn-btn>
+              <ul class="grid">
+                <li>Performance: 100</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="artifacts.html" target="_BLANK" link="">artifacts</nn-btn>
+              <ul class="grid">
+                <li>Performance: 78</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="back-accesories.html" target="_BLANK" link="">back accesories</nn-btn>
+              <ul class="grid">
+                <li>Performance: 78</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="mounts.html" target="_BLANK" link="">mounts</nn-btn>
+              <ul class="grid">
+                <li>Performance: 77</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="avians.html" target="_BLANK" link="">avians</nn-btn>
+              <ul class="grid">
+                <li>Performance: 78</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="parking-decorations.html" target="_BLANK" link="">parking decorations</nn-btn>
+              <ul class="grid">
+                <li>Performance: 78</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="mount-calculator.html" target="_BLANK" link="">mount calculator</nn-btn>
+              <ul class="grid">
+                <li>Performance: 100</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="state.html" target="_BLANK" link="">db state</nn-btn>
+              <ul class="grid">
+                <li>Performance: 90</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="normalizer.html" target="_BLANK" link="">normalizer</nn-btn>
+              <ul class="grid">
+                <li>Performance: 100</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="gallery.html" target="_BLANK" link="">assets gallery</nn-btn>
+              <ul class="grid">
+                <li>Performance: 80</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Improved page load of:
+              <nn-btn color="#6cc48f" href="changelog.html" target="_BLANK" link="">changelog</nn-btn>
+              <ul class="grid">
+                <li>Performance: 85</li>
+                <li>Accesibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+              </ul>
+            </li>
+            <li>
+              Added new backend UI
+              <img src="./img/ui.svg" alt="backend ui" width="1920">
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-08">
+            <time datetime="2025-08-01"> 2025 Aug </time>
+          </h2>
+
+          <ul>
+            <li>Added new animated header: forest</li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="pals.html" target="_BLANK" link="">Pals List</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="guardians.html" target="_BLANK" link="">Guardians List</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="shop.html" target="_BLANK" link="">Donate</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#d34d4d" href="https://www.youtube.com/@LoMDB" target="_BLANK" link="">Youtube Channel</nn-btn>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-09">
+            <time datetime="2025-09-01"> 2025 Sep </time>
+          </h2>
+
+          <ul>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="star-array.html" target="_BLANK" link="">Star Array List</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="design.html" target="_BLANK" link="">Design Section</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="ring-calculator.html" target="_BLANK" link="">Ring Calculator</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="merges-blocks.html" target="_BLANK" link="">Merges Blocks</nn-btn>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2025-11">
+            <time datetime="2025-11-01"> 2025 Nov </time>
+          </h2>
+
+          <ul>
+            <li>Added new animated header: winter</li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="age.html" target="_BLANK" link="">Server's Age View</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="about.html" target="_BLANK" link="">About this project</nn-btn>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="2026-01">
+            <time datetime="2026-01-01"> 2026 Jan </time>
+          </h2>
+
+          <ul>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="calendar.html" target="_BLANK" link="">Calendar</nn-btn>
+            </li>
+            <li>
+              Added
+              <nn-btn color="#6cc48f" href="leaderboard.html" target="_BLANK" link="">Leaderboard</nn-btn>
+            </li>
+          </ul>
+        </section>
+
+        <hr>
+      </main>
+    </nn-caja>
+    <lom-footer></lom-footer>
+</body></html>

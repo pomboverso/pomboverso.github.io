@@ -1,0 +1,60 @@
+body.lom-normalizer {
+  main {
+    > section {
+      display: flex;
+      flex-direction: row;
+      height: calc(100svh - 115px);
+      min-height: 400px;
+      gap: 1rem;
+      position: relative;
+
+      &::before {
+        content: ">";
+        display: block;
+        position: absolute;
+        color: var(--background-color);
+        width: 75px;
+        height: 75px;
+        z-index: 1;
+        background-color: #637d9a;
+        font-size: 4rem;
+        display: flex;
+        place-content: center;
+        line-height: 75px;
+        border-radius: 50%;
+        top: calc(50% - 75px / 2);
+        left: calc(50% - 75px / 2);
+        pointer-events: none;
+      }
+    }
+  }
+
+  .input,
+  .output {
+    width: 50%;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter',
+      'Lucida Typewriter', monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0;
+    overflow: auto;
+    border: none;
+  }
+
+  .input {
+    color: #ddd;
+    background: #273647;
+    resize: none;
+    min-height: 320px;
+  }
+
+  .output {
+    text-align: left;
+    color: #ddd;
+    border: none;
+    background: #22263e;
+  }
+}

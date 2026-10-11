@@ -1,0 +1,125 @@
+body.lom-ring-calculator {
+  .ring-path {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      position: relative;
+
+      &.ring-radio {
+        &.lv1 label {
+          background-color: #9881ff;
+        }
+
+        &.lv51 label {
+          background-color: #ffcd2b;
+        }
+
+        &.lv101 label {
+          background-color: #ffcd2b;
+        }
+
+        &.lv151 label {
+          background-color: #ffb13d;
+        }
+
+        &.lv201 label {
+          background-color: #ff6666;
+        }
+
+        label {
+          display: block;
+          background-color: #333;
+          border-radius: 45px;
+        }
+
+        :has(input[type='radio']:checked) {
+          background-color: #fff2c9;
+        }
+
+        h3 {
+          position: absolute;
+          font-size: 3rem;
+          top: calc(200px - 3rem);
+          left: 420px;
+        }
+
+        p {
+          position: absolute;
+          font-size: 2rem;
+          top: calc(200px);
+          left: 420px;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+        }
+
+        &:hover {
+          label {
+            background-color: #ffb1a7;
+          }
+        }
+      }
+
+      label {
+        cursor: pointer;
+      }
+
+      nn-icono {
+        font-size: 75%;
+      }
+
+      input[type='radio'] {
+        display: none;
+
+        &:checked {
+          + .btn {
+            background-color: #ffe281;
+          }
+        }
+      }
+
+      .btn {
+        display: flex;
+        place-content: center;
+        background-color: #d89ff3;
+        border-radius: 10px;
+        color: var(--background-color);
+        line-height: 64px;
+        width: 64px;
+        height: 64px;
+        font-size: 1.25rem;
+      }
+
+      &:hover {
+        .btn {
+          background-color: #ffb1a7;
+        }
+
+        .target {
+          color: #fff;
+        }
+      }
+
+      .target {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-direction: row;
+        /* height: 32px; */
+        position: absolute;
+        top: 22px;
+        left: 72px;
+        padding-inline: 0.5rem;
+        /* background-color: rgb(51, 21, 41); */
+        /* border: 1px solid rgb(100, 23, 74); */
+        color: rgb(216, 13, 148);
+      }
+    }
+  }
+}

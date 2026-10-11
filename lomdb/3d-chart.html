@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="An interactive visual archive tracking all known server merges and top player data across regions in Legend of Mushroom, built for clarity and community insight.">
+    <title>Legend of Mushroom Database | LoM DB</title>
+    <script src="./js/component_loading.js"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="256x256" href="./img/favicon_256x256.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./img/favicon_128x128.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="./img/favicon_64x64.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./img/favicon_48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="./img/favicon_24x24.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_180x180.png">
+    <meta name="msapplication-TileColor" content="#e9c200">
+    <meta name="msapplication-TileImage" content="https://pomboverso.github.io/lomdb/img/favicon_128x128.png">
+    <meta property="og:image" content="https://pomboverso.github.io/lomdb/img/lomdb-preview.webp">
+    <meta property="og:site_name" content="Legend of Mushrom Database | LoM DB">
+    <meta property="og:description" content="An interactive visual archive tracking all known server merges and top player data across regions in Legend of Mushroom, built for clarity and community insight.">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <script type="module" src="./js/lom_3d-chart.js"></script>
+    <link rel="stylesheet" href="./css/lom.css">
+  </head>
+  <body class="lom-3d-chart">
+    <lom-loading blocking-request="./js/data_3d.json"></lom-loading>
+    <lom-navbar>
+      <nn-caja padding="1rem">
+  <div class="nav-controls">
+    <nav>
+      <div class="mobile-controls">
+        <button type="button" class="toggle" tabindex="0" aria-label="mobile menu button">
+          <nn-icono class="bars"></nn-icono>
+        </button>
+        <button type="button" class="close-menu">
+          <nn-icono class="times"></nn-icono>
+        </button>
+      </div>
+      <ul>
+        <li>
+          <a target="_self" href="./index.html" class="logo">
+            <img width="112" height="35" src="./img/lomdb.svg" alt="lomdb logo">
+          </a>
+        </li>
+        <li class="searchbar-area">
+          <search>
+            <nn-fila class="search-bar">
+              <nn-pilar size="35px">
+                <nn-btn class="search-btn" aria-label="filter button">
+                  <nn-icono class="filter"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+              <nn-pilar size="100% - 35px * 3">
+                <input type="text" autocomplete="off" autofocus="" aria-label="search bar input">
+              </nn-pilar>
+              <nn-pilar size="35px">
+                <nn-btn class="clear-btn" aria-label="clear search bar button">
+                  <nn-icono class="times"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+              <nn-pilar size="35px">
+                <nn-btn class="share-btn" aria-label="share filterd table button">
+                  <nn-icono class="share-alt"></nn-icono>
+                </nn-btn>
+              </nn-pilar>
+            </nn-fila>
+          </search>
+        </li>
+        <li>
+          <a target="_self" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a target="_self" href="calendar.html">Calendar</a>
+        </li>
+        <li>
+          <nn-dropdown label="Servers">
+            <a target="_self" href="timeline.html">Server Compositions</a>
+            <a target="_self" href="age.html">Server Openings</a>
+            <a target="_self" href="merges.html">Merge Schedule</a>
+            <!-- <a
+              target="_self"
+              href="merges-blocks.html"
+              >Merges Blocks</a
+            > -->
+            <!-- <a
+              target="_self"
+              href="gaps.html"
+              >Merges Gaps</a
+            > -->
+            <a target="_self" href="3d-chart.html">3D Stack Comparison</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Players">
+            <a target="_self" href="players.html">Player List</a>
+            <a target="_self" href="leaderboard.html">Leaderboard</a>
+            <!-- <a
+              target="_self"
+              href="players-duplication.html"
+              >UID Duplications</a
+            > -->
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Items">
+            <a target="_self" href="artifacts.html">Artifacts</a>
+            <a target="_self" href="avians.html">Avians</a>
+            <a target="_self" href="back-accesories.html">Back Accesories</a>
+            <a target="_self" href="guardians.html">Guardians</a>
+            <a target="_self" href="mounts.html">Mounts</a>
+            <a target="_self" href="pals.html">Pals</a>
+            <a target="_self" href="parking-decorations.html">Parking Decorations</a>
+            <a target="_self" href="star-array.html">Star Array</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Calculators">
+            <a target="_self" href="mount-calculator.html">Mount</a>
+            <a target="_self" href="ring-calculator.html">Ring</a>
+          </nn-dropdown>
+        </li>
+        <li>
+          <nn-dropdown label="Developer Tools">
+            <a target="_self" href="normalizer.html">Normalizer</a>
+            <a target="_self" href="changelog.html">Changelog</a>
+            <a target="_self" href="design.html">Design</a>
+            <a target="_self" href="about.html">About LoM DB</a>
+          </nn-dropdown>
+        </li>
+        <li class="hidden">
+          <input type="checkbox" id="theme">
+        </li>
+      </ul>
+    </nav>
+    <div class="filters"></div>
+  </div>
+  <ul class="notifications"></ul>
+</nn-caja>
+    </lom-navbar>
+    <lom-3d-chart data-url="./js/data_3d.json"></lom-3d-chart>
+</body></html>

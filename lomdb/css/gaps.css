@@ -1,0 +1,20 @@
+body.lom-gaps {
+  .table-body {
+    gap: 0.5rem;
+    text-align: center;
+
+    nn-pilar {
+      --nn-pilar-size: auto;
+      flex-grow: 1;
+      width: 75px;
+      padding: 1rem;
+      border-radius: 10px;
+      color: #eee;
+
+      &.missing {
+        color: #A6A6A6;
+        background-color: #222;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380">
+  <metadata>
+    Created by Pombo — Learn more at github.com/pomboverso
+  </metadata>
+
+  <rect width="800" height="380" fill="#181818"/>
+  <rect width="338" height="340" x="20" y="20" fill="#1578c9ff"/>
+
+  <rect class="pomboverso-github-io" width="338" height="21" x="20" y="190" fill="#e474deff"/>
+
+  <text font-family="Liberation Mono" fill="#ffffffff" font-size="1.3rem" font-weight="400" transform="translate(20 20)">
+
+    <tspan x="0" dy="1.3rem" fill="#fff280">
+    ═══ LoM DB :: Tasks ═══════
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ▼ Generate JSON Data
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── All
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── 3D Chart
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Artifacts
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Avians
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Back Accesories
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── DB State
+    </tspan>
+
+    <tspan x="0" dy="1.3rem" fill="#000">
+    ├─&gt; Merges
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Merge Gaps
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Mounts
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Parking Decorations
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Players
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Players Duplication
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ├── Timeline
+    </tspan>
+
+    <tspan x="0" dy="1.3rem">
+    ► Crop Images
+    </tspan>
+  </text>
+</svg>
