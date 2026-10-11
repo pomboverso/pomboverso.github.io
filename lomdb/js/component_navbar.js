@@ -57,10 +57,10 @@ customElements.define(
 		}
 
 		setTheme(theme) {
-			const localTheme = theme || this.#data.theme
-			localStorage.setItem('theme', localTheme)
-			document.body.classList.remove('dark', 'light')
-			document.body.classList.add(localTheme)
+			// const localTheme = theme || this.#data.theme
+			// localStorage.setItem('theme', localTheme)
+			// document.body.classList.remove('dark', 'light')
+			// document.body.classList.add(localTheme)
 		}
 
 		#setActiveLinks() {
