@@ -16,7 +16,7 @@ export default [
   [
     "tui",
     {
-      "stars": 41,
+      "stars": 42,
       "issues": 10
     }
   ],
