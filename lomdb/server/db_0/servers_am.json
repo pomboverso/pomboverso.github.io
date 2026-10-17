@@ -15972,7 +15972,7 @@
       "name": "AMER-1264",
       "opentime": 1791778020,
       "type": "0",
-      "state": 1,
+      "state": 2,
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
@@ -23244,6 +23244,19 @@
       "tip": "",
       "merge_id": "0",
       "game_server": "U2FsdGVkX1/x94JqXeP3bMi5wvFoaMWyHkDoh0U0lqlHKqtN+HC2qnU9GdtLrYre"
+    },
+    {
+      "ip": "",
+      "port": "12797",
+      "id": "2269",
+      "name": "AMER-1269",
+      "opentime": 1792210020,
+      "type": "0",
+      "state": 1,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "0",
+      "game_server": "U2FsdGVkX18qYaPGqvhHVtVynAew5sjg6JAHRA6Ax2dgSjrKSGRdSRO/Y4LfEJmz"
     },
     {
       "ip": "",
