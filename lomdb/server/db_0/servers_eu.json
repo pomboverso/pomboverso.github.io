@@ -12280,7 +12280,7 @@
       "name": "MUSH-830",
       "opentime": 1791929220,
       "type": "0",
-      "state": 1,
+      "state": 2,
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
@@ -13767,6 +13767,19 @@
       "tip": "",
       "merge_id": "30051",
       "game_server": "U2FsdGVkX18EXfZZ8dNpBtLDbeMBcFAV6a3DdEw31/uXlZ/5xi7/gfj2dcjFPL6F"
+    },
+    {
+      "ip": "",
+      "port": "12443",
+      "id": "42718",
+      "name": "RU-718",
+      "opentime": 1792361220,
+      "type": "0",
+      "state": 1,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "0",
+      "game_server": "U2FsdGVkX1+N933edRJJTZF6GDMjhTQbymMAUiPgJ8XQdutE4pQRV9fevk2LFVFO"
     },
     {
       "ip": "",
@@ -15587,6 +15600,19 @@
       "tip": "",
       "merge_id": "30215",
       "game_server": "U2FsdGVkX1+8CGRZTQU3lawQbcugJaykVoqbs8cuGsi8JcjrH4GMhT6tPXhvO59R"
+    },
+    {
+      "ip": "",
+      "port": "12467",
+      "id": "30835",
+      "name": "MUSH-835",
+      "opentime": 1792361220,
+      "type": "0",
+      "state": 1,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "0",
+      "game_server": "U2FsdGVkX18QIxYlLerXsakhcDM+7AYPCLIgibPuQI/nY0N5DfVw16/wC0GeYg4R"
     },
     {
       "ip": "",
