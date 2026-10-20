@@ -529,6 +529,11 @@ pv-home {
       display: block;
     }
   }
+
+  pv-img.preview {
+    margin-block-end: var(--space-between-blocks);
+  }
+
   .project-btn {
     background: transparent;
     border: 0;
