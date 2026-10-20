@@ -5,9 +5,10 @@ const REPOS = {
   mako: 'rama-io/mako',
   txori: 'rama-io/txori',
   tui: 'rama-io/tui',
-  teyin: 'rama-io/teyin',
-  okapi: 'rama-io/okapi',
-  jaguar: 'rama-io/jaguar',
+  // teyin: 'rama-io/teyin',
+  // okapi: 'rama-io/okapi',
+  // jaguar: 'rama-io/jaguar',
+  // fikret: 'rama-io/fikret',
 }
 
 const HEADERS = {

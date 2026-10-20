@@ -1,5 +1,6 @@
 import { getPrefix, EVENT_SEARCH, normalize } from './_helpers.js'
-import projects from './arr_projects.js'
+import allProjects from './arr_projects.js'
+import category from './obj_category.js'
 import { parse } from './parser.js'
 
 customElements.define(
@@ -16,6 +17,16 @@ customElements.define(
     }
 
     #currentList = []
+
+    // Optional `categories` attribute (comma separated category names) limits
+    // which projects this instance shows. No attribute = every project.
+    get #projects() {
+      const attr = this.getAttribute('categories')
+      if (!attr) return allProjects
+
+      const allowed = attr.split(',').map(c => category[c.trim()] ?? c.trim())
+      return allProjects.filter(p => allowed.includes(p.category))
+    }
 
     #template = `
     <ul class="list"></ul>
@@ -141,7 +152,7 @@ customElements.define(
     }
 
     refreshList(query = '') {
-      const filtered = projects.filter(p => this.#matchesQuery(p, query))
+      const filtered = this.#projects.filter(p => this.#matchesQuery(p, query))
 
       const isSame =
         filtered.length === this.#currentList.length &&

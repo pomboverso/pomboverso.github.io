@@ -221,7 +221,10 @@ main {
 h1 {
   font-size: var(--font-size-h1);
   font-weight: 400;
-  color: var(--accent);
+}
+
+h1,h2,h3 {
+   color: var(--accent);
 }
 
 .avatar {
@@ -263,6 +266,7 @@ ul.unordered-list {
 pv-img,
 pv-search,
 pv-home,
+pv-desktop,
 pv-stats,
 pv-settings {
   display: block;
@@ -503,7 +507,28 @@ pv-search {
   }
 }
 
+pv-home,
+pv-desktop {
+   .content-area {
+    background-color: var(--background-2);
+    border: 1px solid var(--border);
+    padding: var(--space-between-blocks);
+    color: var(--foreground);
+
+    &:empty {
+      display: none;
+    }
+  }
+}
+
 pv-home {
+  .content-area {
+    display: none;
+
+    &.open {
+      display: block;
+    }
+  }
   .project-btn {
     background: transparent;
     border: 0;
@@ -537,22 +562,6 @@ pv-home {
     &::before {
       content: '------------------------------------------------------------------';
       word-break: break-all;
-    }
-  }
-
-  .content-area {
-    background-color: var(--background-2);
-    border: 1px solid var(--border);
-    padding: var(--space-between-blocks);
-    color: var(--foreground);
-    display: none;
-
-    &:empty {
-      display: none;
-    }
-
-    &.open {
-      display: block;
     }
   }
 
@@ -601,5 +610,29 @@ pv-stats {
         color: #f3e284;
       }
     }
+  }
+}
+
+
+pv-desktop {
+  article {
+    margin-block-end: var(--space-between-blocks);
+  }
+
+  pre {
+    background: rgb(0 0 0 / 35%);
+    padding: var(--space-between-blocks);
+    margin: 0 0 var(--space-between-blocks);
+    overflow-x: auto;
+    color: var(--foreground);
+  }
+
+  code {
+    font-family: inherit;
+  }
+
+  p code,
+  li code {
+    color: var(--highlight);
   }
 }
