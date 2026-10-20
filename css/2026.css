@@ -198,6 +198,16 @@ body {
     --border: #feffff;
     --placeholder-color: #010001;
   }
+
+  &:has(button[data-route="map"].active) {
+    grid-template-columns: 0 1fr;
+    overflow: hidden;
+    aside {
+      opacity: 0;
+      height: 0;
+    }
+
+  }
 }
 
 body {
@@ -207,10 +217,17 @@ body {
   max-width: 1200px;
   min-height: 100svh;
   margin: auto;
+  transition: grid-template-columns 300ms ease;
 
   @media (max-width: 850px) {
     display: block;
   }
+}
+
+aside {
+  overflow: hidden;
+  height: 100%;
+  transition: opacity 300ms ease, height 300ms ease;
 }
 
 main {
@@ -374,6 +391,7 @@ nav {
     background-color: var(--highlight);
   }
 
+  &.active,
   &:hover {
     cursor: pointer;
     background: var(--background-hover);
@@ -646,5 +664,12 @@ pv-desktop {
   p code,
   li code {
     color: var(--highlight);
+  }
+}
+
+pv-map {
+  canvas {
+    width: 100%;
+    background-color: #000000;
   }
 }
