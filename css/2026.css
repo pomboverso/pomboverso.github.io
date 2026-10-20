@@ -312,22 +312,29 @@ pv-search {
   }
 }
 
-.nav-btn {
-  background: transparent;
-  border: none;
-  color: var(--placeholder-color);
-  padding: 0.5rem;
-  font-size: var(--font-size-content);
-
-  &:hover {
-    cursor: pointer;
-    color: var(--highlight);
+nav {
+  .nav-btn:not(.cta) {
+    background: transparent;
+    border: none;
+    color: var(--placeholder-color);
+    padding: 0.5rem;
+    font-size: var(--font-size-content);
+  
+    &:hover {
+      cursor: pointer;
+      color: var(--highlight);
+    }
+  
+    &.active {
+      color: var(--accent);
+    }
   }
 
-  &.active {
-    color: var(--accent);
-  }
+  /* .cta {
+    flex-grow: 1;
+  } */
 }
+
 
 .row-list {
   flex-wrap: wrap;
