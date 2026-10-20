@@ -92,10 +92,10 @@
     />
 
     <!-- PWA -->
-    <link
+    <!-- <link
       rel="manifest"
       href="./manifest.json"
-    />
+    /> -->
 
     <!-- Open Graph -->
     <meta
@@ -192,6 +192,24 @@
           </button>
           <button
             class="icon nav-btn"
+            data-route="web"
+          >
+            🌎
+          </button>
+          <button
+            class="icon nav-btn"
+            data-route="mobile"
+          >
+            📱
+          </button>
+          <button
+            class="icon nav-btn"
+            data-route="desktop"
+          >
+            🖥
+          </button>
+          <button
+            class="icon nav-btn"
             data-route="stats"
           >
             ⭐
@@ -206,6 +224,7 @@
 
         <div class="router">
           <pv-home data-route="home" class="active"></pv-home>
+          <pv-desktop data-route="desktop"></pv-desktop>
           <pv-settings data-route="settings"></pv-settings>
           <pv-stats data-route="stats"></pv-stats>
         </div>

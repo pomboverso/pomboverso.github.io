@@ -85,6 +85,7 @@ export default {
   // unity: 'Unity',
 
   kotlin: 'Kotlin',
+  java: 'Java',
 
   // jest: 'Jest',
   // cucumber: 'Cucumber',

@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'pomboverso';
   src:
-    url('../fonts/pomboverso.woff2') format('woff2'),
+    url('../fonts/pomboverso.otf') format('otf'),
     url('../fonts/pomboverso.ttf') format('truetype'),
     url('../fonts/pomboverso.woff') format('woff');
   font-weight: normal;
