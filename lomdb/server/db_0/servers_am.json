@@ -15122,6 +15122,19 @@
     },
     {
       "ip": "",
+      "port": "12549",
+      "id": "2274",
+      "name": "AMER-1274",
+      "opentime": 1792642020,
+      "type": "0",
+      "state": 1,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "0",
+      "game_server": "U2FsdGVkX18bRX2YxbXpbojscDvKWecf6+idP5hw54Evas6MFqK4NMRW6BVxVSjy"
+    },
+    {
+      "ip": "",
       "port": "12559",
       "id": "1006",
       "name": "AMEN-6",
@@ -23291,7 +23304,7 @@
       "name": "AMER-1269",
       "opentime": 1792210020,
       "type": "0",
-      "state": 1,
+      "state": 2,
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
