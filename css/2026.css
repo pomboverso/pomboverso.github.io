@@ -198,6 +198,16 @@ body {
     --border: #feffff;
     --placeholder-color: #010001;
   }
+
+  &:has(button[data-route="map"].active) {
+    grid-template-columns: 0 1fr;
+    overflow: hidden;
+    aside {
+      opacity: 0;
+      height: 0;
+    }
+
+  }
 }
 
 body {
@@ -207,10 +217,17 @@ body {
   max-width: 1200px;
   min-height: 100svh;
   margin: auto;
+  transition: grid-template-columns 300ms ease;
 
   @media (max-width: 850px) {
     display: block;
   }
+}
+
+aside {
+  overflow: hidden;
+  height: 100%;
+  transition: opacity 300ms ease, height 300ms ease;
 }
 
 main {
@@ -312,22 +329,29 @@ pv-search {
   }
 }
 
-.nav-btn {
-  background: transparent;
-  border: none;
-  color: var(--placeholder-color);
-  padding: 0.5rem;
-  font-size: var(--font-size-content);
-
-  &:hover {
-    cursor: pointer;
-    color: var(--highlight);
+nav {
+  .nav-btn:not(.cta) {
+    background: transparent;
+    border: none;
+    color: var(--placeholder-color);
+    padding: 0.5rem;
+    font-size: var(--font-size-content);
+  
+    &:hover {
+      cursor: pointer;
+      color: var(--highlight);
+    }
+  
+    &.active {
+      color: var(--accent);
+    }
   }
 
-  &.active {
-    color: var(--accent);
-  }
+  /* .cta {
+    flex-grow: 1;
+  } */
 }
+
 
 .row-list {
   flex-wrap: wrap;
@@ -367,6 +391,7 @@ pv-search {
     background-color: var(--highlight);
   }
 
+  &.active,
   &:hover {
     cursor: pointer;
     background: var(--background-hover);
@@ -639,5 +664,86 @@ pv-desktop {
   p code,
   li code {
     color: var(--highlight);
+  }
+}
+
+pv-map {
+  display: block;
+
+  .map-app {
+    height: calc(100svh - 8.5rem);
+    min-height: 360px;
+  }
+
+  .map-stage {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    border: 1px solid var(--border);
+
+    canvas {
+      display: block;
+      image-rendering: pixelated;
+      touch-action: none;
+    }
+  }
+
+  .map-help {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.2rem 0.6rem;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  .map-dpad {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    grid-template-columns: repeat(3, 56px);
+    grid-template-rows: repeat(2, 56px);
+    gap: 6px;
+    touch-action: none;
+    user-select: none;
+
+    button {
+      background: rgba(0, 0, 0, 0.55);
+      color: #fff;
+      border: 1px solid var(--border);
+      font-size: 20px;
+
+      &[data-dir='up'] {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      &[data-dir='left'] {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      &[data-dir='down'] {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      &[data-dir='right'] {
+        grid-column: 3;
+        grid-row: 2;
+      }
+    }
+
+    @media (pointer: coarse) {
+      display: grid;
+    }
+  }
+
+  @media (pointer: coarse) {
+    .map-help {
+      display: none;
+    }
   }
 }

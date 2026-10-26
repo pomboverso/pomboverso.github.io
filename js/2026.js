@@ -1,6 +1,7 @@
 import "./cmp_search.js"
 import "./cmp_home.js"
 import "./cmp_desktop.js"
+import "./cmp_map.js"
 import "./cmp_img.js"
 import "./cmp_settings.js"
 import "./cmp_stats.js"

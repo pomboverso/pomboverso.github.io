@@ -132,7 +132,7 @@
     </script> -->
   </head>
   <body>
-    <header>
+    <aside>
       <div class="container">
         <h1>
           <img
@@ -177,12 +177,11 @@
 
         <pv-search></pv-search>
       </div>
-    </header>
+    </aside>
 
     <main>
       <div class="container">
         <nav class="row-list">
-          <span class="separator"></span>
           <button
             class="icon nav-btn"
             data-route="home"
@@ -220,6 +219,13 @@
           >
             ⚙
           </button>
+          <span class="separator"></span>
+          <button
+            class="cta nav-btn"
+            data-route="map"
+          >
+            GO TO MAP
+          </button>
         </nav>
 
         <div class="router">
@@ -229,6 +235,7 @@
           <pv-desktop data-route="desktop"></pv-desktop>
           <pv-settings data-route="settings"></pv-settings>
           <pv-stats data-route="stats"></pv-stats>
+          <pv-map data-route="map"></pv-map>
         </div>
       </div>
     </main>
