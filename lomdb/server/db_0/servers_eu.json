@@ -3513,32 +3513,6 @@
     },
     {
       "ip": "",
-      "port": "12076",
-      "id": "42691",
-      "name": "RU-691",
-      "opentime": 1788256140,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX18rhIPphb4kGaZj7V9CLg+2+RVP4UwSOEYrbZxFlenL7dLRp/OS2awu"
-    },
-    {
-      "ip": "",
-      "port": "12079",
-      "id": "30780",
-      "name": "MUSH-780",
-      "opentime": 1787609280,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1//oRHbVPAC1NUalJQZXxtlaNtN31UfYytzwRs2HGmbZ46xgo8y1XSe"
-    },
-    {
-      "ip": "",
       "port": "12081",
       "id": "30803",
       "name": "MUSH-803",
@@ -5282,19 +5256,6 @@
     {
       "ip": "",
       "port": "12117",
-      "id": "30784",
-      "name": "MUSH-784",
-      "opentime": 1787954820,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX18gRBwqAk3FNb9LDl6+qgc2AhSXPjRvnUsT1tN5GbLM32c6MOQlJnTY"
-    },
-    {
-      "ip": "",
-      "port": "12117",
       "id": "42652",
       "name": "RU-652",
       "opentime": 1784498820,
@@ -5317,19 +5278,6 @@
       "tip": "",
       "merge_id": "30744",
       "game_server": "U2FsdGVkX18UyhUZoN5f1aX5eR0pLf9hj0qorIbhQ6s2ms84N/khj7KoTt+RPBlw"
-    },
-    {
-      "ip": "",
-      "port": "12126",
-      "id": "30782",
-      "name": "MUSH-782",
-      "opentime": 1787782020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1/XZcWhKUZEZ389VcxwboJznj2BLNYrHhCkFX6w4Bd054E7Qkc7SITb"
     },
     {
       "ip": "",
@@ -5395,19 +5343,6 @@
       "tip": "",
       "merge_id": "30748",
       "game_server": "U2FsdGVkX1+qYo/TvTTpAQQd0Itg3j2tKUVzwj0p4qBnEGPT2oeHxF05/51xsh9f"
-    },
-    {
-      "ip": "",
-      "port": "12141",
-      "id": "30781",
-      "name": "MUSH-781",
-      "opentime": 1787695620,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1/if4EADwoYYWAiZmjGiguaua/UYsE050AxpbmjmwwAX9iYhgnG/SgP"
     },
     {
       "ip": "",
@@ -7101,19 +7036,6 @@
     },
     {
       "ip": "",
-      "port": "12197",
-      "id": "42690",
-      "name": "RU-690",
-      "opentime": 1787782080,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX19SeNAGaqmGTLV7anQdX/GUkQps0AR66LzH4RGlDgYWAqLt7Nr3q0x2"
-    },
-    {
-      "ip": "",
       "port": "12207",
       "id": "30829",
       "name": "MUSH-829",
@@ -8480,32 +8402,6 @@
     {
       "ip": "",
       "port": "12233",
-      "id": "30730",
-      "name": "MUSH-730",
-      "opentime": 1783289220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1+a1fAZLx1QVJKEIn+ZWNsr9mN6Oz6KKibv8e4HQsbD+FiJQV7zuuXz"
-    },
-    {
-      "ip": "",
-      "port": "12233",
-      "id": "30731",
-      "name": "MUSH-731",
-      "opentime": 1783289220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30730",
-      "game_server": "U2FsdGVkX1+a1fAZLx1QVJKEIn+ZWNsr9mN6Oz6KKibv8e4HQsbD+FiJQV7zuuXz"
-    },
-    {
-      "ip": "",
-      "port": "12233",
       "id": "33192",
       "name": "DE-192",
       "opentime": 1730412420,
@@ -9233,45 +9129,6 @@
     },
     {
       "ip": "",
-      "port": "12233",
-      "id": "42638",
-      "name": "RU-638",
-      "opentime": 1783289220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30730",
-      "game_server": "U2FsdGVkX1+a1fAZLx1QVJKEIn+ZWNsr9mN6Oz6KKibv8e4HQsbD+FiJQV7zuuXz"
-    },
-    {
-      "ip": "",
-      "port": "12233",
-      "id": "42639",
-      "name": "RU-639",
-      "opentime": 1783289220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30730",
-      "game_server": "U2FsdGVkX1+a1fAZLx1QVJKEIn+ZWNsr9mN6Oz6KKibv8e4HQsbD+FiJQV7zuuXz"
-    },
-    {
-      "ip": "",
-      "port": "12234",
-      "id": "30785",
-      "name": "MUSH-785",
-      "opentime": 1788041220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX18TISDdBZj615xYMCEayg2qemVOsnG6S43kth94uFPU5lSNxhSFUmav"
-    },
-    {
-      "ip": "",
       "port": "12239",
       "id": "42704",
       "name": "RU-704",
@@ -9294,7 +9151,72 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
-      "game_server": "U2FsdGVkX1+X7Nc8ADQZx3ZzY8n/Onz5ciVRkEaOn4vhxPLaCEQq/HOXPDkxttvZ"
+      "game_server": "U2FsdGVkX19Z2L+cXCvfrAF7UiTQjlCH7SeQ0neRgOr1iuE9zwmTULfCMuDwAfHi"
+    },
+    {
+      "ip": "",
+      "port": "12247",
+      "id": "30791",
+      "name": "MUSH-791",
+      "opentime": 1788473220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30790",
+      "game_server": "U2FsdGVkX19Z2L+cXCvfrAF7UiTQjlCH7SeQ0neRgOr1iuE9zwmTULfCMuDwAfHi"
+    },
+    {
+      "ip": "",
+      "port": "12247",
+      "id": "30792",
+      "name": "MUSH-792",
+      "opentime": 1788473220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30790",
+      "game_server": "U2FsdGVkX19Z2L+cXCvfrAF7UiTQjlCH7SeQ0neRgOr1iuE9zwmTULfCMuDwAfHi"
+    },
+    {
+      "ip": "",
+      "port": "12247",
+      "id": "42693",
+      "name": "RU-693",
+      "opentime": 1788473220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30790",
+      "game_server": "U2FsdGVkX19Z2L+cXCvfrAF7UiTQjlCH7SeQ0neRgOr1iuE9zwmTULfCMuDwAfHi"
+    },
+    {
+      "ip": "",
+      "port": "12247",
+      "id": "42694",
+      "name": "RU-694",
+      "opentime": 1788473220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30790",
+      "game_server": "U2FsdGVkX19Z2L+cXCvfrAF7UiTQjlCH7SeQ0neRgOr1iuE9zwmTULfCMuDwAfHi"
+    },
+    {
+      "ip": "",
+      "port": "12247",
+      "id": "42695",
+      "name": "RU-695",
+      "opentime": 1788473220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30790",
+      "game_server": "U2FsdGVkX19Z2L+cXCvfrAF7UiTQjlCH7SeQ0neRgOr1iuE9zwmTULfCMuDwAfHi"
     },
     {
       "ip": "",
@@ -9321,71 +9243,6 @@
       "tip": "",
       "merge_id": "0",
       "game_server": "U2FsdGVkX18B9dh1r8mWuYGYwXdQATtXK92NE+fOFnrAkk8aisiq5tX4UxVSGv7z"
-    },
-    {
-      "ip": "",
-      "port": "12258",
-      "id": "30735",
-      "name": "MUSH-735",
-      "opentime": 1783721220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1/CAxFEyqvX9084A5QHtIzuVLWfDlpGIDJIeeL851/h5ctJz+6D9Vuw"
-    },
-    {
-      "ip": "",
-      "port": "12258",
-      "id": "30736",
-      "name": "MUSH-736",
-      "opentime": 1783721220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30735",
-      "game_server": "U2FsdGVkX1/CAxFEyqvX9084A5QHtIzuVLWfDlpGIDJIeeL851/h5ctJz+6D9Vuw"
-    },
-    {
-      "ip": "",
-      "port": "12258",
-      "id": "42642",
-      "name": "RU-642",
-      "opentime": 1783721220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30735",
-      "game_server": "U2FsdGVkX1/CAxFEyqvX9084A5QHtIzuVLWfDlpGIDJIeeL851/h5ctJz+6D9Vuw"
-    },
-    {
-      "ip": "",
-      "port": "12258",
-      "id": "42643",
-      "name": "RU-643",
-      "opentime": 1783721220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30735",
-      "game_server": "U2FsdGVkX1/CAxFEyqvX9084A5QHtIzuVLWfDlpGIDJIeeL851/h5ctJz+6D9Vuw"
-    },
-    {
-      "ip": "",
-      "port": "12258",
-      "id": "42644",
-      "name": "RU-644",
-      "opentime": 1783721220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30735",
-      "game_server": "U2FsdGVkX1/CAxFEyqvX9084A5QHtIzuVLWfDlpGIDJIeeL851/h5ctJz+6D9Vuw"
     },
     {
       "ip": "",
@@ -9438,6 +9295,19 @@
       "tip": "",
       "merge_id": "0",
       "game_server": "U2FsdGVkX1+WAV6Tv3uljRsMCC/AU1CgckCUMQ/aNv/9qJ3v5EMskt6TwNXH7rQE"
+    },
+    {
+      "ip": "",
+      "port": "12289",
+      "id": "30849",
+      "name": "MUSH-849",
+      "opentime": 1793570880,
+      "type": "0",
+      "state": 1,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "0",
+      "game_server": "U2FsdGVkX1+v0BODyN/z6MZrTt2KaAxJ60LaGX9qY+YBrwRW7SAf37fRaxpQBZQe"
     },
     {
       "ip": "",
@@ -9649,19 +9519,6 @@
     },
     {
       "ip": "",
-      "port": "12299",
-      "id": "30791",
-      "name": "MUSH-791",
-      "opentime": 1788559620,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1+ImEMXYE7RoyPXmr9M8WqHlCgRWLNWkH0p5SNCeQI88E52HZKsbWwk"
-    },
-    {
-      "ip": "",
       "port": "12308",
       "id": "30779",
       "name": "MUSH-779",
@@ -9671,7 +9528,85 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
-      "game_server": "U2FsdGVkX19osIGlgDmhCyuBDuSI7qYUDeijyy07QIgdPoTMDWwxSqMcQfJDm3mv"
+      "game_server": "U2FsdGVkX19qjTlivjQeXkZkz43jt1gnCYaiDUBO3eTDS4pBSZBYMZT8FrCOEjUJ"
+    },
+    {
+      "ip": "",
+      "port": "12308",
+      "id": "30780",
+      "name": "MUSH-780",
+      "opentime": 1787522880,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30779",
+      "game_server": "U2FsdGVkX19qjTlivjQeXkZkz43jt1gnCYaiDUBO3eTDS4pBSZBYMZT8FrCOEjUJ"
+    },
+    {
+      "ip": "",
+      "port": "12308",
+      "id": "30781",
+      "name": "MUSH-781",
+      "opentime": 1787522880,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30779",
+      "game_server": "U2FsdGVkX19qjTlivjQeXkZkz43jt1gnCYaiDUBO3eTDS4pBSZBYMZT8FrCOEjUJ"
+    },
+    {
+      "ip": "",
+      "port": "12308",
+      "id": "30782",
+      "name": "MUSH-782",
+      "opentime": 1787522880,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30779",
+      "game_server": "U2FsdGVkX19qjTlivjQeXkZkz43jt1gnCYaiDUBO3eTDS4pBSZBYMZT8FrCOEjUJ"
+    },
+    {
+      "ip": "",
+      "port": "12308",
+      "id": "42687",
+      "name": "RU-687",
+      "opentime": 1787522880,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30779",
+      "game_server": "U2FsdGVkX19qjTlivjQeXkZkz43jt1gnCYaiDUBO3eTDS4pBSZBYMZT8FrCOEjUJ"
+    },
+    {
+      "ip": "",
+      "port": "12308",
+      "id": "42688",
+      "name": "RU-688",
+      "opentime": 1787522880,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30779",
+      "game_server": "U2FsdGVkX19qjTlivjQeXkZkz43jt1gnCYaiDUBO3eTDS4pBSZBYMZT8FrCOEjUJ"
+    },
+    {
+      "ip": "",
+      "port": "12308",
+      "id": "42689",
+      "name": "RU-689",
+      "opentime": 1787522880,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30779",
+      "game_server": "U2FsdGVkX19qjTlivjQeXkZkz43jt1gnCYaiDUBO3eTDS4pBSZBYMZT8FrCOEjUJ"
     },
     {
       "ip": "",
@@ -11479,32 +11414,6 @@
       "tip": "",
       "merge_id": "30065",
       "game_server": "U2FsdGVkX1/qBgAejS2qM24k7AdqubZa+cj9jIBEtMJ0/PBGUI1JzCtEiUtuKTA2"
-    },
-    {
-      "ip": "",
-      "port": "12367",
-      "id": "42694",
-      "name": "RU-694",
-      "opentime": 1788559620,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX19bd9NuDDXHn5oAokkMz6QTkAymNScBsLl5SFrymru8QlCgqG9lHQtr"
-    },
-    {
-      "ip": "",
-      "port": "12376",
-      "id": "42695",
-      "name": "RU-695",
-      "opentime": 1788646020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX19TfzPujtfC18W2cpnJwlm3Wo7lgY4I+pyf7cKJttp53tbjHd7BHKFc"
     },
     {
       "ip": "",
@@ -16838,19 +16747,6 @@
     },
     {
       "ip": "",
-      "port": "12543",
-      "id": "42689",
-      "name": "RU-689",
-      "opentime": 1787695680,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1+OO3TzwQ9UOMZvPrhAHIx6n5U6ujOZp5AhpA8hNEfPvnvCbCPTQl6h"
-    },
-    {
-      "ip": "",
       "port": "12549",
       "id": "30810",
       "name": "MUSH-810",
@@ -16877,19 +16773,6 @@
     },
     {
       "ip": "",
-      "port": "12551",
-      "id": "30789",
-      "name": "MUSH-789",
-      "opentime": 1788386820,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX18IvRhP25qurf8Ve/BgzAyzBTdie7l7lLZiMQ/ExbRp5jlX7bMFZcCk"
-    },
-    {
-      "ip": "",
       "port": "12558",
       "id": "30825",
       "name": "MUSH-825",
@@ -16913,292 +16796,6 @@
       "tip": "",
       "merge_id": "0",
       "game_server": "U2FsdGVkX18uvvvcUGSUeaYB+MflXVX3+G7O6uWvly+G7vBkxbPFFwuDBteSR5E8"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30549",
-      "name": "MUSH-549",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30554",
-      "name": "MUSH-554",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30555",
-      "name": "MUSH-555",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30556",
-      "name": "MUSH-556",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30557",
-      "name": "MUSH-557",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30558",
-      "name": "MUSH-558",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30559",
-      "name": "MUSH-559",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30560",
-      "name": "MUSH-560",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30561",
-      "name": "MUSH-561",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30562",
-      "name": "MUSH-562",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30563",
-      "name": "MUSH-563",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "30564",
-      "name": "MUSH-564",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42497",
-      "name": "RU-497",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42498",
-      "name": "RU-498",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42499",
-      "name": "RU-499",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42500",
-      "name": "RU-500",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42501",
-      "name": "RU-501",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42502",
-      "name": "RU-502",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42505",
-      "name": "RU-505",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42506",
-      "name": "RU-506",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42507",
-      "name": "RU-507",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
-    },
-    {
-      "ip": "",
-      "port": "12581",
-      "id": "42508",
-      "name": "RU-508",
-      "opentime": 1763290380,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30549",
-      "game_server": "U2FsdGVkX18p8DhoMEPy+ceU1ur29KcpL+rR9DoTaN8HaQKeBF6SpPtx7oCwQgKB"
     },
     {
       "ip": "",
@@ -17822,7 +17419,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
-      "game_server": "U2FsdGVkX19Rja1J8u+IcQIut5YU08H1RxRQORG0WXwIJ5ZH/t7UqeHpLHpubrPH"
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
     },
     {
       "ip": "",
@@ -17835,7 +17432,59 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30723",
-      "game_server": "U2FsdGVkX19Rja1J8u+IcQIut5YU08H1RxRQORG0WXwIJ5ZH/t7UqeHpLHpubrPH"
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "30728",
+      "name": "MUSH-728",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "30729",
+      "name": "MUSH-729",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "30735",
+      "name": "MUSH-735",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "30736",
+      "name": "MUSH-736",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
     },
     {
       "ip": "",
@@ -17848,7 +17497,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30723",
-      "game_server": "U2FsdGVkX19Rja1J8u+IcQIut5YU08H1RxRQORG0WXwIJ5ZH/t7UqeHpLHpubrPH"
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
     },
     {
       "ip": "",
@@ -17861,7 +17510,85 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30723",
-      "game_server": "U2FsdGVkX19Rja1J8u+IcQIut5YU08H1RxRQORG0WXwIJ5ZH/t7UqeHpLHpubrPH"
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "42635",
+      "name": "RU-635",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "42636",
+      "name": "RU-636",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "42637",
+      "name": "RU-637",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "42642",
+      "name": "RU-642",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "42643",
+      "name": "RU-643",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
+    },
+    {
+      "ip": "",
+      "port": "12600",
+      "id": "42644",
+      "name": "RU-644",
+      "opentime": 1782684420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30723",
+      "game_server": "U2FsdGVkX1+XBN9D8fapMsjRsW4+ZMnGQglHiLgoNimmRWU+crmujRSgJTm1MEU8"
     },
     {
       "ip": "",
@@ -19512,7 +19239,46 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
-      "game_server": "U2FsdGVkX185fjkHguOpscVJZKdKq/rApB4Tjng6wXrjKzMOjDsNlAPPgbcnvTlj"
+      "game_server": "U2FsdGVkX1/ePRLUaUhIm1tBU5uuBzDOh+qVFlqudThZh/XqRcj156r6pEn2FV2M"
+    },
+    {
+      "ip": "",
+      "port": "12618",
+      "id": "30784",
+      "name": "MUSH-784",
+      "opentime": 1787868420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30783",
+      "game_server": "U2FsdGVkX1/ePRLUaUhIm1tBU5uuBzDOh+qVFlqudThZh/XqRcj156r6pEn2FV2M"
+    },
+    {
+      "ip": "",
+      "port": "12618",
+      "id": "30785",
+      "name": "MUSH-785",
+      "opentime": 1787868420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30783",
+      "game_server": "U2FsdGVkX1/ePRLUaUhIm1tBU5uuBzDOh+qVFlqudThZh/XqRcj156r6pEn2FV2M"
+    },
+    {
+      "ip": "",
+      "port": "12618",
+      "id": "42690",
+      "name": "RU-690",
+      "opentime": 1787868420,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30783",
+      "game_server": "U2FsdGVkX1/ePRLUaUhIm1tBU5uuBzDOh+qVFlqudThZh/XqRcj156r6pEn2FV2M"
     },
     {
       "ip": "",
@@ -20033,19 +19799,6 @@
       "tip": "",
       "merge_id": "0",
       "game_server": "U2FsdGVkX18IhKKazrcwdU6muhFE8bmj9qShU0NOflrFQ35zutpi8o81uvCDD862"
-    },
-    {
-      "ip": "",
-      "port": "12675",
-      "id": "42692",
-      "name": "RU-692",
-      "opentime": 1788386820,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX19Ym9AYZtMsmhlt3//ybSeq7Rlm1C+KX8Kmtuy7KiYRLpTOmOor7Zys"
     },
     {
       "ip": "",
@@ -21219,19 +20972,6 @@
     },
     {
       "ip": "",
-      "port": "12717",
-      "id": "30792",
-      "name": "MUSH-792",
-      "opentime": 1788646020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1/c6ieB6ngTQUp13/iFKzXRx2AQGcaLF5V08EL5DvK74LLLYHpIKMUj"
-    },
-    {
-      "ip": "",
       "port": "12720",
       "id": "30786",
       "name": "MUSH-786",
@@ -21241,7 +20981,72 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
-      "game_server": "U2FsdGVkX1/2QniqzlSTQBVmheEZjK1fmVM5Euj6gd0BWMNfZFqqzlQQwGOmXxMp"
+      "game_server": "U2FsdGVkX18L1LU1r6/BH6msmIuUPApc1udVQsB4ULa13MwK4tMlnv5ALjoe+UsX"
+    },
+    {
+      "ip": "",
+      "port": "12720",
+      "id": "30787",
+      "name": "MUSH-787",
+      "opentime": 1788127620,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30786",
+      "game_server": "U2FsdGVkX18L1LU1r6/BH6msmIuUPApc1udVQsB4ULa13MwK4tMlnv5ALjoe+UsX"
+    },
+    {
+      "ip": "",
+      "port": "12720",
+      "id": "30788",
+      "name": "MUSH-788",
+      "opentime": 1788127620,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30786",
+      "game_server": "U2FsdGVkX18L1LU1r6/BH6msmIuUPApc1udVQsB4ULa13MwK4tMlnv5ALjoe+UsX"
+    },
+    {
+      "ip": "",
+      "port": "12720",
+      "id": "30789",
+      "name": "MUSH-789",
+      "opentime": 1788127620,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30786",
+      "game_server": "U2FsdGVkX18L1LU1r6/BH6msmIuUPApc1udVQsB4ULa13MwK4tMlnv5ALjoe+UsX"
+    },
+    {
+      "ip": "",
+      "port": "12720",
+      "id": "42691",
+      "name": "RU-691",
+      "opentime": 1788127620,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30786",
+      "game_server": "U2FsdGVkX18L1LU1r6/BH6msmIuUPApc1udVQsB4ULa13MwK4tMlnv5ALjoe+UsX"
+    },
+    {
+      "ip": "",
+      "port": "12720",
+      "id": "42692",
+      "name": "RU-692",
+      "opentime": 1788127620,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30786",
+      "game_server": "U2FsdGVkX18L1LU1r6/BH6msmIuUPApc1udVQsB4ULa13MwK4tMlnv5ALjoe+UsX"
     },
     {
       "ip": "",
@@ -22064,149 +21869,6 @@
     },
     {
       "ip": "",
-      "port": "12734",
-      "id": "30728",
-      "name": "MUSH-728",
-      "opentime": 1783116420,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX18Fl3c0jIMrZFFEQ1K6eNN4D+Ut9Tond8Tvz1k0Kp9bWBrVHmOLl0We"
-    },
-    {
-      "ip": "",
-      "port": "12734",
-      "id": "30729",
-      "name": "MUSH-729",
-      "opentime": 1783116420,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30728",
-      "game_server": "U2FsdGVkX18Fl3c0jIMrZFFEQ1K6eNN4D+Ut9Tond8Tvz1k0Kp9bWBrVHmOLl0We"
-    },
-    {
-      "ip": "",
-      "port": "12734",
-      "id": "42635",
-      "name": "RU-635",
-      "opentime": 1783116420,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30728",
-      "game_server": "U2FsdGVkX18Fl3c0jIMrZFFEQ1K6eNN4D+Ut9Tond8Tvz1k0Kp9bWBrVHmOLl0We"
-    },
-    {
-      "ip": "",
-      "port": "12734",
-      "id": "42636",
-      "name": "RU-636",
-      "opentime": 1783116420,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30728",
-      "game_server": "U2FsdGVkX18Fl3c0jIMrZFFEQ1K6eNN4D+Ut9Tond8Tvz1k0Kp9bWBrVHmOLl0We"
-    },
-    {
-      "ip": "",
-      "port": "12734",
-      "id": "42637",
-      "name": "RU-637",
-      "opentime": 1783116420,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30728",
-      "game_server": "U2FsdGVkX18Fl3c0jIMrZFFEQ1K6eNN4D+Ut9Tond8Tvz1k0Kp9bWBrVHmOLl0We"
-    },
-    {
-      "ip": "",
-      "port": "12741",
-      "id": "42688",
-      "name": "RU-688",
-      "opentime": 1787609220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX18IvLzZN6SJhQwKgnwLHIgWNmImFxa52niCGBWEV1mibUP07SOgXMIY"
-    },
-    {
-      "ip": "",
-      "port": "12744",
-      "id": "30732",
-      "name": "MUSH-732",
-      "opentime": 1783462020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX18XXZBXzKoVYkq0IWvUdnH/IOewlVlALL3k+wIrW5lGfS36kxhRfwNh"
-    },
-    {
-      "ip": "",
-      "port": "12744",
-      "id": "30733",
-      "name": "MUSH-733",
-      "opentime": 1783462020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30732",
-      "game_server": "U2FsdGVkX18XXZBXzKoVYkq0IWvUdnH/IOewlVlALL3k+wIrW5lGfS36kxhRfwNh"
-    },
-    {
-      "ip": "",
-      "port": "12744",
-      "id": "30734",
-      "name": "MUSH-734",
-      "opentime": 1783462020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30732",
-      "game_server": "U2FsdGVkX18XXZBXzKoVYkq0IWvUdnH/IOewlVlALL3k+wIrW5lGfS36kxhRfwNh"
-    },
-    {
-      "ip": "",
-      "port": "12744",
-      "id": "42640",
-      "name": "RU-640",
-      "opentime": 1783462020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30732",
-      "game_server": "U2FsdGVkX18XXZBXzKoVYkq0IWvUdnH/IOewlVlALL3k+wIrW5lGfS36kxhRfwNh"
-    },
-    {
-      "ip": "",
-      "port": "12744",
-      "id": "42641",
-      "name": "RU-641",
-      "opentime": 1783462020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "30732",
-      "game_server": "U2FsdGVkX18XXZBXzKoVYkq0IWvUdnH/IOewlVlALL3k+wIrW5lGfS36kxhRfwNh"
-    },
-    {
-      "ip": "",
       "port": "12748",
       "id": "30848",
       "name": "MUSH-848",
@@ -22815,6 +22477,19 @@
       "tip": "",
       "merge_id": "0",
       "game_server": "U2FsdGVkX19z+SH5K3/fYGKRcEx/8qDrA7GEo6d1hB039SUqqqab7boHvCKSZj87"
+    },
+    {
+      "ip": "",
+      "port": "12775",
+      "id": "42725",
+      "name": "RU-725",
+      "opentime": 1793570820,
+      "type": "0",
+      "state": 1,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "0",
+      "game_server": "U2FsdGVkX19Z6vxl6A72GTXvuNpVSrIsM7GeZU/1/aRRb4ZhktVPZhs6ty1mq4zy"
     },
     {
       "ip": "",
@@ -23659,7 +23334,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
-      "game_server": "U2FsdGVkX18Mo2c4tnuqtJ7dAf+0jaRIaSm/QTRnx2KfsBN2pHUnjdJAYrAzRctF"
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
     },
     {
       "ip": "",
@@ -23672,7 +23347,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30725",
-      "game_server": "U2FsdGVkX18Mo2c4tnuqtJ7dAf+0jaRIaSm/QTRnx2KfsBN2pHUnjdJAYrAzRctF"
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
     },
     {
       "ip": "",
@@ -23685,7 +23360,72 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30725",
-      "game_server": "U2FsdGVkX18Mo2c4tnuqtJ7dAf+0jaRIaSm/QTRnx2KfsBN2pHUnjdJAYrAzRctF"
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "30730",
+      "name": "MUSH-730",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "30731",
+      "name": "MUSH-731",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "30732",
+      "name": "MUSH-732",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "30733",
+      "name": "MUSH-733",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "30734",
+      "name": "MUSH-734",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
     },
     {
       "ip": "",
@@ -23711,7 +23451,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30725",
-      "game_server": "U2FsdGVkX18Mo2c4tnuqtJ7dAf+0jaRIaSm/QTRnx2KfsBN2pHUnjdJAYrAzRctF"
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
     },
     {
       "ip": "",
@@ -23724,7 +23464,59 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30725",
-      "game_server": "U2FsdGVkX18Mo2c4tnuqtJ7dAf+0jaRIaSm/QTRnx2KfsBN2pHUnjdJAYrAzRctF"
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "42638",
+      "name": "RU-638",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "42639",
+      "name": "RU-639",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "42640",
+      "name": "RU-640",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
+    },
+    {
+      "ip": "",
+      "port": "12802",
+      "id": "42641",
+      "name": "RU-641",
+      "opentime": 1782857220,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30725",
+      "game_server": "U2FsdGVkX1+ASqg3EpyZrqvRZuB2s/di+PfRzAfLdarXXAH3YERxRnneyaZwNVUe"
     },
     {
       "ip": "",
@@ -23738,19 +23530,6 @@
       "tip": "",
       "merge_id": "0",
       "game_server": "U2FsdGVkX1+SdnXBHRiYLs4/oX9vIGXuknsE3dMArZZGLu+xcwCq4/DLLJq2Wmpx"
-    },
-    {
-      "ip": "",
-      "port": "12803",
-      "id": "30787",
-      "name": "MUSH-787",
-      "opentime": 1788214020,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1+xgmCq2NzHurivP/9d60Y7gegAPVxHRGSufdbkgF6gDueIgrC9cgDK"
     },
     {
       "ip": "",
@@ -26471,19 +26250,6 @@
     },
     {
       "ip": "",
-      "port": "12892",
-      "id": "42693",
-      "name": "RU-693",
-      "opentime": 1788473220,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX19RdNLcpdvBsWuAgUTvGP359EKBuKJKcjFQGB4SqRLF1KHDNPoIECVB"
-    },
-    {
-      "ip": "",
       "port": "12902",
       "id": "42714",
       "name": "RU-714",
@@ -26913,19 +26679,6 @@
     },
     {
       "ip": "",
-      "port": "12911",
-      "id": "30788",
-      "name": "MUSH-788",
-      "opentime": 1788300420,
-      "type": "0",
-      "state": 2,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX19yA78MXK81DmCRfyTMSeiufbkAv65hTLpOzEHHPKmE8gvGFpt23NIc"
-    },
-    {
-      "ip": "",
       "port": "12917",
       "id": "30537",
       "name": "MUSH-537",
@@ -26935,7 +26688,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -26948,7 +26701,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -26961,7 +26714,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -26974,7 +26727,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -26987,7 +26740,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27000,7 +26753,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27013,7 +26766,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27026,7 +26779,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27039,7 +26792,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27052,7 +26805,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27065,7 +26818,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27078,7 +26831,20 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30549",
+      "name": "MUSH-549",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27091,7 +26857,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27104,7 +26870,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27117,7 +26883,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27130,7 +26896,150 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30554",
+      "name": "MUSH-554",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30555",
+      "name": "MUSH-555",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30556",
+      "name": "MUSH-556",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30557",
+      "name": "MUSH-557",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30558",
+      "name": "MUSH-558",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30559",
+      "name": "MUSH-559",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30560",
+      "name": "MUSH-560",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30561",
+      "name": "MUSH-561",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30562",
+      "name": "MUSH-562",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30563",
+      "name": "MUSH-563",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "30564",
+      "name": "MUSH-564",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27143,7 +27052,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27156,7 +27065,85 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42497",
+      "name": "RU-497",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42498",
+      "name": "RU-498",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42499",
+      "name": "RU-499",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42500",
+      "name": "RU-500",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42501",
+      "name": "RU-501",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42502",
+      "name": "RU-502",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27169,7 +27156,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27182,7 +27169,59 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42505",
+      "name": "RU-505",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42506",
+      "name": "RU-506",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42507",
+      "name": "RU-507",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
+    },
+    {
+      "ip": "",
+      "port": "12917",
+      "id": "42508",
+      "name": "RU-508",
+      "opentime": 1761569760,
+      "type": "0",
+      "state": 2,
+      "bgp_addr": [],
+      "tip": "",
+      "merge_id": "30537",
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27195,7 +27234,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27208,7 +27247,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27221,7 +27260,7 @@
       "bgp_addr": [],
       "tip": "",
       "merge_id": "30537",
-      "game_server": "U2FsdGVkX1/dgufJZ1v4nYotJlZOeet3wQ/iLKAbFQVoKts4/RfLQ179872J42lN"
+      "game_server": "U2FsdGVkX19s717rUrEhdd3Kr2ZWbwe9TMYeVVnBTQym9MlsLEOzO8vNa8e/J3k6"
     },
     {
       "ip": "",
@@ -27737,24 +27776,11 @@
       "name": "MUSH-844",
       "opentime": 1793138820,
       "type": "0",
-      "state": 1,
-      "bgp_addr": [],
-      "tip": "",
-      "merge_id": "0",
-      "game_server": "U2FsdGVkX1+Z+qp8VspA++y0d+PYFS9NErQaneNTOHAr4PEjGrkAy8NdIJ/Pfkot"
-    },
-    {
-      "ip": "",
-      "port": "12961",
-      "id": "42687",
-      "name": "RU-687",
-      "opentime": 1787522820,
-      "type": "0",
       "state": 2,
       "bgp_addr": [],
       "tip": "",
       "merge_id": "0",
-      "game_server": "U2FsdGVkX1/s3NYldah917lIUyOMY1+nmYJeL/K7FMbwdOtsE8fbXz2Z/HyFkXer"
+      "game_server": "U2FsdGVkX1+Z+qp8VspA++y0d+PYFS9NErQaneNTOHAr4PEjGrkAy8NdIJ/Pfkot"
     },
     {
       "ip": "",
