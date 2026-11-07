@@ -1,0 +1,285 @@
+#home {
+  background-color: var(--brand-blue);
+
+  section.intro {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+
+    @media (width >= 992px) {
+      padding: 0 0 230px;
+      max-height: 688px;
+      height: 100vh;
+      min-height: 638px;
+      position: relative;
+    }
+
+    .animation-intro {
+      bottom: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      width: 100%;
+    }
+
+    .copywrite {
+      margin: 50px auto;
+      padding: 0 12px;
+      z-index: 1;
+      position: relative;
+      pointer-events: none;
+
+      @media (width >= 992px) {
+        margin: 60px auto 20px;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  section.body {
+    padding-top: 290px;
+    margin-bottom: -370px;
+
+    .btn {
+      width: 260px;
+    }
+
+    h2 {
+      font-size: 14pt;
+    }
+
+    article {
+      padding: 20px;
+      text-align: center;
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+
+      @media (width <= 992px) {
+        display: block;
+        width: 100%;
+      }
+
+      .contain {
+        min-height: 520px;
+
+        @media (width <= 992px) {
+          min-height: initial;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .bend {
+      top: -80px;
+      z-index: 6;
+      border-top-right-radius: 700px;
+      border-top-left-radius: 700px;
+      padding: 100px 0 100px;
+    }
+  }
+
+  section.call-us {
+    padding: 40px 0;
+  }
+}
+
+.table-mobile {
+  display: block;
+  width: 100%;
+  margin-bottom: 90px;
+
+  @media (width >= 992px) {
+    display: none;
+  }
+}
+
+.office {
+  position: relative;
+  width: 1015px;
+  height: 371px;
+  margin: 0 auto -200px;
+  display: none;
+
+  @media (width >= 992px) {
+    display: block;
+  }
+
+  &:hover > .hand04 {
+    transform: rotateZ(-10deg);
+    left: 660px;
+  }
+
+  &:hover > .head {
+    transform: rotateZ(7deg);
+  }
+
+  .table {
+    position: absolute;
+    background: url("../../img/home/table.png") no-repeat center bottom;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+}
+
+.lamp-area {
+  position: absolute;
+  width: 116px;
+  height: 438px;
+  top: -270px;
+  display: none;
+
+  @media (width >= 992px) {
+    display: block;
+  }
+
+  &.right { right: 10%; }
+  &.left { left: 10%; }
+
+  .lamp {
+    background: url("../../img/home/lamp.png") no-repeat center bottom;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 700ms ease-in-out;
+    transform: rotateZ(0deg);
+    transform-origin: 50% 0;
+
+    &:hover > .bulb {
+      background-color: #a1cbe6;
+    }
+  }
+
+  &.right:hover > .lamp {
+    transform: rotateZ(-20deg);
+  }
+
+  &.left:hover > .lamp {
+    transform: rotateZ(20deg);
+  }
+
+  .bulb {
+    --size: 30px;
+    position: absolute;
+    bottom: -15px;
+    right: 43px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: #e5e6a1;
+    transition: background-color 500ms;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 15px;
+      display: block;
+      background-color: #005cbf;
+    }
+  }
+}
+
+.object {
+  position: absolute;
+
+  &.back { z-index: 4; }
+  &.front { z-index: 6; }
+
+  &.hand01 {
+    bottom: 190px;
+    left: 160px;
+    transform: rotateZ(0deg);
+    transform-origin: 5% 100%;
+    animation: clicking_01 600ms alternate infinite;
+  }
+
+  &.hand02 {
+    bottom: 190px;
+    left: 166px;
+    transform: rotateZ(0deg);
+    transform-origin: 5% 100%;
+    animation: clicking_02 600ms reverse 50ms infinite;
+  }
+
+  &.hand03 {
+    bottom: 184px;
+    left: 785px;
+    transform: rotateZ(0deg);
+    transform-origin: 85% 100%;
+    animation: knocking 300ms alternate infinite;
+  }
+
+  &.hand04 {
+    bottom: 187px;
+    left: 658px;
+    transform: rotateZ(5deg);
+    transform-origin: 50% 100%;
+    transition: 400ms;
+  }
+
+  &.leg {
+    top: 238px;
+    left: 660px;
+    animation: shaking 200ms alternate infinite;
+  }
+
+  &.guy {
+    top: 18px;
+    left: 530px;
+  }
+
+  &.head {
+    bottom: 202px;
+    left: 322px;
+    transform: rotateZ(7deg);
+    animation: watching 5s alternate infinite;
+  }
+
+  &.head-02 {
+    top: 0;
+    left: 900px;
+    animation: nodding 2s alternate infinite;
+  }
+
+  &.pc {
+    bottom: 185px;
+    left: 720px;
+    z-index: 3;
+  }
+
+  &.folder {
+    bottom: 263px;
+    left: 420px;
+    animation: folder_open 15s infinite;
+  }
+
+  &.pointer {
+    bottom: 253px;
+    left: 549px;
+    animation: cursor_moving 15s infinite;
+  }
+}
+
+.wireframe {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 608px;
+  background: url("../../img/home/wire.png") center bottom no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  display: none;
+
+  @media (width >= 992px) {
+    display: block;
+  }
+}
