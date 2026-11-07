@@ -1,0 +1,234 @@
+#contact {
+  padding-bottom: 0.1px;
+
+  section.intro {
+    background-color: var(--brand-orange);
+    background-image: none;
+    overflow: hidden;
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  section.body {
+    margin-top: -110px;
+
+    .bend {
+      padding: 100px 0 10px;
+      width: 120%;
+      left: -10%;
+    }
+  }
+
+  .animation-intro {
+    --extra: 1500ms;
+    width: 100%;
+    height: 100vh;
+    min-height: 888px;
+    max-height: 1050px;
+    top: 0;
+    margin: -265px auto -110px;
+    position: relative;
+
+    .plane {
+      position: absolute;
+      bottom: -250px;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+
+      &.p01 { left: 40%; animation-name: flying_plane_01; animation-duration: calc(2900ms + var(--extra)); }
+      &.p02 { left: 45%; animation-name: flying_plane_02; animation-duration: calc(1700ms + var(--extra)); }
+      &.p03 { left: 47%; animation-name: flying_plane_03; animation-duration: calc(3400ms + var(--extra)); }
+      &.p04 { left: 47%; animation-name: flying_plane_04; animation-duration: calc(2800ms + var(--extra)); }
+      &.p05 { left: 54%; animation-name: flying_plane_05; animation-duration: calc(2300ms + var(--extra)); }
+      &.p06 { left: 58%; animation-name: flying_plane_06; animation-duration: calc(2100ms + var(--extra)); }
+    }
+  }
+
+  form {
+    text-align: right;
+
+    legend {
+      border-bottom: none;
+      text-align: left;
+      font-size: 13pt;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .form-group {
+    position: relative;
+    min-height: 35px;
+    font-size: 0;
+
+    &:hover > span {
+      background-color: #17ccbb;
+    }
+
+    &.txt-area {
+      height: 70px;
+    }
+
+    .help-block.with-errors {
+      font-size: 10pt;
+      pointer-events: none;
+      margin: 0;
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      color: #ea8755;
+    }
+
+    input,
+    textarea {
+      display: inline-block;
+      width: calc(100% - 36px);
+      height: 100%;
+      border: none;
+      border-radius: 0;
+      background-color: #efefef;
+      color: #000;
+      font-size: 10pt;
+      padding: 9px;
+      vertical-align: top;
+    }
+
+    span {
+      font-size: 12px;
+      display: inline-block;
+      width: 34px;
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      line-height: 23px;
+      border-radius: 0;
+      vertical-align: top;
+      background: #3292d6;
+      border: none;
+      transition: background-color 500ms;
+      margin-right: -1px;
+    }
+  }
+
+  .goToMap {
+    cursor: pointer;
+  }
+}
+
+.relative-box {
+  position: relative;
+  height: 100%;
+}
+
+section.body address {
+  max-width: 285px;
+  padding-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+
+  img {
+    width: 59px;
+    float: left;
+    margin-right: 30px;
+    transition: transform 500ms;
+  }
+
+  p {
+    height: 42px;
+    line-height: 1.5;
+    margin: 25px 0;
+
+    &:hover img {
+      transform: rotateZ(15deg);
+    }
+  }
+
+  span,
+  strong {
+    font-weight: 500;
+    position: relative;
+    top: 2px;
+  }
+
+  strong {
+    display: block;
+  }
+
+  .phone::before {
+    content: "";
+  }
+}
+
+#location {
+  text-align: center;
+  margin-top: 70px;
+}
+
+#map {
+  position: relative;
+  height: 500px;
+  margin-bottom: 130px;
+
+  @media (width <= 768px) {
+    pointer-events: none;
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    pointer-events: none;
+  }
+
+  &.is-active iframe {
+    pointer-events: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -124px 0 0 -100px;
+    text-align: center;
+    width: 200px;
+    pointer-events: none;
+
+    p {
+      font: 12pt var(--base-font-family);
+      background-color: var(--brand-dark-blue);
+      padding: 8px 21px;
+      border-radius: 9px;
+      color: #fff;
+      display: inline-block;
+    }
+
+    .point {
+      background-color: rgb(42 74 100 / 0.22);
+      border-radius: 50%;
+      display: inline-block;
+      font-size: 0;
+      width: 80px;
+      text-align: center;
+      height: 80px;
+      line-height: 80px;
+      animation: glowing_mark 1000ms ease-in infinite;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        background-color: var(--brand-dark-blue);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+    }
+  }
+}

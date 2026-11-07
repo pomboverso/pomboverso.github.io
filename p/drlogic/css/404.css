@@ -1,0 +1,134 @@
+@keyframes dancing-border {
+  0% {
+    border: 3vmax solid #156993;
+  }
+
+  50% {
+    border: 16vmax solid #156993;
+  }
+}
+
+body,
+html {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat", helvetica, sans-serif;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+section {
+  border: 5vmax solid #156993;
+  border-radius: 50%;
+  min-height: 110vmax;
+  min-width: 110vmax;
+  box-sizing: border-box;
+  animation: dancing-border 2000ms infinite ease-in-out alternate;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0 auto auto 0;
+}
+
+.numbers {
+  font-size: 270px;
+  font-weight: bold;
+  flex-basis: 100%;
+  letter-spacing: 0;
+  margin: -35px 0;
+
+  @media (width <= 900px) {
+    font-size: 180px;
+  }
+
+  span {
+    opacity: 0.8;
+    display: inline-block;
+    line-height: 0;
+    transform-origin: 60% 100%;
+  }
+
+  .n1 {
+    color: #22b573;
+    transform: rotateZ(-20deg);
+  }
+
+  .n2 {
+    color: #ffcf5d;
+    flex-basis: 100%;
+    margin: 0 -40px;
+  }
+
+  .n3 {
+    color: #d33dac;
+    transform: rotateZ(20deg);
+  }
+}
+
+h1 {
+  font-size: 50px;
+  transform: translate(0, 0);
+
+  @media (width <= 900px) {
+    font-size: 35px;
+  }
+}
+
+h2 {
+  font-size: 20pt;
+
+  @media (width <= 900px) {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+
+  @media (width <= 900px) {
+    font-size: 12px;
+  }
+}
+
+h1,
+h2,
+p {
+  line-height: 1;
+  margin: 10px 0;
+  flex-basis: 100%;
+}
+
+.btn {
+  background-color: #3488c1;
+  box-shadow: 0 3px 0 #2a4a64;
+  display: block;
+  padding: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: auto;
+  transition: background-color 500ms;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #457696;
+  }
+
+  @media (width <= 900px) {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,117 @@
+@keyframes flying_plane_01 {
+  to {
+    translate: -750px var(--plane-rise);
+  }
+}
+
+@keyframes flying_plane_02 {
+  to {
+    translate: -850px var(--plane-rise);
+  }
+}
+
+@keyframes flying_plane_03 {
+  to {
+    translate: -450px var(--plane-rise);
+  }
+}
+
+@keyframes flying_plane_04 {
+  to {
+    translate: 700px var(--plane-rise);
+  }
+}
+
+@keyframes flying_plane_05 {
+  to {
+    translate: 1200px var(--plane-rise);
+  }
+}
+
+@keyframes flying_plane_06 {
+  to {
+    translate: 1000px var(--plane-rise);
+  }
+}
+
+@keyframes glowing_mark {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  50% {
+    opacity: 0.5;
+    scale: 1;
+  }
+
+  100% {
+    opacity: 0;
+    scale: 1.5;
+  }
+}
+
+@keyframes clicking_01 {
+  0% { transform: rotateZ(-3deg) translateX(2px); }
+  20% { transform: rotateZ(5deg) translateX(2px); }
+  40% { transform: rotateZ(-3deg) translateX(2px); }
+  60% { transform: rotateZ(-3deg) translateX(3px); }
+  80% { transform: rotateZ(5deg) translateX(3px); }
+  100% { transform: rotateZ(-3deg) translateX(3px); }
+}
+
+@keyframes clicking_02 {
+  0% { transform: rotateZ(-3deg) translateX(0); }
+  20% { transform: rotateZ(5deg) translateX(0); }
+  40% { transform: rotateZ(-3deg) translateX(0); }
+  60% { transform: rotateZ(-3deg) translateX(3px); }
+  80% { transform: rotateZ(5deg) translateX(3px); }
+  100% { transform: rotateZ(-3deg) translateX(3px); }
+}
+
+@keyframes cursor_moving {
+  0%, 10% { translate: 0 0; }
+  30%, 32% { translate: 0 -79px; }
+  55%, 58% { translate: -90px -59px; }
+  82%, 85% { translate: -25px -76px; }
+  95% { translate: 0 0; }
+}
+
+@keyframes folder_open {
+  0%, 30% { opacity: 0; }
+  32%, 82% { opacity: 1; }
+  85%, 100% { opacity: 0; }
+}
+
+@keyframes knocking {
+  from { transform: rotateZ(-4deg); }
+  to { transform: rotateZ(6deg); }
+}
+
+@keyframes nodding {
+  from { transform: rotateZ(-4deg); }
+  to { transform: rotateZ(8deg); }
+}
+
+@keyframes shaking {
+  from { translate: 0 0; }
+  to { translate: 0 5px; }
+}
+
+@keyframes watching {
+  0% { transform: rotateZ(7deg); }
+  20%, 95% { transform: rotateZ(-2deg); }
+}
+
+@keyframes rising {
+  0% {
+    top: 0;
+    rotate: 10deg;
+  }
+
+  50%,
+  100% {
+    top: 90%;
+    rotate: 30deg;
+  }
+}

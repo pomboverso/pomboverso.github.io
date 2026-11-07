@@ -1,0 +1,207 @@
+#nav {
+  &.blue { --nav: var(--brand-blue); --pos: 100% -2px; }
+  &.red { --nav: var(--brand-red); --pos: 100% -99px; }
+  &.green { --nav: var(--brand-green); --pos: 100% -195px; }
+  &.purple { --nav: var(--brand-purple2); --pos: 100% -293px; }
+  &.cyan { --nav: var(--brand-cyan); --pos: 100% -391px; }
+  &.orange { --nav: var(--brand-orange); --pos: 100% -488px; }
+
+  &.navbar-default {
+    background-color: var(--nav);
+
+    @media (width >= 768px) {
+      background-color: #fff;
+    }
+
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+      background-color: hsl(from var(--nav) h s calc(l - 10));
+    }
+  }
+
+  .container {
+    position: relative;
+
+    @media (width >= 1200px) {
+      width: 1100px;
+    }
+
+    @media (width >= 768px) {
+      background: url("../../img/nav-wire.png") no-repeat;
+      background-position: var(--pos);
+    }
+  }
+
+  &.navbar {
+    margin-bottom: 0 !important;
+
+    @media (width >= 768px) {
+      padding-bottom: 13px;
+    }
+  }
+
+  address {
+    margin-bottom: 0;
+  }
+
+  .navbar-collapse {
+    background-color: hsl(from var(--nav) h s calc(l - 10));
+    border-color: transparent;
+    box-shadow: none;
+
+    @media (width >= 768px) {
+      background-color: transparent;
+    }
+  }
+
+  .navbar-brand {
+    position: relative;
+    z-index: 11;
+    height: auto;
+    box-sizing: content-box;
+
+    @media (width >= 768px) {
+      width: 110px;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+
+    .visible-xs {
+      width: 110px;
+    }
+
+    .hidden-xs {
+      width: 100%;
+    }
+  }
+
+  .info {
+    display: none;
+    float: right;
+    margin: 9px 14px -20px;
+    font-size: 9pt;
+
+    @media (width >= 768px) {
+      display: block;
+    }
+  }
+
+  .mail {
+    color: var(--nav);
+  }
+
+  .dropdown-menu {
+    border: transparent;
+    top: 23px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 0;
+    left: -4px;
+
+    @media (width >= 768px) {
+      padding: 13px 0 0;
+    }
+
+    li {
+      @media (width >= 768px) {
+        padding: 5px 0 6px;
+        border-bottom: 1px solid #eee;
+      }
+    }
+
+    a {
+      padding: 5px 15px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  ul {
+    @media (width >= 768px) {
+      position: absolute;
+      top: 46px;
+      right: 30px;
+    }
+  }
+
+  li {
+    &.active-dropdown a.dropdown-toggle {
+      color: var(--nav);
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &.active a {
+      color: #fff;
+
+      &::after {
+        opacity: 1;
+      }
+
+      @media (width >= 768px) {
+        color: var(--nav);
+      }
+    }
+
+    a {
+      padding: 10px 15px;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: transparent;
+      font-weight: 300;
+      font-size: 10pt;
+      line-height: 1;
+
+      @media (768px <= width <= 992px) {
+        font-size: 8pt;
+        padding: 0 10px;
+      }
+
+      @media (width >= 768px) {
+        color: #000;
+        padding: 0 15px;
+      }
+
+      &::after {
+        background-color: var(--nav);
+
+        @media (width >= 992px) {
+          content: "";
+          display: block;
+          rotate: 45deg;
+          width: 20px;
+          height: 20px;
+          position: relative;
+          margin: auto;
+          top: 10px;
+          opacity: 0;
+          transition-property: color, background-color, opacity;
+          transition-duration: 500ms;
+        }
+      }
+
+      &:hover {
+        color: hsl(from var(--nav) h s calc(l + 35));
+
+        @media (width >= 768px) {
+          color: var(--nav);
+        }
+      }
+    }
+  }
+}
+
+.navbar-default {
+  border: none;
+
+  .navbar-toggle {
+    border-color: transparent;
+
+    .icon-bar {
+      background-color: #fff;
+    }
+  }
+}

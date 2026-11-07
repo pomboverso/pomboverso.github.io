@@ -1,0 +1,6 @@
+aside.loader {
+  background: #fff url("../../img/iconx128.png") center no-repeat;
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+}
