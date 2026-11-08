@@ -1,0 +1,63 @@
+:host {
+  --font: "Montserrat", helvetica, sans-serif, verdana;
+  --yellow: #f4d242;
+  --light-blue: #41afd7;
+  --dark-blue: #1f67ac;
+  --loader-blue: #3c81c1;
+  --navy: #124c83;
+  --label-blue: #1461aa;
+  --outline-blue: #2471b2;
+  --hover-blue: #42a3dc;
+  --button-text: #0168b3;
+  --age-yellow: #f6db50;
+  --age-hover: #3aa1cf;
+  --stage-height: 100svh;
+
+  display: block;
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  container: mineriza / inline-size;
+  min-height: var(--stage-height);
+  background:
+    radial-gradient(var(--light-blue), var(--dark-blue) 70%) top / 100% var(--stage-height) no-repeat,
+    var(--dark-blue);
+}
+
+main {
+  all: initial;
+  display: block;
+  font-family: var(--font);
+  text-align: center;
+}
+
+.loader {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 99;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--loader-blue);
+  transition:
+    height 500ms ease-in-out,
+    visibility 0s 500ms;
+}
+
+:host([loaded]) .loader {
+  height: 0;
+  visibility: hidden;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader {
+    transition: none;
+  }
+}

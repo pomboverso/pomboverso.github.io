@@ -1,238 +1,489 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Dr Logic: Mac IT support for creative companies in London." />
-		<link rel="icon" href="img/icon.ico" />
-		<link rel="icon" type="image/png" sizes="32x32" href="img/iconx32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="img/iconx16.png" />
-		<link rel="apple-touch-icon" href="img/iconx256.png" />
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet" type="text/css" />
-		<link href="vendor/normalize/normalize.css" rel="stylesheet" />
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-		<link href="vendor/mcustomscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
-		<link href="css/style.css" rel="stylesheet" />
-		<title>Contact Us // DrLogic</title>
-	</head>
-	<body data-page="contact-us">
-		<aside class="loader"></aside>
-		<nav class="navbar navbar-default" id="nav">
-			<div class="container">
-				<div class="info">
-					<address>
-						<a class="mail" href="mailto:hello@drlogic.com?Subject=Contact%20From%20Webpage">hello@drlogic.com</a
-						><a class="phone" href="tel:02036426540">020 3642 6540</a>
-					</address>
-				</div>
-				<div class="navbar-header">
-					<button
-						class="navbar-toggle collapsed"
-						aria-controls="navbar"
-						aria-expanded="false"
-						data-target="#navbar"
-						data-toggle="collapse"
-						type="button"
-					>
-						<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span
-						><span class="icon-bar"></span></button
-					><a class="navbar-brand" href="index.html"
-						><img class="hidden-xs" src="img/logo-drlogic.png" /><img
-							class="visible-xs"
-							src="img/logo-drlogic-white.png"
-					/></a>
-				</div>
-				<div class="navbar-collapse collapse" id="navbar">
-					<ul class="nav navbar-nav navbar-main navbar-right">
-						<li><a class="nav-link" href="index.html" data-page="home">Home</a></li>
-						<li><a class="nav-link" href="about-us.html" data-page="about-us">About Us</a></li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"
-								>Services<span class="caret"></span
-							></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Mac Support</a></li>
-								<li><a href="#">Other Services</a></li>
-							</ul>
-						</li>
-						<li><a class="nav-link" href="portfolio.html" data-page="portfolio">Portfolio</a></li>
-						<li><a class="nav-link contact-us" href="contact-us.html" data-page="contact-us">Contact Us</a></li>
-						<li><a class="nav-link" href="404.html" data-page="404">Error 404</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<section id="contact">
-			<section class="intro">
-				<div class="container">
-					<h1>Get in touch for Mac support</h1>
-					<div class="row">
-						<div class="col-md-6">
-							<p>
-								There’s no such thing as a typical client, so we don’t offer a one-size-fits-all IT solution. Much of
-								what we do has evolved around the needs of our clients and by getting to know how they like to work with
-								us.
-							</p>
-						</div>
-						<div class="col-md-6">
-							<p>
-								To find out how we can help you improve the way your business operates and to take the aches and pains
-								out of IT support, please drop Dr Logic a line or pick up the phone.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="animation-intro">
-					<img class="plane p01" src="img/contact/plane1.png" width="100" /><img
-						class="plane p02"
-						src="img/contact/plane2.png"
-						width="100"
-					/><img class="plane p03" src="img/contact/plane3.png" width="100" /><img
-						class="plane p04"
-						src="img/contact/plane4.png"
-						width="100"
-					/><img class="plane p05" src="img/contact/plane5.png" width="100" /><img
-						class="plane p06"
-						src="img/contact/plane6.png"
-						width="100"
-					/>
-				</div>
-			</section>
-			<section class="body" id="main">
-				<div class="bend">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<address>
-									<p>
-										<a class="smooth phone" href="tel:02036426540"
-											><span>020 3642 6540</span><img src="img/contact/phone.png"
-										/></a>
-									</p>
-									<p>
-										<a class="smooth mail" href="mailto:hello@drlogic.com?Subject=Contact%20From%20Webpage"
-											><img src="img/contact/mail.png" /><span>hello@drlogic.com</span></a
-										>
-									</p>
-									<p>
-										<a class="smooth" href="#location"
-											><img src="img/contact/sign.png" /><strong>London</strong
-											><small>Exmouth House, 3-11 Pine Street London EC1R 0JH</small></a
-										>
-									</p>
-								</address>
-							</div>
-							<div class="col-md-6">
-								<form data-toggle="validator" role="form">
-									<legend>Send us a message</legend>
-									<div class="form-group has-feedback">
-										<span class="fa fa-user input-group-addon"></span>
-										<input
-											class="form-control"
-											type="text"
-											placeholder="Full name*"
-											required="required"
-											data-error="Fill this field"
-										/>
-										<div class="help-block with-errors"></div>
-									</div>
-									<div class="form-group has-feedback">
-										<span class="fa fa-building input-group-addon"></span>
-										<input
-											class="form-control"
-											type="text"
-											placeholder="Company Name*"
-											required="required"
-											data-error="Fill this field"
-										/>
-										<div class="help-block with-errors"></div>
-									</div>
-									<div class="form-group has-feedback">
-										<span class="fa fa-envelope input-group-addon"></span>
-										<input
-											class="form-control"
-											type="email"
-											placeholder="Email Address*"
-											required="required"
-											data-error="Fill this field"
-										/>
-										<div class="help-block with-errors"></div>
-									</div>
-									<div class="form-group has-feedback">
-										<span class="fa fa-phone-square input-group-addon"></span>
-										<input class="form-control" type="tel" placeholder="Phone Number" data-error="Fill this field" />
-										<div class="help-block with-errors"></div>
-									</div>
-									<div class="form-group txt-area has-feedback">
-										<span class="fa fa-pencil input-group-addon"></span>
-										<textarea
-											class="form-control"
-											placeholder="Your Message*"
-											required="required"
-											data-error="Fill this field"
-										></textarea>
-										<div class="help-block with-errors"></div>
-									</div>
-									<button class="btn btn-primary orange" type="Submit">Submit</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="location">
-				<h2>Where to find us</h2>
-				<section id="map">
-					<iframe
-						title="Map showing Dr Logic's office at Exmouth House, Pine Street, London"
-						src="https://www.openstreetmap.org/export/embed.html?bbox=-0.11279%2C51.52451%2C-0.10635%2C51.52619&amp;layer=mapnik"
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"
-					></iframe>
-					<aside class="overlay">
-						<img src="img/map-logo.png" width="60" alt="Dr Logic" /><br /><span class="point"></span>
-					</aside>
-				</section>
-			</section>
-			<footer>
-				<div class="social-networks">
-					<a class="fa fa-twitter" href="https://twitter.com/drlogic" target="_blank" rel="noopener"></a
-					><a class="fa fa-facebook" href="https://www.facebook.com/DrLogic/?fref=ts" target="_blank" rel="noopener"></a
-					><a class="fa fa-linkedin" href="https://www.linkedin.com/company/452520" target="_blank" rel="noopener"></a>
-				</div>
-				<div class="bend">
-					<address>
-						<div class="container">
-							<a class="mail" href="mailto:support@drlogic.com?Subject=Contact%20From%20Webpage">support@drlogic.com</a
-							><a class="phone" href="tel:02036426540">020 3642 6540</a>
-							<p>Exmouth House 3-11 Pine Street London EC1R 0JH</p>
-							<hr />
-							<div class="lenker">
-								<img class="image-resposive logo exponentiale" src="img/logos/footer/exponentiale.png" /><img
-									class="image-resposive logo apple"
-									src="img/logos/footer/apple.png"
-								/><img class="image-resposive logo google" src="img/logos/footer/google.png" /><img
-									class="image-resposive logo casper"
-									src="img/logos/footer/casper.png"
-								/><img class="image-resposive logo meraki" src="img/logos/footer/meraki.png" />
-							</div>
-							<hr />
-							<small>© Copyright 2016 Dr Logic. All rights reserved.</small
-							><small>Dr Logic is a registered trademark of Doctor Logic Ltd.</small
-							><small>Registered in England and Wales. Company no. 4947299. VAT no. 848448189.</small
-							><a class="terms" href="documents/terms.pdf">
-								<p>Terms & Conditions</p>
-								<span class="fa fa-book"></span
-							></a>
-						</div>
-					</address>
-				</div>
-			</footer>
-		</section>
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="vendor/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Pomboverso Portfolio"
+    />
+    <meta
+      name="theme-color"
+      content="#2e2c42"
+    />
+    <title>Pomboverso</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../img/icon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../img/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../img/icon_16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="24x24"
+      href="../../img/icon_24x24.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../img/icon_32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="../../img/icon_48x48.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="../../img/icon_64x64.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../../img/icon_128x128.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="256x256"
+      href="../../img/icon_256x256.png"
+    />
+
+    <!-- Apple -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../img/icon_180x180.png"
+    />
+
+    <!-- Windows -->
+    <meta
+      name="msapplication-TileColor"
+      content="#2e2c42"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="../../img/icon_128x128.png"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:image"
+      content="../../img/preview.webp"
+    />
+    <meta
+      property="og:image:type"
+      content="image/png"
+    />
+    <meta
+      property="og:image:width"
+      content="1200"
+    />
+    <meta
+      property="og:image:height"
+      content="630"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="vendor/normalize/normalize.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendor/mcustomscrollbar/jquery.mCustomScrollbar.css"
+      rel="stylesheet"
+    />
+    <link
+      href="css/style.css"
+      rel="stylesheet"
+    />
+    <title>Contact Us // DrLogic</title>
+  </head>
+  <body data-page="contact-us">
+    <aside class="loader"></aside>
+    <nav
+      class="navbar navbar-default"
+      id="nav"
+    >
+      <div class="container">
+        <div class="info">
+          <address>
+            <a
+              class="mail"
+              href="mailto:hello@drlogic.com?Subject=Contact%20From%20Webpage"
+              >hello@drlogic.com</a
+            ><a
+              class="phone"
+              href="tel:02036426540"
+              >020 3642 6540</a
+            >
+          </address>
+        </div>
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            aria-controls="navbar"
+            aria-expanded="false"
+            data-target="#navbar"
+            data-toggle="collapse"
+            type="button"
+          >
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span
+            ><span class="icon-bar"></span><span class="icon-bar"></span></button
+          ><a
+            class="navbar-brand"
+            href="index.html"
+            ><img
+              class="hidden-xs"
+              src="img/logo-drlogic.png" /><img
+              class="visible-xs"
+              src="img/logo-drlogic-white.png"
+          /></a>
+        </div>
+        <div
+          class="navbar-collapse collapse"
+          id="navbar"
+        >
+          <ul class="nav navbar-nav navbar-main navbar-right">
+            <li>
+              <a
+                class="nav-link"
+                href="index.html"
+                data-page="home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                href="about-us.html"
+                data-page="about-us"
+                >About Us</a
+              >
+            </li>
+            <li class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                >Services<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Mac Support</a></li>
+                <li><a href="#">Other Services</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                href="portfolio.html"
+                data-page="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link contact-us"
+                href="contact-us.html"
+                data-page="contact-us"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                href="404.html"
+                data-page="404"
+                >Error 404</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="contact">
+      <section class="intro">
+        <div class="container">
+          <h1>Get in touch for Mac support</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                There’s no such thing as a typical client, so we don’t offer a one-size-fits-all IT
+                solution. Much of what we do has evolved around the needs of our clients and by
+                getting to know how they like to work with us.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                To find out how we can help you improve the way your business operates and to take
+                the aches and pains out of IT support, please drop Dr Logic a line or pick up the
+                phone.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="animation-intro">
+          <img
+            class="plane p01"
+            src="img/contact/plane1.png"
+            width="100"
+          /><img
+            class="plane p02"
+            src="img/contact/plane2.png"
+            width="100"
+          /><img
+            class="plane p03"
+            src="img/contact/plane3.png"
+            width="100"
+          /><img
+            class="plane p04"
+            src="img/contact/plane4.png"
+            width="100"
+          /><img
+            class="plane p05"
+            src="img/contact/plane5.png"
+            width="100"
+          /><img
+            class="plane p06"
+            src="img/contact/plane6.png"
+            width="100"
+          />
+        </div>
+      </section>
+      <section
+        class="body"
+        id="main"
+      >
+        <div class="bend">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <address>
+                  <p>
+                    <a
+                      class="smooth phone"
+                      href="tel:02036426540"
+                      ><span>020 3642 6540</span><img src="img/contact/phone.png"
+                    /></a>
+                  </p>
+                  <p>
+                    <a
+                      class="smooth mail"
+                      href="mailto:hello@drlogic.com?Subject=Contact%20From%20Webpage"
+                      ><img src="img/contact/mail.png" /><span>hello@drlogic.com</span></a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      class="smooth"
+                      href="#location"
+                      ><img src="img/contact/sign.png" /><strong>London</strong
+                      ><small>Exmouth House, 3-11 Pine Street London EC1R 0JH</small></a
+                    >
+                  </p>
+                </address>
+              </div>
+              <div class="col-md-6">
+                <form
+                  data-toggle="validator"
+                  role="form"
+                >
+                  <legend>Send us a message</legend>
+                  <div class="form-group has-feedback">
+                    <span class="fa fa-user input-group-addon"></span>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Full name*"
+                      required="required"
+                      data-error="Fill this field"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <span class="fa fa-building input-group-addon"></span>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Company Name*"
+                      required="required"
+                      data-error="Fill this field"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <span class="fa fa-envelope input-group-addon"></span>
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="Email Address*"
+                      required="required"
+                      data-error="Fill this field"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <span class="fa fa-phone-square input-group-addon"></span>
+                    <input
+                      class="form-control"
+                      type="tel"
+                      placeholder="Phone Number"
+                      data-error="Fill this field"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group txt-area has-feedback">
+                    <span class="fa fa-pencil input-group-addon"></span>
+                    <textarea
+                      class="form-control"
+                      placeholder="Your Message*"
+                      required="required"
+                      data-error="Fill this field"
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <button
+                    class="btn btn-primary orange"
+                    type="Submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="location">
+        <h2>Where to find us</h2>
+        <section id="map">
+          <iframe
+            title="Map showing Dr Logic's office at Exmouth House, Pine Street, London"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.11279%2C51.52451%2C-0.10635%2C51.52619&amp;layer=mapnik"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <aside class="overlay">
+            <img
+              src="img/map-logo.png"
+              width="60"
+              alt="Dr Logic"
+            /><br /><span class="point"></span>
+          </aside>
+        </section>
+      </section>
+      <footer>
+        <div class="social-networks">
+          <a
+            class="fa fa-twitter"
+            href="https://twitter.com/drlogic"
+            target="_blank"
+            rel="noopener"
+          ></a
+          ><a
+            class="fa fa-facebook"
+            href="https://www.facebook.com/DrLogic/?fref=ts"
+            target="_blank"
+            rel="noopener"
+          ></a
+          ><a
+            class="fa fa-linkedin"
+            href="https://www.linkedin.com/company/452520"
+            target="_blank"
+            rel="noopener"
+          ></a>
+        </div>
+        <div class="bend">
+          <address>
+            <div class="container">
+              <a
+                class="mail"
+                href="mailto:support@drlogic.com?Subject=Contact%20From%20Webpage"
+                >support@drlogic.com</a
+              ><a
+                class="phone"
+                href="tel:02036426540"
+                >020 3642 6540</a
+              >
+              <p>Exmouth House 3-11 Pine Street London EC1R 0JH</p>
+              <hr />
+              <div class="lenker">
+                <img
+                  class="image-resposive logo exponentiale"
+                  src="img/logos/footer/exponentiale.png"
+                /><img
+                  class="image-resposive logo apple"
+                  src="img/logos/footer/apple.png"
+                /><img
+                  class="image-resposive logo google"
+                  src="img/logos/footer/google.png"
+                /><img
+                  class="image-resposive logo casper"
+                  src="img/logos/footer/casper.png"
+                /><img
+                  class="image-resposive logo meraki"
+                  src="img/logos/footer/meraki.png"
+                />
+              </div>
+              <hr />
+              <small>© Copyright 2016 Dr Logic. All rights reserved.</small
+              ><small>Dr Logic is a registered trademark of Doctor Logic Ltd.</small
+              ><small
+                >Registered in England and Wales. Company no. 4947299. VAT no. 848448189.</small
+              ><a
+                class="terms"
+                href="documents/terms.pdf"
+              >
+                <p>Terms & Conditions</p>
+                <span class="fa fa-book"></span
+              ></a>
+            </div>
+          </address>
+        </div>
+      </footer>
+    </section>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

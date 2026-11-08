@@ -1,0 +1,35 @@
+h1 {
+  max-width: 570px;
+  margin: auto;
+}
+
+.info {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+img {
+  position: absolute;
+  bottom: -100%;
+  right: 5%;
+  width: 95%;
+  z-index: -1;
+  transition: bottom 1000ms ease-in-out;
+}
+
+:host([ready]) {
+  .info {
+    opacity: 1;
+  }
+
+  img {
+    bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .info,
+  img {
+    transition: none;
+  }
+}

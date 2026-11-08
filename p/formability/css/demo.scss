@@ -1,0 +1,237 @@
+body#view-demo {
+  > footer {
+    display: none;
+  }
+
+  section {
+    height: 100vh;
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(331deg, #cb407d, #5c4fc4);
+    background-size: 400% 400%;
+    animation: background-chameleon 15s ease infinite;
+  
+    > .content {
+      text-align: center;
+      flex-basis: 100%;
+      align-self: center;
+      color: #fff;
+      margin-bottom: 50px;
+  
+      h1 {
+        font-size: 60px;
+        margin: 0;
+      }
+  
+      time {
+        font-size: 23px;
+        font-weight: 400;
+      }
+    }
+  
+    > figure {
+      flex-basis: 100%;
+      align-self: flex-end;
+  
+      .hq {
+        z-index: 1;
+        bottom: 0;
+        position: relative;
+        pointer-events: none;
+        width: 760px;
+        margin: -80px auto 0;
+        max-width: 100%;
+        font-size: 0;
+  
+        .light {
+          width: 53px;
+          height: 258px;
+          position: absolute;
+          top: 159px;
+          left: 233px;
+          transform: rotateZ(-3deg);
+  
+          &:before,
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: rgba(255, 200, 0, 0.95);
+            border-radius: 13px;
+            filter: blur(4px);
+            opacity: 0;
+            pointer-events: all;
+            transition: opacity 800ms ease-out;
+            transform: rotate(-4deg);
+          }
+  
+          &:before {
+            width: 26px;
+            height: 144px;
+            top: 6px;
+            left: 13px;
+            transform: rotateZ(-2deg);
+          }
+  
+          &:after {
+            width: 26px;
+            height: 41px;
+            top: 210px;
+            left: 12px;
+          }
+  
+          &:hover {
+            &:before,
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+  
+        .arm {
+          position: relative;
+          top: 33px;
+          left: 242px;
+          width: 60px;
+          transform-origin: 83% 60%;
+          pointer-events: all;
+          animation: arm-bone-1 10s ease-in-out infinite;
+  
+          > .anthena {
+            animation: arm-bone-2 10s ease-in-out infinite;
+          }
+  
+          &, & > .anthena {
+            transform: rotateZ(0deg);
+            animation-delay: 30s;
+          }
+        }
+  
+        .anthena {
+          position: absolute;
+          top: -53px;
+          left: -83px;
+          width: 100px;
+          transform-origin: 100% 60%;
+        }
+      }
+    }
+  
+    > .clouds {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+  
+      .cloud {
+        position: absolute;
+        animation: x_translation linear infinite;
+        left: -200px;
+        opacity: 1;
+        transition: all ease-in-out 400ms;
+        transform-origin: 50% 50%;
+        filter: brightness(1.2);
+        transform: rotate(0) scale(.8);
+ 
+        img {
+          width: 100%;
+        }
+
+        @media (max-width: 840px) {
+          display: none;
+        }
+  
+        &:hover {
+          opacity: .95;
+        }
+  
+        &.c02, &.c03 {
+          z-index: 2;
+          &:hover {
+            transform: rotate(-5deg) scale(.9);
+          }
+        }
+  
+        &.c01, &.c05, &.c06, &.c04 {
+          &:hover {
+            transform: rotate(5deg) scale(.9);
+          }
+        }
+  
+        // small clouds
+        &.c01 {
+          width: 85px;
+          animation-duration: 50s;
+          bottom: 20%;
+        }
+        &.c05 {
+          width: 100px;
+          animation-duration: 52s;
+          animation-delay: 5s;
+          bottom: 15%;
+        }
+        &.c04 {
+          width: 105px;
+          animation-duration: 54s;
+          animation-delay: 10s;
+          bottom: 10%;
+        }
+        &.c06 {
+          width: 90px;
+          animation-duration: 56s;
+          animation-delay: 15s;
+          bottom: 25%;
+        }
+  
+        //big clouds
+        &.c02 {
+          width: 140px;
+          animation-duration: 20s;
+          animation-delay: 2s;
+          bottom: 50%;
+        }
+        &.c03 {
+          width: 130px;
+          animation-duration: 20s;
+          animation-delay: 17s;
+          bottom: 70%;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------ keyframes */
+
+@keyframes x_translation
+{
+  0% { left: 120%; }
+  100% { left: -20%; }
+}
+
+@keyframes background-chameleon
+{
+  0% { background-position: 79% 0; }
+  50% { background-position: 22% 100%; }
+  100% { background-position: 79% 0; }
+}
+
+@keyframes arm-bone-1
+{
+  0% { transform: rotateZ(0deg); }
+  20% { transform: rotateZ(40deg); }
+  45% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(0deg); }
+}
+
+@keyframes arm-bone-2
+{
+  0% { transform: rotateZ(0deg); }
+  20% { transform: rotateZ(20deg); }
+  45% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(0deg); }
+}

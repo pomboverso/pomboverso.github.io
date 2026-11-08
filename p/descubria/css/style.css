@@ -1,0 +1,367 @@
+aside.cover {
+  width: 100%;
+  height: 100%;
+  background-color: #de0d0d;
+  position: fixed;
+  z-index: 10;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #85d8f7;
+  -webkit-transition: background-color 1000ms ease;
+          transition: background-color 1000ms ease;
+}
+
+body.sunset
+, html.sunset {
+  background-color: #ffd290;
+}
+
+body.night
+, html.night {
+  background-color: #747CBB;
+}
+
+body.night
+.planes, html.night .planes {
+  background-image: url("../img/stars.png");
+}
+
+a, button {
+  cursor: pointer;
+  outline: none;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #de0d0d;
+}
+
+nav.hour {
+  position: fixed;
+  bottom: 10px;
+  right: 8px;
+  z-index: 5;
+}
+
+nav.hour.on > ul {
+  height: 205px;
+}
+
+nav.hour
+button {
+  opacity: 1;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-transition: opacity ease 500ms;
+          transition: opacity ease 500ms;
+}
+
+nav.hour
+button:hover {
+  opacity: .2;
+}
+
+nav.hour img {
+  width: 70px;
+}
+
+nav.hour
+ul {
+  -webkit-transition: height ease 200ms;
+          transition: height ease 200ms;
+  overflow: hidden;
+  bottom: 0;
+  height: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.city {
+  position: relative;
+  width: 1050px;
+  height: 1770px;
+  background: url("../img/background.png") 70% 100% no-repeat;
+  margin: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.city
+a {
+  background-image: url("../img/city.png");
+  background-repeat: no-repeat;
+}
+
+.city a, .city
+div {
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.bk_city {
+  position: relative;
+  height: 1770px;
+}
+
+.sky_section {
+  position: relative;
+  top: 0;
+  width: 915px;
+  height: 500px;
+  margin-right: -170px;
+}
+
+.planes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/planes.png");
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 2000ms ease;
+          transition: background-image 2000ms ease;
+}
+
+.planes.p01 {
+  background-position: 0 -5px;
+}
+
+.planes.p02 {
+  background-position: 0 -595px;
+}
+
+.planes.p03 {
+  background-position: 0 -1204px;
+}
+
+.informatica {
+  right: 130px;
+  bottom: 1230px;
+  width: 204px;
+  height: 246px;
+  background-position: 0 -27px;
+  -webkit-animation: floating ease 2000ms alternate infinite;
+          animation: floating ease 2000ms alternate infinite;
+}
+
+.informatica:hover {
+  background-position-x: -223px;
+}
+
+.aeropuerto {
+  right: 36%;
+  bottom: 1153px;
+  width: 458px;
+  height: 256px;
+  background-position: -12px -609px;
+}
+
+.aeropuerto:hover {
+  background-position-x: -536px;
+}
+
+.arte {
+  right: 29%;
+  bottom: 928px;
+  width: 259px;
+  height: 180px;
+  background-position: 0 -2162px;
+  z-index: 1;
+}
+
+.arte:hover {
+  background-position-x: -278px;
+}
+
+.banco {
+  right: 29%;
+  bottom: 7px;
+  width: 259px;
+  height: 395px;
+  background-position: 0 -2363px;
+}
+
+.banco:hover {
+  background-position-x: -281px;
+}
+
+.bomberos {
+  right: 62%;
+  bottom: 559px;
+  width: 384px;
+  height: 312px;
+  background-position: 0 -285px;
+}
+
+.bomberos:hover {
+  background-position-x: -406px;
+}
+
+.cocinita {
+  right: 9%;
+  bottom: 929px;
+  width: 335px;
+  height: 324px;
+  background-position: 0 -1825px;
+}
+
+.cocinita:hover {
+  background-position-x: -353px;
+}
+
+.construccion {
+  right: 64%;
+  bottom: 888px;
+  width: 351px;
+  height: 168px;
+  background-position: -44px -874px;
+}
+
+.construccion:hover {
+  background-position-x: -514px;
+}
+
+.farmacia {
+  right: 23%;
+  bottom: 410px;
+  width: 318px;
+  height: 162px;
+  background-position: 0 -1416px;
+}
+
+.farmacia:hover {
+  background-position-x: -337px;
+}
+
+.supermercado {
+  right: 16%;
+  bottom: 584px;
+  width: 398px;
+  height: 212px;
+  background-position: 0 -1595px;
+}
+
+.supermercado:hover {
+  background-position-x: -422px;
+}
+
+.teatro {
+  right: 61%;
+  bottom: -28px;
+  width: 270px;
+  height: 347px;
+  background-position: 0 -1051px;
+}
+
+.teatro:hover {
+  background-position-x: -289px;
+}
+
+.city_gate {
+  right: 11px;
+  bottom: 0;
+  width: 100%;
+  height: 65px !important;
+  background-image: url("../img/gate.png");
+  background-position: center;
+  -webkit-transition: -webkit-transform ease 500ms;
+          transition: transform ease 500ms;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.base {
+  right: 35%;
+  bottom: -3px;
+  width: 454px;
+  height: 228px;
+  background-position: 0 -2783px;
+}
+
+.base:hover > .city_gate {
+  -webkit-transform: scale(1, 0.1);
+      -ms-transform: scale(1, 0.1);
+          transform: scale(1, 0.1);
+}
+
+@-webkit-keyframes floating {
+  from
+{
+    bottom: 1230px;
+  }
+  to
+{
+    bottom: 1240px;
+  }
+}
+
+@keyframes floating {
+  from
+{
+    bottom: 1230px;
+  }
+  to
+{
+    bottom: 1240px;
+  }
+}
+
+.gate_section {
+  cursor: pointer;
+  position: relative;
+  bottom: 397px;
+  width: 40%;
+  height: 100px;
+}
+
+.gate_section:hover > .gate {
+  bottom: 50px;
+  -webkit-transform: scale(1, 0.5);
+      -ms-transform: scale(1, 0.5);
+          transform: scale(1, 0.5);
+}
+
+.gate_section:hover > .car {
+  background-position-x: -190px;
+}
+
+.gate {
+  bottom: 0;
+  left: 13px;
+  width: 100%;
+  height: 80px;
+  background-image: url("../img/car.png");
+  background-position: 0 -94px;
+  -webkit-transition: all ease 500ms;
+          transition: all ease 500ms;
+}
+
+.car {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: url("../img/car.png");
+  background-position: 0 -1px;
+  -webkit-transition: background-position-x ease 500ms;
+          transition: background-position-x ease 500ms;
+}
+
+.ground {
+  width: 100%;
+  height: 100px;
+  background-color: #5cc52e;
+}

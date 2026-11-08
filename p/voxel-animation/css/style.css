@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+}
+
+.btn {
+  color: #fff;
+  background-color: #f79421;
+  border-color: #f79421;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  margin: auto;
+}
+
+header#hero {
+  width: 100%;
+  height: 680px;
+}
+
+header#hero
+.container {
+  padding-top: 100px;
+}
+
+header#hero .background,
+header#hero
+.fx-cover {
+  width: 100%;
+  height: 680px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header#hero
+.background {
+  background: url(../img/background.jpg) center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+header#hero
+.btn {
+  margin: 15px auto;
+  display: block;
+}
+
+header#hero
+.btn:hover {
+  color: #fff;
+  background-color: #dd7a08;
+  border-color: #d37508;
+}
+
+header#hero .logo,
+header#hero
+.info {
+  margin: auto;
+  display: block;
+  width: 220px;
+}
+
+header#hero
+.logo:hover {
+  -webkit-animation: shake 100ms linear infinite alternate;
+          animation: shake 100ms linear infinite alternate;
+  opacity: .8;
+}
+
+header#hero
+.fx-cover {
+  background-image: url(../img/fx.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  pointer-events: none;
+  opacity: .15;
+  -webkit-animation: background_move 18s linear infinite;
+          animation: background_move 18s linear infinite;
+  z-index: 5;
+}
+
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  to {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  to {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+}
+
+@-webkit-keyframes background_move {
+  0% {
+    background-position: 0% 0;
+    opacity: 0;
+  }
+  10% {
+    background-position: 10% 0;
+    opacity: .15;
+  }
+  100% {
+    background-position: 100% 0;
+    opacity: 0;
+  }
+}
+
+@keyframes background_move {
+  0% {
+    background-position: 0% 0;
+    opacity: 0;
+  }
+  10% {
+    background-position: 10% 0;
+    opacity: .15;
+  }
+  100% {
+    background-position: 100% 0;
+    opacity: 0;
+  }
+}
