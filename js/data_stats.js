@@ -2,8 +2,8 @@ export default [
   [
     "mako",
     {
-      "stars": 288,
-      "issues": 34
+      "stars": 289,
+      "issues": 32
     }
   ],
   [
@@ -16,7 +16,7 @@ export default [
   [
     "tui",
     {
-      "stars": 42,
+      "stars": 40,
       "issues": 12
     }
   ]
