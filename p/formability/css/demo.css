@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Nunito SemiBold"), local("Nunito-SemiBold"),
+    url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofA6sKUYevIWzgPDA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Nunito ExtraBold"), local("Nunito-ExtraBold"),
+    url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAksCUYevIWzgPDA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  color: #fff;
+  font-family: "Nunito", Helvetica, Arial, Tahoma, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 15px 0;
+}
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  font-family: 'Nunito', Helvetica, Arial, Tahoma, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+p {
+  font-size: 26px;
+  line-height: 1.38;
+}
+
+h1, p, figure {
+  margin: 0;
+}
+
+body#view-demo > footer {
+  display: none;
+}
+body#view-demo section {
+  height: 100vh;
+  padding-top: 65px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(331deg, #cb407d, #5c4fc4);
+  background-size: 400% 400%;
+  animation: background-chameleon 15s ease infinite;
+}
+body#view-demo section > .content {
+  text-align: center;
+  flex-basis: 100%;
+  align-self: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+body#view-demo section > .content h1 {
+  font-size: 60px;
+  margin: 0;
+}
+body#view-demo section > .content time {
+  font-size: 23px;
+  font-weight: 400;
+}
+body#view-demo section > figure {
+  flex-basis: 100%;
+  align-self: flex-end;
+}
+body#view-demo section > figure .hq {
+  z-index: 1;
+  bottom: 0;
+  position: relative;
+  pointer-events: none;
+  width: 760px;
+  margin: -80px auto 0;
+  max-width: 100%;
+  font-size: 0;
+}
+body#view-demo section > figure .hq .light {
+  width: 53px;
+  height: 258px;
+  position: absolute;
+  top: 159px;
+  left: 233px;
+  transform: rotateZ(-3deg);
+}
+body#view-demo section > figure .hq .light:before, body#view-demo section > figure .hq .light:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 200, 0, 0.95);
+  border-radius: 13px;
+  filter: blur(4px);
+  opacity: 0;
+  pointer-events: all;
+  transition: opacity 800ms ease-out;
+  transform: rotate(-4deg);
+}
+body#view-demo section > figure .hq .light:before {
+  width: 26px;
+  height: 144px;
+  top: 6px;
+  left: 13px;
+  transform: rotateZ(-2deg);
+}
+body#view-demo section > figure .hq .light:after {
+  width: 26px;
+  height: 41px;
+  top: 210px;
+  left: 12px;
+}
+body#view-demo section > figure .hq .light:hover:before, body#view-demo section > figure .hq .light:hover:after {
+  opacity: 1;
+}
+
+body#view-demo section > figure .hq .arm {
+  position: relative;
+  top: 33px;
+  left: 242px;
+  width: 60px;
+  transform-origin: 83% 60%;
+  pointer-events: all;
+  transition: 500ms ease-in-out transform;
+}
+
+body#view-demo section > figure .hq .arm, body#view-demo section > figure .hq .arm > .anthena {
+  transform: rotateZ(0deg);
+}
+
+body#view-demo section > figure .hq .arm > .anthena {
+  transition: 500ms ease-in-out transform;
+}
+
+body#view-demo section > figure .hq .arm:hover {
+  transform: rotateZ(20deg);
+}
+
+body#view-demo section > figure .hq .arm:hover > .anthena {
+  transform: rotateZ(20deg);
+}
+
+body#view-demo section > figure .hq .anthena {
+  position: absolute;
+  top: -53px;
+  left: -83px;
+  width: 100px;
+  transform-origin: 100% 60%;
+}
+body#view-demo section > .clouds {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+body#view-demo section > .clouds .cloud {
+  position: absolute;
+  animation: x_translation linear infinite;
+  left: -200px;
+  opacity: 1;
+  transition: all ease-in-out 400ms;
+  transform-origin: 50% 50%;
+  filter: brightness(1.2);
+  transform: rotate(0) scale(0.8);
+}
+body#view-demo section > .clouds .cloud img {
+  width: 100%;
+}
+@media (max-width: 840px) {
+  body#view-demo section > .clouds .cloud {
+    display: none;
+ }
+}
+body#view-demo section > .clouds .cloud:hover {
+  opacity: 0.95;
+}
+body#view-demo section > .clouds .cloud.c02, body#view-demo section > .clouds .cloud.c03 {
+  z-index: 2;
+}
+body#view-demo section > .clouds .cloud.c02:hover, body#view-demo section > .clouds .cloud.c03:hover {
+  transform: rotate(-5deg) scale(0.9);
+}
+body#view-demo section > .clouds .cloud.c01:hover, body#view-demo section > .clouds .cloud.c05:hover, body#view-demo section > .clouds .cloud.c06:hover, body#view-demo section > .clouds .cloud.c04:hover {
+  transform: rotate(5deg) scale(0.9);
+}
+body#view-demo section > .clouds .cloud.c01 {
+  width: 85px;
+  animation-duration: 50s;
+  bottom: 20%;
+}
+body#view-demo section > .clouds .cloud.c05 {
+  width: 100px;
+  animation-duration: 52s;
+  animation-delay: 5s;
+  bottom: 15%;
+}
+body#view-demo section > .clouds .cloud.c04 {
+  width: 105px;
+  animation-duration: 54s;
+  animation-delay: 10s;
+  bottom: 10%;
+}
+body#view-demo section > .clouds .cloud.c06 {
+  width: 90px;
+  animation-duration: 56s;
+  animation-delay: 15s;
+  bottom: 25%;
+}
+body#view-demo section > .clouds .cloud.c02 {
+  width: 140px;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  bottom: 50%;
+}
+body#view-demo section > .clouds .cloud.c03 {
+  width: 130px;
+  animation-duration: 20s;
+  animation-delay: 17s;
+  bottom: 70%;
+}
+/* ------------------ keyframes */
+@keyframes x_translation {
+  0% {
+    left: 120%;
+ }
+  100% {
+    left: -20%;
+ }
+}
+@keyframes background-chameleon {
+  0% {
+    background-position: 79% 0;
+ }
+  50% {
+    background-position: 22% 100%;
+ }
+  100% {
+    background-position: 79% 0;
+ }
+}

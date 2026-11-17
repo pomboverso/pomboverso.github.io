@@ -1,11 +1,4 @@
-body.about-us,
-html.about-us {
-  overflow-x: hidden;
-}
-
 #about-us {
-  overflow-x: hidden;
-
   .intro {
     background-color: var(--brand-red);
     padding-bottom: 420px;

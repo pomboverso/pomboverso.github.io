@@ -1,0 +1,169 @@
+.avatar {
+  --dy: 0px;
+  margin-top: -80px;
+  width: 350px;
+  height: 600px;
+  position: relative;
+
+  img {
+    position: absolute;
+    z-index: 3;
+  }
+
+  .skin {
+    z-index: 0;
+  }
+
+  &[data-variant="male-old"] {
+    .hair { top: 3px; left: 92px; }
+    .eyes { top: 80px; left: 114px; }
+    .nose { top: 104px; left: 127px; }
+    .mouth { top: 135px; left: 132px; }
+    .skin { top: 82px; left: 85px; }
+  }
+
+  &[data-variant="male-teen"] {
+    --dy: 72px;
+
+    .hair { top: calc(13px + var(--dy)); left: 94px; }
+    .eyes { top: calc(73px + var(--dy)); left: 99px; }
+    .nose { top: calc(107px + var(--dy)); left: 123px; }
+    .mouth { top: calc(145px + var(--dy)); left: 132px; }
+    .skin { top: calc(82px + var(--dy)); left: 85px; }
+  }
+
+  &[data-variant="male-child"] {
+    .hair { top: 224px; left: 89px; }
+    .eyes { top: 301px; left: 114px; }
+    .nose { top: 328px; left: 128px; }
+    .mouth { top: 356px; left: 138px; }
+    .skin { top: 292px; left: 90px; }
+  }
+
+  &[data-variant="female-old"] {
+    .hair { top: 10px; left: 60px; }
+    .eyes { top: 67px; left: 114px; }
+    .nose { top: 92px; left: 125px; }
+    .mouth { top: 127px; left: 134px; }
+    .tool { top: 196px; left: 131px; }
+    .skin { top: 63px; left: 85px; }
+  }
+
+  &[data-variant="female-teen"] {
+    --dy: 84px;
+
+    .hair { top: calc(10px + var(--dy)); left: 60px; }
+    .eyes { top: calc(67px + var(--dy)); left: 114px; }
+    .nose { top: calc(92px + var(--dy)); left: 125px; }
+    .mouth { top: calc(127px + var(--dy)); left: 134px; }
+    .skin { top: 152px; left: 85px; }
+  }
+
+  &[data-variant="female-child"] {
+    --dy: 222px;
+
+    .hair { top: calc(10px + var(--dy)); left: 60px; }
+    .eyes { top: calc(67px + var(--dy)); left: 114px; }
+    .nose { top: calc(92px + var(--dy)); left: 125px; }
+    .mouth { top: 344px; left: 134px; }
+    .skin { top: 293px; left: 95px; }
+  }
+
+  &[data-variant="pet-child"] {
+    .skin { top: 288px; left: 95px; }
+  }
+}
+
+.tools {
+  width: 430px;
+}
+
+.controls {
+  hr {
+    border: 2px solid #fff;
+    margin-top: -22px;
+    width: 240px;
+  }
+
+  button {
+    background: #fff;
+    color: var(--yellow);
+    font-size: 24pt;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px;
+
+    &:hover,
+    &[aria-pressed="true"] {
+      background: var(--yellow);
+      color: #fff;
+    }
+  }
+}
+
+.ageControls {
+  button {
+    margin-top: 30px;
+    color: var(--button-text);
+    width: 70px;
+    height: 70px;
+    vertical-align: top;
+    border-radius: 37%;
+    background-color: var(--age-yellow);
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 0.12);
+
+    &:hover {
+      border-radius: 15%;
+      background-color: var(--age-hover);
+      color: var(--age-yellow);
+    }
+  }
+
+  .old {
+    font-size: 45pt;
+  }
+
+  .teen {
+    font-size: 36pt;
+  }
+
+  .child {
+    font-size: 28pt;
+  }
+}
+
+.tabs {
+  margin-bottom: 30px;
+
+  .pick {
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+    border: 3px solid var(--outline-blue);
+    border-radius: 25px;
+    margin: 13px;
+
+    &:hover,
+    &[aria-pressed="true"] {
+      border-color: var(--yellow);
+    }
+  }
+
+  img {
+    width: 100px;
+  }
+
+  .skin img {
+    margin: 4px 0 1px;
+  }
+}
+
+@container mineriza (width <= 500px) {
+  .tools {
+    width: 280px;
+  }
+
+  .controls button {
+    font-size: 16pt;
+  }
+}

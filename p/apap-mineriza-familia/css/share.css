@@ -1,0 +1,5 @@
+@container mineriza (width <= 500px) {
+  img {
+    width: 260px;
+  }
+}

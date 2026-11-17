@@ -1,0 +1,309 @@
+html,
+body {
+  background: #003C01 url(../img/bk_filtro.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  position: absolute;
+  top: 60px;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  height: 170px;
+  margin-bottom: 37px;
+}
+
+h1 {
+  font-size: 29pt;
+  font-family: "Montserrat", helvetica, sans-serif, verdana;
+  box-sizing: border-box;
+  letter-spacing: 2pt;
+  color: #014d06;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 11pt;
+  text-align: center;
+  font-family: "Montserrat", helvetica, sans-serif, verdana;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+#door_area {
+  width: 330px;
+  height: 640px;
+  background: url(../img/dimension.png) bottom center no-repeat;
+  background-size: 100% auto;
+  margin: 20px auto 0;
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+#door_area
+.panel {
+  width: 49%;
+  height: 22.6%;
+  margin: 50px auto;
+  background: url(../img/panel.jpg) center center no-repeat;
+}
+
+#door_area
+.base {
+  width: 78%;
+  height: 85.5%;
+  position: absolute;
+  top: 3%;
+  left: 10.9%;
+  background: url(../img/door_ext.jpg) center -8px no-repeat;
+  background-size: 100.5%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 500ms;
+          transition: 500ms;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+#door_area
+.base.animate {
+  -webkit-transform: rotateY(120deg);
+          transform: rotateY(120deg);
+}
+
+#door_area
+.base
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform: translateZ(10px);
+          transform: translateZ(10px);
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  background: url(../img/door_ext.jpg) center -8px no-repeat;
+  background-size: 100.5%;
+}
+
+#door_area
+.base
+.top {
+  width: 10px;
+  height: 100%;
+  background: #5f5;
+  position: absolute;
+  -webkit-transform: translateX(-10px) rotateY(90deg);
+          transform: translateX(-10px) rotateY(90deg);
+  -webkit-transform-origin: 100% 0%;
+      -ms-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  background: #62b77f url(../img/cerrojo.jpg) center center no-repeat;
+}
+
+input {
+  position: relative;
+  z-index: 1;
+  font-size: 44pt;
+  font-weight: bold;
+  font-family: "Montserrat", helvetica, sans-serif, verdana;
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  top: 25px;
+  border: none;
+  color: #5e5d5d;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn_send {
+  font-size: 14pt;
+  font-family: "Montserrat", helvetica, sans-serif, verdana;
+  text-transform: uppercase;
+  color: #bcfbba;
+  -webkit-transition: 500ms;
+          transition: 500ms;
+  position: relative;
+  top: 40px;
+  letter-spacing: 6pt;
+}
+
+.btn_send:hover {
+  color: #ffda2e;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  font-size: 12pt;
+  font-family: helvetica, sans-serif, verdana;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #003c01;
+}
+
+/* ------------------------- Media Query ------------------------- */
+@media screen and (max-width: 1000px) {
+  .logo {
+    height: 140px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    top: 0;
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 15pt;
+  }
+  p {
+    font-size: 9pt;
+  }
+  .logo {
+    height: 75px;
+    margin-bottom: 10px;
+  }
+  #door_area {
+    width: 200px;
+    height: 390px;
+    margin: 5px auto 0;
+  }
+  #door_area .base {
+    top: 4%;
+  }
+  #door_area .top {
+    background-position: 50% 49%;
+  }
+  #door_area .panel {
+    margin: 27px auto;
+  }
+  .btn_send {
+    top: 26px;
+    font-size: 10pt;
+  }
+  footer {
+    font-size: 7pt;
+    padding: 5px 0;
+  }
+  input {
+    top: 7px;
+    font-size: 35pt;
+  }
+}
+
+@media screen and (min-height: 628px) and (max-width: 550px) {
+  body, html {
+    background-position: center top;
+    background-size: auto 628px;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  .logo {
+    height: 140px;
+    margin-bottom: 10px;
+  }
+  main {
+    top: 0;
+  }
+  h1 {
+    font-size: 21pt;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .logo {
+    height: 100px;
+    margin-bottom: 0;
+  }
+  main {
+    top: 0;
+  }
+  h1 {
+    font-size: 18pt;
+  }
+  p {
+    font-size: 9pt;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  body {
+    background-position: center top;
+    background-size: auto 628px;
+  }
+  main {
+    top: 0;
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 15pt;
+  }
+  p {
+    font-size: 9pt;
+  }
+  .logo {
+    height: 75px;
+    margin-bottom: 10px;
+  }
+  #door_area {
+    width: 200px;
+    height: 390px;
+    margin: 5px auto 0;
+  }
+  #door_area .base {
+    top: 4%;
+  }
+  #door_area .top {
+    background-position: 50% 49%;
+  }
+  #door_area .panel {
+    margin: 27px auto;
+  }
+  .btn_send {
+    top: 26px;
+    font-size: 10pt;
+  }
+  footer {
+    font-size: 7pt;
+    padding: 5px 0;
+  }
+  input {
+    top: 7px;
+    font-size: 35pt;
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  body, html {
+    background-position: center top;
+    background-size: auto 1150px;
+  }
+}

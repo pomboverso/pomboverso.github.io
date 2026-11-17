@@ -1,0 +1,103 @@
+body {
+  background-color: #FBB03B;
+  color: #2E2F30;
+  text-align: center;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  margin: 0;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 450%;
+  height: 270%;
+  bottom: -183%;
+  right: -240%;
+  -webkit-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+div.dialog {
+  width: 530px;
+  height: 304px;
+  margin-top: -152px;
+  margin-left: -275px;
+  top: 50%;
+  left: 50%;
+  color: #222;
+  line-height: 1.2;
+  position: absolute;
+}
+
+@media (max-width: 550px) {
+  img {
+    height: 80px;
+  }
+  div.dialog {
+    width: 250px;
+    margin-left: -125px;
+  }
+}
+
+p {
+  margin: 25px auto;
+}
+
+a {
+  background-color: #DC4126;
+  display: block;
+  margin: auto;
+  width: 200px;
+  font-size: 12pt;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 0;
+  box-shadow: 0px 3px 0px #af3f2b;
+  -webkit-transition: background-color 500ms ease;
+          transition: background-color 500ms ease;
+}
+
+a:hover {
+  background-color: #b93119;
+}
+
+.ruby {
+  margin: 0 -10px;
+  -webkit-transition: margin 500ms ease;
+          transition: margin 500ms ease;
+}
+
+div.images {
+  text-align: center;
+}
+
+div.images:hover > img.ruby {
+  margin: 0 -20px;
+  -webkit-animation: shake 100ms linear infinite alternate;
+          animation: shake 100ms linear infinite alternate;
+}
+
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  to {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  to {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}

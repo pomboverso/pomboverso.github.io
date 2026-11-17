@@ -1,0 +1,34 @@
+.characters {
+  margin-top: 30px;
+
+  button {
+    background: transparent;
+    color: var(--yellow);
+    font-size: 110pt;
+    text-shadow: 0 0 0 rgb(0 0 0 / 0.25);
+    text-align: center;
+
+    &:hover {
+      text-shadow: 1px 0 2px rgb(0 0 0 / 0.25);
+      color: var(--hover-blue);
+    }
+
+    &.male {
+      width: 68px;
+
+      &::before {
+        margin-left: -45px;
+      }
+    }
+
+    &.pet {
+      width: 88px;
+      height: 129px;
+      vertical-align: bottom;
+
+      &::before {
+        margin-left: -35px;
+      }
+    }
+  }
+}

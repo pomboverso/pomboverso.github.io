@@ -1,0 +1,60 @@
+button.icon {
+  font-size: 45pt;
+  background-color: transparent;
+  color: var(--yellow);
+  vertical-align: 203px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.compos {
+  position: relative;
+  width: 782px;
+  height: 440px;
+  display: inline-block;
+  margin: auto;
+
+  img {
+    position: absolute;
+  }
+
+  .base {
+    top: 0;
+    left: 0;
+    height: 440px;
+    z-index: 0;
+  }
+}
+
+.mobile {
+  display: none;
+
+  .pick {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    margin: 10px;
+    display: inline-block;
+    padding: 10px;
+
+    &:hover,
+    &[aria-pressed="true"] {
+      border-color: var(--yellow);
+    }
+  }
+}
+
+@container mineriza (width <= 1000px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}

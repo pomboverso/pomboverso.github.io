@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Nunito SemiBold"), local("Nunito-SemiBold"),
+    url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofA6sKUYevIWzgPDA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Nunito ExtraBold"), local("Nunito-ExtraBold"),
+    url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAksCUYevIWzgPDA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body, html {
+  color: #fff;
+  font-family: "Nunito", Helvetica, Arial, Tahoma, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  margin: auto;
+  max-width: 1300px;
+  min-height: calc(100vh - 135px);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  padding: 15px 0 30px;
+}
+
+.btn {
+  display: inline-block;
+  color: #c4409d;
+  background-color: #fff;
+  font-family: "Nunito", Helvetica, Arial, Tahoma, sans-serif;
+  font-weight: 800;
+  padding: 12px 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  line-height: 1;
+}
+
+.btn:hover {
+  background-color: #edf6fe;
+  box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+@media (max-width: 943px) {
+  header {
+    padding: 0 0 30px;
+  }
+
+  .grid {
+    min-height: 100%;
+  }
+
+  .column {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  a.btn {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}

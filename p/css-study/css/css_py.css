@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon_05.eot?n27ali");
+  src: url("../fonts/icomoon_05.eot?#iefixn27ali") format("embedded-opentype"), url("../fonts/icomoon_05.woff?n27ali") format("woff"), url("../fonts/icomoon_05.ttf?n27ali") format("truetype"), url("../fonts/icomoon_05.svg?#n27aliicomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/amatic-bold.eot");
+  src: url("../fonts/amatic-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/amatic-bold.woff2") format("woff2"), url("../fonts/amatic-bold.woff") format("woff"), url("../fonts/amatic-bold.ttf") format("truetype"), url("../fonts/amatic-bold.svg#amaticbold") format("svg");
+}
+
+#cover {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #de7241 url("../img/wait2.png") no-repeat center center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  background-color: #00c589;
+}
+
+::-moz-selection {
+  background-color: #f90;
+  color: #000;
+}
+
+::selection {
+  background-color: #f90;
+  color: #000;
+}
+
+#texture {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  background: url("../img/paper.jpg") bottom repeat;
+  filter: alpha(opacity=20);
+}
+
+img {
+  border: none;
+}
+
+img:focus {
+  border: none;
+  outline: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:focus {
+  outline: none;
+}
+
+main {
+  margin-bottom: 120px;
+}
+
+strong {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  font: normal 200pt "Amatic SC", helvetica, sans-serif, verdana;
+  width: 560px\9;
+  max-width: 560px;
+  margin: 25px auto 0;
+  cursor: default;
+  text-align: center;
+  color: #000;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+#vs {
+  position: relative;
+  display: inline;
+  cursor: default;
+  color: #fff;
+}
+
+#vs
+a {
+  font-size: 30pt;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #404eb1;
+}
+
+#vs
+a:hover {
+  color: #fff;
+  background-color: #00d1ff;
+}
+
+#op1 {
+  top: 10px;
+  right: 50px;
+}
+
+#op2 {
+  top: 0;
+  right: -10px;
+}
+
+#op3 {
+  top: 40px;
+  right: -60px;
+}
+
+#op4 {
+  top: 106px;
+  right: -60px;
+}
+
+#sel {
+  display: inline;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#query {
+  font: normal 30pt "Amatic SC", helvetica, sans-serif, verdana;
+  display: block;
+  width: 100%;
+  margin: auto;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  text-align: center;
+  text-transform: lowercase;
+  color: #000;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#query:focus {
+  outline: none;
+}
+
+#query:hover {
+  color: #fff;
+  border-radius: 35px;
+  background: transparent;
+}
+
+.selected {
+  border: 2px solid #f0a;
+  background: rgba(52, 52, 52, 0.2);
+}
+
+.info {
+  font: normal 20pt "Amatic SC", helvetica, sans-serif, verdana;
+  position: relative;
+  display: block;
+  max-width: 900px;
+  margin: 25px auto;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border: 1px dashed #343434;
+  border-radius: 15px;
+}
+
+.info:hover {
+  color: #000;
+  background: rgba(52, 52, 52, 0.2);
+}
+
+.info
+ul {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.info
+li {
+  border-bottom: 1px dashed #fff;
+  padding: 10px 0;
+}
+
+.info
+li:last-child {
+  border: 0;
+}
+
+.info
+.toggle {
+  display: block;
+  padding: 10px;
+}
+
+.info
+.toggle
+strong {
+  color: #000;
+}
+
+.info
+.toggle:hover > strong {
+  color: #fff !important;
+}
+
+.info
+.addLi {
+  display: inline-block;
+  position: absolute;
+  border-radius: 20px;
+  padding: 0px 18px 7px;
+  background: #00CFFF;
+  font-size: 25pt;
+  color: #000;
+  -webkit-transition: 500ms;
+          transition: 500ms;
+  top: 5px;
+  right: 10px;
+}
+
+.info
+.addLi:hover {
+  background: #1B4A77;
+  color: #fff;
+}
+
+.info
+.more {
+  margin: 15px 10px;
+  padding: 10px;
+  color: #fff;
+  background: #1b1b1b;
+}
+
+h1,
+h2,
+h3,
+em {
+  font: inherit;
+  display: inline;
+  letter-spacing: 1pt;
+  color: #fff;
+}
+
+em {
+  display: inline-block;
+  margin: 10px 5px 2px;
+  padding: 2px 18px 5px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 35px;
+}
+
+em:hover {
+  background-color: #f60;
+}
+
+h1 {
+  color: #d8d8d8;
+}
+
+h3 {
+  display: inline-block;
+  width: 15px;
+  margin: 0 6px 0 13px;
+  padding: 3px 18px;
+  text-align: center;
+  border-radius: 35px;
+  background-color: #006fb3;
+}
+
+em {
+  background-color: #006fb3;
+}
+
+hr {
+  border: 1px dashed #fff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background: #343434;
+  color: #fff;
+  font: normal 20pt "Amatic SC", helvetica, sans-serif, verdana;
+}
+
+footer
+strong {
+  font-size: 13pt;
+  position: relative;
+  top: -2px;
+}
+
+footer
+.board {
+  text-align: left;
+  position: relative;
+  width: 88%;
+  height: 83%;
+  margin: auto;
+  padding: 6px;
+  border: 18px solid #d8a35d;
+  margin-top: 10px;
+  background: #56725c;
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+  overflow: auto;
+}
+
+footer
+.board
+ul {
+  margin: 0;
+}
+
+footer
+.board
+ul
+a {
+  -webkit-transition: 500ms;
+          transition: 500ms;
+}
+
+footer
+.board
+ul
+a:hover {
+  color: #FFE800;
+}
+
+#showLi {
+  -webkit-transition: 500ms;
+          transition: 500ms;
+  opacity: .5;
+}
+
+#showLi:hover {
+  opacity: 1;
+}
+
+.show_list {
+  height: 100%;
+}
+
+.doneLi {
+  text-decoration: line-through;
+}
