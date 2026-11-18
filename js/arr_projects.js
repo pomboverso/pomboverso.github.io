@@ -605,7 +605,7 @@ export default [
     date: new Date('2015-11-12'),
     org: org.apap,
     name: 'Mineriza a tu Familia',
-    completion: 1,
+    completion: 2,
     category: category.webApp,
     preview: './img/apap.jpg',
     // screenshots: [],
@@ -613,6 +613,9 @@ export default [
     description: [
       '[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.)',
     ],
+    link: {
+      demo: 'https://pomboverso.github.io/p/apap-mineriza-familia/',
+    },
     license: license.propietary,
   },
   {
