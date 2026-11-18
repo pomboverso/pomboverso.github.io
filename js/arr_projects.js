@@ -552,7 +552,7 @@ export default [
     date: new Date('2016-02-22'),
     org: org.pixelPerfectTree,
     name: 'DrLogic',
-    completion: 2,
+    completion: 3,
     category: category.website,
     preview: './img/drlogic.jpg',
     // screenshots: [],
@@ -582,6 +582,9 @@ export default [
         'Cohesive use of color, typography, and layout across pages to reflect a professional yet approachable Apple-aligned brand.',
       ],
     ],
+    link: {
+      demo: 'https://pomboverso.github.io/p/drlogic/',
+    },
     license: license.propietary,
   },
   {
@@ -697,7 +700,7 @@ export default [
     date: new Date('2014-01-14'),
     org: org.avante,
     name: 'Descubria',
-    completion: 1,
+    completion: 2,
     category: category.website,
     preview: './img/descubria.jpg',
     // screenshots: [],
@@ -706,6 +709,9 @@ export default [
       `[blockquote](Descubria was an interactive children's park where young minds could step into the shoes of grown-ups and explore the world of work through play. In a vibrant, mini-city environment, kids took on roles like chefs, firefighters, builders, and healthcare workers—earning play money for their efforts and discovering new passions along the way. Through hands-on experiences and realistic job simulations, Descubria offered a fun and educational glimpse into adult life, inspiring curiosity, responsibility, and imagination.
       )`,
     ],
+    link: {
+      demo: 'https://pomboverso.github.io/p/descubria/',
+    },
     license: license.propietary,
   },
 ]
