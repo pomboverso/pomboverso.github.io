@@ -5,6 +5,23 @@ import license from './obj_license.js'
 
 export default [
   {
+    date: new Date('2026-11-10'),
+    org: org.rama,
+    name: 'Iqra',
+    completion: 2,
+    category: category.webApp,
+    preview: '/img/iqra.webp',
+    tags: [skill.webComponents, skill.css, skill.js],
+    description: [
+      '[p](A lightweight, browser-based Git client that runs locally on your machine and is accessible through your browser. The frontend uses native Web Components and modern CSS, without third-party libraries to keep dependencies to a minimum, while the backend was AI generated in Rust.)',
+      `[p](The project focuses on simplicity, performance, and a minimal dependency footprint.)`,
+    ],
+    link: {
+      github: 'https://github.com/rama-oi/iqra',
+    },
+    license: license.gplv3,
+  },
+  {
     date: new Date('2026-09-21'),
     org: org.rama,
     name: 'Fikret',
@@ -194,20 +211,25 @@ export default [
         'https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/rama-io/mako',
     },
     externalLink: {
-      'El Launcher SECRETO para curar tu adicción al celular': 'https://www.youtube.com/watch?v=D11o4i9nScg',
+      'El Launcher SECRETO para curar tu adicción al celular':
+        'https://www.youtube.com/watch?v=D11o4i9nScg',
       'Top 10 Android Apps July 2026': 'https://youtu.be/Hqp60tdtE2A&t=336s',
       '8 Incredible Android Apps July 2026': 'https://youtu.be/KQdL4ehLhcg?t=321',
-      'Básicos OPEN-SOURCE: 10 apps ESENCIALES para tu Android': 'https://youtu.be/51junHoL-d0?t=534',
-      'I switched from Niagara to a launcher that costs nothing, requires no account, and looks great':'https://www.europesays.com/us/877559/',
-      'Forget Niagara and Nova, this minimalist launcher is my new favorite for old Android hardware': 'https://www.androidauthority.com/mako-minimalist-android-launcher-hands-on-3674437/',
-      'I switched from Niagara to a launcher that costs nothing, requires no account, and looks great': 'https://www.makeuseof.com/niagara-to-mako-launcher/',
-    // https://postroyka.org/obzor-mako-ultraminimalistichnyiy-launcher-dlya-spaseniya-staryih-android-ustroystv/
+      'Básicos OPEN-SOURCE: 10 apps ESENCIALES para tu Android':
+        'https://youtu.be/51junHoL-d0?t=534',
+      'I switched from Niagara to a launcher that costs nothing, requires no account, and looks great':
+        'https://www.europesays.com/us/877559/',
+      'Forget Niagara and Nova, this minimalist launcher is my new favorite for old Android hardware':
+        'https://www.androidauthority.com/mako-minimalist-android-launcher-hands-on-3674437/',
+      'I switched from Niagara to a launcher that costs nothing, requires no account, and looks great':
+        'https://www.makeuseof.com/niagara-to-mako-launcher/',
+      // https://postroyka.org/obzor-mako-ultraminimalistichnyiy-launcher-dlya-spaseniya-staryih-android-ustroystv/
       // https://gadgetdrop.reinforz.co.jp/articles/mako-minimalist-android-launcher-hands-on
       // https://www.youtube.com/shorts/lqCA7QabgXc?t=82
-    // https://youtu.be/8VPVEi5kAJA?t=520
-    // https://nuneztech.pro/top-aplicaciones-codigo-abierto-herramientas-android/
-    // https://electronics.alibaba.com/buyingguides/cool-android-apps-in-2026-utility,-vertical-video-minimalism
-    // https://electronics.alibaba.com/buyingguides/cool-free-android-apps-minimalist,-ai-micro-drama-picks 
+      // https://youtu.be/8VPVEi5kAJA?t=520
+      // https://nuneztech.pro/top-aplicaciones-codigo-abierto-herramientas-android/
+      // https://electronics.alibaba.com/buyingguides/cool-android-apps-in-2026-utility,-vertical-video-minimalism
+      // https://electronics.alibaba.com/buyingguides/cool-free-android-apps-minimalist,-ai-micro-drama-picks
     },
     license: license.gplv3,
   },
