@@ -8,17 +8,17 @@ export default [
     date: new Date('2026-11-10'),
     org: org.rama,
     name: 'Iqra',
-    completion: 2,
+    completion: 3,
     main: true,
     category: category.webApp,
-    preview: '/img/iqra.webp',
+    preview: '/img/iqra.jxl',
     tags: [skill.webComponents, skill.css, skill.js],
     description: [
       '[p](A lightweight, browser-based Git client that runs locally on your machine and is accessible through your browser. The frontend uses native Web Components and modern CSS, without third-party libraries to keep dependencies to a minimum, while the backend was AI generated in Rust.)',
       `[p](The project focuses on simplicity, performance, and a minimal dependency footprint.)`,
     ],
     link: {
-      demo: 'https://pomboverso.github.io/p/iqra/',
+      demo: 'p/iqra/',
       github_source: 'https://github.com/rama-oi/iqra',
     },
     license: license.gplv3,
@@ -273,28 +273,25 @@ export default [
     },
     license: license.gplv3,
   },
-  // {
-  //   date: new Date('2024-12-24'),
-  //   org: org.rama,
-  //   name: 'LoM DB',
-  //   category: category.website,
-  //   preview: 'https://lomdb.github.io/img/svg/lom_header-draco.svg',
-  //   screenshots: [
-  //     'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/0-min.webp',
-  //     'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/1-min.webp',
-  //     'https://raw.githubusercontent.com/lomdb/lomdb.github.io/master/metadata/2-min.webp',
-  //   ],
-  //   tags: [skill.webComponents, skill.svg, skill.css, skill.three, skill.js],
-  //   description: [
-  //     '[p](**LoM DB** is a community-driven database for tracking and exploring merged servers, top players, and timelines across regions.)',
-  //     '[p](This project is built to help players, analysts, and enthusiasts get a clearer view of evolving server data, elite players, and historical merges, all in one place.)',
-  //   ],
-  //   link: {
-  //     web: 'https://lomdb.github.io/',
-  //     github: 'https://github.com/lomdb/lomdb.github.io',
-  //   },
-  //   license: license.gplv3,
-  // },
+  {
+    date: new Date('2024-12-24'),
+    org: org.rama,
+    name: 'LoM DB',
+    main: true,
+    completion: 3,
+    category: category.website,
+    preview: 'p/lomdb/metadata/0-min.webp',
+    tags: [skill.webComponents, skill.svg, skill.css, skill.three, skill.js],
+    description: [
+      '[p](**LoM DB** is a community-driven database for tracking and exploring merged servers, top players, and timelines across regions.)',
+      '[p](This project is built to help players, analysts, and enthusiasts get a clearer view of evolving server data, elite players, and historical merges, all in one place.)',
+    ],
+    link: {
+      demo: 'p/lomdb/',
+      github: 'https://github.com/lomdb/lomdb.github.io',
+    },
+    license: license.gplv3,
+  },
   {
     date: new Date('2022-09-01'), //TODO
     org: org.teamup,
@@ -609,7 +606,7 @@ export default [
       ],
     ],
     link: {
-      demo: 'https://pomboverso.github.io/p/drlogic/',
+      demo: 'p/drlogic/',
     },
     license: license.propietary,
   },
@@ -644,7 +641,7 @@ export default [
       '[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.)',
     ],
     link: {
-      demo: 'https://pomboverso.github.io/p/apap-mineriza-familia/',
+      demo: 'p/apap-mineriza-familia/',
     },
     license: license.propietary,
   },
@@ -737,7 +734,7 @@ export default [
       )`,
     ],
     link: {
-      demo: 'https://pomboverso.github.io/p/descubria/',
+      demo: 'p/descubria/',
     },
     license: license.propietary,
   },
