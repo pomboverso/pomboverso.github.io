@@ -18,9 +18,13 @@ customElements.define(
 
     #currentList = []
 
-    // Optional `categories` attribute (comma separated category names) limits
-    // which projects this instance shows. No attribute = every project.
+    // Optional attributes limit which projects this instance shows:
+    // `main` keeps only projects with `main: true`, and `categories` (comma
+    // separated category names) keeps only those categories.
+    // No attributes = every project.
     get #projects() {
+      if (this.hasAttribute('main')) return allProjects.filter(p => p.main === true)
+
       const attr = this.getAttribute('categories')
       if (!attr) return allProjects
 

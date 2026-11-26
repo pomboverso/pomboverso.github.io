@@ -254,15 +254,14 @@ export default [
     license: license.gplv3,
   },
   {
-    // date: new Date('2025-10-04'),
-    date: new Date('2026-01-05'),
+    date: new Date('2025-10-04'),
     org: org.rama,
     name: 'Rama-io',
     main: true,
-    completion: 0,
+    completion: 3,
     category: category.website,
-    // preview:
-    //   'https://raw.githubusercontent.com/salishan/salishan.github.io/master/metadata/mobile.webp',
+    preview:
+      'img/rama.jxl',
     tags: [skill.webComponents, skill.css, skill.js],
     description: [
       '[p](Small, focused Android apps built for speed and simplicity. No bloat, no tracking, no nonsense, just software that works.)',
