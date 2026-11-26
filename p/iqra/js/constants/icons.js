@@ -1,0 +1,15 @@
+export const ICONS = {
+  "folder-open": "\u{1f4c2}",
+  archive: "\u{1f5c3}",
+  trash: "\u{1f5d1}",
+  minus: "-",
+  plus: "+",
+  times: "×",
+  "download-alt": "⇓",
+  "upload-alt": "⇑",
+  branch: "\u{1f331}",
+  "arrow-up": "↑",
+  "arrow-right": "→",
+  "arrow-left": "←",
+  "arrow-down": "↓",
+};

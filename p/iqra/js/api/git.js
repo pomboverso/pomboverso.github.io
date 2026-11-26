@@ -1,0 +1,116 @@
+import MOCK from "./config.js";
+import {
+  mockStage,
+  mockUnstage,
+  mockTakeChanges,
+  mockGiveChanges,
+} from "./changes.js";
+import { mockPushStash, mockPopStash } from "./stashes.js";
+import { mockAddBranch } from "./projects.js";
+import { checkout } from "./commits.js";
+
+const delay = (ms = 200) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function post(repo, action, body = {}) {
+  const res = await fetch(`/api/repos/${encodeURIComponent(repo)}/${action}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  const reply = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(reply.error || `Request failed (${res.status})`);
+  return reply;
+}
+
+export async function stage({ repo, paths }) {
+  if (MOCK.changes) return delay(100).then(() => mockStage(repo, paths));
+  return post(repo, "stage", { paths });
+}
+
+export async function unstage({ repo, paths }) {
+  if (MOCK.changes) return delay(100).then(() => mockUnstage(repo, paths));
+  return post(repo, "unstage", { paths });
+}
+
+// Throw away unstaged changes for good: tracked files go back to the staged version,
+// new files are deleted. `all` takes every unstaged file.
+//   POST /api/repos/:repo/discard { paths } | { all: true } -> { discarded: n }
+export async function stageLines({ repo, path, staged, patch, lines }) {
+  if (MOCK.changes) {
+    await delay();
+    return {};
+  }
+  return post(repo, "stage-lines", { path, staged, patch, lines });
+}
+
+export async function discardChanges({ repo, paths, all = false }) {
+  if (MOCK.changes) {
+    await delay(100);
+    return { discarded: all ? 0 : paths.length };
+  }
+  return post(repo, "discard", all ? { all: true } : { paths });
+}
+
+export async function stashChanges({ repo, branch, message = "" }) {
+  if (MOCK.changes) {
+    await delay();
+    const files = mockTakeChanges(repo);
+    if (!files.length) throw new Error("There are no changes to stash.");
+    return mockPushStash(repo, { files, branch, message });
+  }
+  return post(repo, "stashes/push", { message });
+}
+
+export async function popStash({ repo }) {
+  if (MOCK.changes) {
+    await delay();
+    const stash = mockPopStash(repo);
+    if (!stash) throw new Error("No stash entries found.");
+    return mockGiveChanges(repo, stash.files);
+  }
+  return post(repo, "stashes/pop");
+}
+
+export async function pull({ repo }) {
+  if (MOCK.changes) return delay(600);
+  return post(repo, "pull");
+}
+
+export async function push({ repo }) {
+  if (MOCK.changes) return delay(600);
+  return post(repo, "push");
+}
+
+// A new branch at the current commit, checked out right away.
+//   POST /api/repos/:repo/branches { name } -> { currentBranch }
+export async function createBranch({ repo, name }) {
+  if (MOCK.changes) {
+    await delay();
+    mockAddBranch(repo, name);
+    return checkout({ repo, branch: name });
+  }
+  return post(repo, "branches", { name });
+}
+
+// Merge the local branch `source` into the local branch `target`, which ends up checked
+// out. With changed files in the project the answer is an error saying to deal with them.
+//   POST /api/repos/:repo/merge { source, target }
+//     -> { outcome: "merged" | "fastForward" | "upToDate", currentBranch }
+export async function mergeBranches({ repo, source, target }) {
+  if (MOCK.changes) {
+    await delay();
+    return { outcome: "merged", currentBranch: target };
+  }
+  return post(repo, "merge", { source, target });
+}
+
+// Apply one commit's changes on top of the checked-out branch, as a new commit. With
+// changed files in the project, or on conflicts, the answer is an error saying so.
+//   POST /api/repos/:repo/cherry-pick { commit }
+export async function cherryPick({ repo, commit }) {
+  if (MOCK.changes) {
+    await delay();
+    return {};
+  }
+  return post(repo, "cherry-pick", { commit });
+}

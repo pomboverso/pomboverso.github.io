@@ -1,0 +1,82 @@
+import { getPrefix, icon } from "../lib/helpers.js";
+import "./pb_settings_ssh.js";
+import "./pb_settings_theme.js";
+import "./pb_settings_about.js";
+
+const TABS = ["ssh", "theme", "about"];
+
+customElements.define(
+  getPrefix("settings"),
+  class extends HTMLElement {
+    #initialized = false;
+
+    #html = {
+      $dialog: undefined,
+    };
+
+    #template = `
+      <dialog data-tab="ssh">
+        <button type="button" class="pb-close" aria-label="Close">
+          ${icon("times")}
+        </button>
+
+        <aside class="pb-sidebar">
+          <ul class="pb-tabs">
+            <li>
+              <button type="button" class="pb-nav-bar pb-active" data-tab="ssh">SSH</button>
+            </li>
+            <li>
+              <button type="button" class="pb-nav-bar" data-tab="theme">Theme</button>
+            </li>
+            <li>
+              <button type="button" class="pb-nav-bar" data-tab="about">About</button>
+            </li>
+          </ul>
+        </aside>
+
+        <header>
+          <h2>Settings</h2>
+        </header>
+
+        <pb-settings-ssh class="pb-body pb-settings-tab-ssh"></pb-settings-ssh>
+        <pb-settings-theme class="pb-body pb-settings-tab-theme"></pb-settings-theme>
+        <pb-settings-about class="pb-body pb-settings-tab-about"></pb-settings-about>
+      </dialog>
+    `;
+
+    connectedCallback() {
+      if (this.#initialized) return;
+      this.#initialized = true;
+      this.innerHTML = this.#template;
+
+      this.#html.$dialog = this.querySelector("dialog");
+
+      document.addEventListener("pb-open-settings", () => this.open());
+      this.#html.$dialog.addEventListener("click", (e) => this.#onClick(e));
+    }
+
+    open(tab = "ssh") {
+      this.#showTab(tab);
+      if (!this.#html.$dialog.open) this.#html.$dialog.showModal();
+    }
+
+    #showTab(tab) {
+      if (!TABS.includes(tab)) return;
+      this.#html.$dialog.dataset.tab = tab;
+      for (const btn of this.querySelectorAll(".pb-nav-bar")) {
+        btn.classList.toggle("pb-active", btn.dataset.tab === tab);
+      }
+    }
+
+    #onClick(e) {
+      const dialog = this.#html.$dialog;
+      if (e.target === dialog) return dialog.close();
+
+      const btn = e.target.closest("button");
+      if (!btn) return;
+
+      if (btn.classList.contains("pb-close")) return dialog.close();
+      if (btn.dataset.tab) this.#showTab(btn.dataset.tab);
+    }
+  },
+);

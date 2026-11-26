@@ -1,0 +1,99 @@
+pb-app,
+pb-app *,
+pb-app *::before,
+pb-app *::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+@font-face {
+  font-family: "Jersey 25";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/jersey25_regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "iqra";
+  src:
+    url("../fonts/iqra.ttf") format("truetype"),
+    url("../fonts/iqra.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.pb-icon {
+  font-family: "iqra" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --yellow: #f9e2af;
+  --red: #f38ba8;
+  --green: #a6e3a1;
+  --mauve: #cba6f7;
+  --blue: #89b4fa;
+  --peach: #fab387;
+
+  --base: #1e1e2e;
+  --surface-0: #313244;
+  --surface-1: #45475a;
+  --surface-2: #585b70;
+
+  --overlay-0: #6c7086;
+
+  --accent: var(--yellow);
+  --hover: var(--overlay-0);
+  --border: var(--surface-2);
+  --disabled: var(--surface-2);
+  --danger: var(--red);
+  --success: var(--green);
+
+  --text: #cdd6f4;
+
+  --font-size-h1: 55px;
+  --font-size-content: 18px;
+
+  --navigation-height: 80px;
+  --sidebar-left-width: 300px;
+  --sidebar-right-width: 410px;
+  --space-between-blocks: 1rem;
+  --space-between-inline-items: 0.5rem;
+
+  --collapse-btn-width: 0.5rem;
+
+  --row-height: 30px;
+  --column-branch-width: 260px;
+  --column-graph-width: 120px;
+
+  --graph-0: #89b4fa;
+  --graph-1: #cba6f7;
+  --graph-2: #a6e3a1;
+  --graph-3: #fab387;
+  --graph-4: #f5c2e7;
+  --graph-5: #94e2d5;
+  --graph-6: #f9e2af;
+  --graph-7: #f38ba8;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--base);
+  font-family: "Jersey 25", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: dark;
+  color: var(--text);
+}
