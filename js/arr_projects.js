@@ -343,10 +343,10 @@ export default [
     date: new Date('2022-09-01'), //TODO
     org: org.teamup,
     name: 'Provider App',
-    completion: 2,
+    completion: 3,
+    main: true,
     category: category.webApp,
-    preview: './img/instructors.png',
-    // screenshots: [],
+    preview: './img/instructors.jxl',
     tags: [skill.vue3, skill.unoCss, skill.storybook, skill.js],
     description: [
       '[blockquote](TeamUp is a fitness management software designed to empower service providers in franchises, studios, gyms, and boxes.)',
@@ -358,6 +358,9 @@ export default [
       'Advanced Calendar Management',
       'Membership Management (creation, editing, sorting, listing, category sorting, and detailed membership view)',
     ],
+    link: {
+      demo: 'p/teamup/instructor_hours/',
+    },
     license: license.propietary,
   },
   {
@@ -439,8 +442,8 @@ export default [
       'Ensure compliance with 508 and WCAG2 accessibility standards.',
     ],
     link: {
-       demo: 'p/formability/form_builder/',
-       tv_visualizer: 'p/formability/demo.html',
+      demo: 'p/formability/form_builder/',
+      tv_visualizer: 'p/formability/demo.html',
     },
     license: license.propietary,
   },
@@ -632,7 +635,7 @@ export default [
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
     description: [
       '[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.)',
-      '[p](A customizable wallpaper creation app that allows users to design their own characters, and select the background to create personalized wallpapers.)'
+      '[p](A customizable wallpaper creation app that allows users to design their own characters, and select the background to create personalized wallpapers.)',
     ],
     link: {
       demo: 'p/apap-mineriza-familia/',
