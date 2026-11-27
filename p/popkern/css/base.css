@@ -1,0 +1,158 @@
+/* Fonts, theme variables and page defaults (from application.scss). */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url("../fonts/montserrat/montserrat-latin-300-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url("../fonts/montserrat/montserrat-latin-ext-300-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/montserrat/montserrat-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/montserrat/montserrat-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("../fonts/montserrat/montserrat-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("../fonts/montserrat/montserrat-latin-ext-600-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("../fonts/montserrat/montserrat-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("../fonts/montserrat/montserrat-latin-ext-700-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", Helvetica, Arial, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  overflow: hidden;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Components that only group markup must not affect the layout. */
+pk-app,
+pk-panel-navigation,
+pk-cube-panel,
+pk-cube-view,
+pk-slider,
+pk-icons-panel,
+pk-icons-view,
+pk-colors-view,
+pk-links-view,
+pk-ruler-view,
+pk-icon-card,
+nn-btn {
+  display: contents;
+}
+
+main {
+  --title-shadow: 0;
+  --color-shadow: rgb(0 0 0 / 65%);
+  --shadow-depth: 2px 2px 5px;
+
+  .panel,
+  .mr-primary-navbar {
+    --color-background: #222;
+    --color-foreground: #eee;
+    --color-label: hsl(50deg 50% 50%);
+    --color-legend: hsl(155deg 50% 50%);
+    --color-panel-details-background: #1d1d26;
+    --color-panel-background: #232327;
+    --color-panel-border-separator: #19191d;
+    --color-border: #444444;
+    --nn-input-color-shadow: hsl(240deg 11% 10%);
+  }
+
+  &.nn-light .mr-workarea {
+    --color-title: hsl(155deg 50% 25%);
+    --color-background: #ffffff;
+    --color-foreground: #202028;
+    --color-workarea-background: #f8f7fb;
+    --color-palette: #f7f7f7;
+    --color-label: #104e86;
+    --color-table-background-2: hsl(240deg 20% 85% / 0.2);
+    --color-legend: #9c330a;
+    --color-border: #e2e2e2;
+  }
+
+  &.nn-dark .mr-workarea {
+    --color-title: hsl(155deg 50% 50%);
+    --color-background: #222;
+    --color-foreground: #eee;
+    --color-workarea-background: #202028;
+    --color-palette: #272727;
+    --color-table-background-2: hsl(240deg 5% 30% / 0.2);
+    --color-label: hsl(50deg 50% 50%);
+    --color-legend: hsl(155deg 50% 50%);
+    --color-border: #444444;
+  }
+
+  .mr-workarea {
+    color: var(--color-foreground);
+  }
+}
+
+hr {
+  border-style: solid;
+  border-color: var(--color-border, #444);
+  border-width: 0 0 1px 0;
+}

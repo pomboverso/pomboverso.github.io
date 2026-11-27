@@ -1,0 +1,360 @@
+/* The parts of nano-grid used by Popkern (rows, columns, buttons, labels, colors). */
+
+/* ---------- theme */
+.nn-light,
+.nn-dark {
+  --nn-border-outline: hsl(209deg 100% 63%);
+}
+
+.nn-light {
+  --nn-color-foreground: hsl(240deg 11% 17%);
+  --nn-input-color-background: hsl(0deg 0% 95%);
+  --nn-input-color-shadow: hsl(0deg 0% 80%);
+  --nn-input-color-background-hover: hsl(0deg 0% 90%);
+  --nn-input-color-shadow-hover: hsl(0deg 0% 70%);
+  --nn-track-color: hsl(0deg 0% 84%);
+  --nn-thumb-color: hsl(0deg 0% 75%);
+  --nn-border-color: hsl(0deg 0% 89%);
+}
+
+.nn-dark {
+  --nn-color-foreground: hsl(0deg 0% 95%);
+  --nn-input-color-background: hsl(240deg 11% 17%);
+  --nn-input-color-shadow: hsl(240deg 11% 10%);
+  --nn-input-color-background-hover: hsl(240deg 11% 25%);
+  --nn-input-color-shadow-hover: hsl(240deg 11% 20%);
+  --nn-track-color: hsl(0deg 0% 14%);
+  --nn-thumb-color: hsl(0deg 0% 43%);
+  --nn-border-color: hsl(0deg 0% 27%);
+}
+
+/* ---------- colors */
+.nn-silver {
+  --nn-color: hsl(0deg, 0%, 75%);
+  --nn-p20: hsl(0deg, 0%, 95%);
+  --nn-p10: hsl(0deg, 0%, 85%);
+  --nn-m10: hsl(0deg 0% 50%);
+  --nn-m20: hsl(0deg, 0%, 55%);
+  --nn-invert: hsl(0deg 0% 24%);
+}
+
+.nn-royal-purple {
+  --nn-color: hsl(263deg, 41%, 44%);
+  --nn-p20: hsl(263deg, 41%, 64%);
+  --nn-p10: hsl(263deg, 41%, 54%);
+  --nn-m10: hsl(263deg, 41%, 34%);
+  --nn-m20: hsl(263deg, 41%, 24%);
+  --nn-invert: hsl(263deg, 41%, 100%);
+}
+
+.nn-persian-red {
+  --nn-color: hsl(0deg, 67%, 52%);
+  --nn-p20: hsl(0deg, 67%, 72%);
+  --nn-p10: hsl(0deg, 67%, 62%);
+  --nn-m10: hsl(0deg, 67%, 42%);
+  --nn-m20: hsl(0deg, 67%, 32%);
+  --nn-invert: hsl(0deg 0% 100%);
+}
+
+.nn-gold-tips {
+  --nn-color: hsl(42deg, 78%, 55%);
+  --nn-p20: hsl(42deg, 78%, 75%);
+  --nn-p10: hsl(42deg, 78%, 65%);
+  --nn-m10: hsl(42deg 81% 39%);
+  --nn-m20: hsl(42deg, 78%, 35%);
+  --nn-invert: hsl(42deg 77% 15%);
+}
+
+.nn-shamrock {
+  --nn-color: hsl(149deg, 61%, 51%);
+  --nn-p20: hsl(149deg, 61%, 71%);
+  --nn-p10: hsl(149deg, 61%, 61%);
+  --nn-m10: hsl(149deg, 61%, 41%);
+  --nn-m20: hsl(149deg, 61%, 31%);
+  --nn-invert: hsl(149deg 73% 15%);
+}
+
+.nn-gravel {
+  --nn-color: hsl(0deg, 0%, 43%);
+  --nn-p20: hsl(0deg, 0%, 63%);
+  --nn-p10: hsl(0deg, 0%, 53%);
+  --nn-m10: hsl(0deg, 0%, 33%);
+  --nn-m20: hsl(0deg, 0%, 23%);
+  --nn-invert: hsl(0deg, 0%, 100%);
+}
+
+.nn-charcoal {
+  --nn-color: hsl(0deg, 0%, 27%);
+  --nn-p20: hsl(0deg, 0%, 47%);
+  --nn-p10: hsl(0deg, 0%, 37%);
+  --nn-m10: hsl(0deg, 0%, 17%);
+  --nn-m20: hsl(0deg, 0%, 7%);
+  --nn-invert: hsl(0deg, 0%, 100%);
+}
+
+.nn-burn-orange {
+  --nn-color: hsl(20deg, 94%, 58%);
+  --nn-p20: hsl(20deg, 94%, 78%);
+  --nn-p10: hsl(20deg, 94%, 68%);
+  --nn-m10: hsl(20deg, 94%, 48%);
+  --nn-m20: hsl(20deg, 94%, 38%);
+  --nn-invert: hsl(20deg 79% 17%);
+}
+
+.nn-cobalt-blue {
+  --nn-color: hsl(215deg, 88%, 36%);
+  --nn-p20: hsl(215deg, 88%, 56%);
+  --nn-p10: hsl(215deg, 88%, 46%);
+  --nn-m10: hsl(215deg, 88%, 26%);
+  --nn-m20: hsl(215deg, 88%, 16%);
+  --nn-invert: hsl(215deg, 88%, 100%);
+}
+
+/* ---------- grid */
+nn-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  align-items: flex-start;
+}
+
+nn-row.nn-spaced {
+  margin-inline: calc(-1 * var(--nn-spacing));
+}
+
+nn-row.nn-spaced > nn-column {
+  padding-inline: var(--nn-spacing);
+}
+
+nn-column {
+  display: block;
+}
+
+nn-container {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* ---------- scroll area */
+nn-scroll-area {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+nn-scroll-area[nn-no-horizontal] {
+  overflow-x: hidden;
+}
+
+nn-scroll-area::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+nn-scroll-area::-webkit-scrollbar-track {
+  background: var(--nn-track-color);
+  border-radius: 25px;
+}
+
+nn-scroll-area::-webkit-scrollbar-thumb {
+  background: var(--nn-thumb-color);
+  border-radius: 25px;
+}
+
+nn-scroll-area:hover::-webkit-scrollbar-thumb {
+  background: var(--nn-color);
+}
+
+/* Firefox */
+@supports not selector(::-webkit-scrollbar) {
+  nn-scroll-area {
+    scrollbar-width: thin;
+    scrollbar-color: var(--nn-thumb-color) var(--nn-track-color);
+  }
+
+  nn-scroll-area:hover {
+    scrollbar-color: var(--nn-color) var(--nn-track-color);
+  }
+}
+
+/* ---------- buttons and labels */
+.nn-btn,
+.nn-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 35px;
+  font-family: inherit;
+  font-size: 9pt;
+  font-weight: bold;
+  letter-spacing: 1pt;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0;
+  transition: all 200ms ease;
+}
+
+.nn-btn {
+  width: 100%;
+  min-width: 35px;
+  color: #fff;
+  background-color: transparent;
+
+  > * {
+    pointer-events: none;
+  }
+
+  nn-icon {
+    font-size: 14px;
+    min-width: 25px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus-visible,
+  &:active {
+    outline: 1px solid var(--nn-border-outline);
+    outline-offset: -1px;
+  }
+}
+
+.nn-btn.nn-flat {
+  color: var(--nn-invert);
+  background-color: var(--nn-color);
+  box-shadow: 0 3px 0 var(--nn-m10);
+
+  &:hover,
+  &:active,
+  &.nn-active {
+    background-color: var(--nn-m10);
+    box-shadow: 0 3px 0 var(--nn-m20);
+  }
+}
+
+.nn-btn.nn-nav {
+  color: hsl(0deg 0% 100% / 0.4);
+
+  &:active,
+  &.nn-active {
+    color: var(--nn-p20);
+    box-shadow: -2px 0 0 var(--nn-color);
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: rgb(255 255 255 / 10%);
+  }
+}
+
+.nn-btn.nn-ghost {
+  color: var(--nn-color);
+
+  &:hover {
+    color: var(--nn-p10);
+    background-color: rgb(255 255 255 / 10%);
+  }
+
+  &:active {
+    color: var(--nn-m20);
+    background-color: var(--nn-color);
+  }
+}
+
+.nn-label {
+  width: max(35px, 100%);
+  margin: 0;
+  padding: 0.5rem;
+  color: var(--nn-color-foreground);
+  background-color: var(--nn-input-color-background);
+  box-shadow: 0 3px 0 var(--nn-input-color-shadow);
+}
+
+.nn-label:is(.nn-gravel, .nn-charcoal, .nn-shamrock, .nn-persian-red) {
+  color: var(--nn-invert);
+  background-color: var(--nn-color);
+  box-shadow: 0 3px 0 var(--nn-m10);
+}
+
+/* ---------- inputs (number and range) */
+.nn-input,
+.nn-range {
+  width: 100%;
+  min-height: 35px;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--nn-input-color-background);
+  box-shadow: 0 3px 0 var(--nn-input-color-shadow);
+
+  &:focus-visible {
+    outline: 1px solid var(--nn-border-outline);
+    outline-offset: -1px;
+  }
+}
+
+.nn-input {
+  min-width: 0;
+  color: var(--nn-color-foreground);
+  font-family: inherit;
+  font-size: 9pt;
+  font-weight: bold;
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.nn-range {
+  appearance: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* WebKit and Firefox pseudo-elements must stay in separate rules */
+.nn-range::-webkit-slider-runnable-track {
+  height: 12.8px;
+  border-radius: 10px;
+  background: var(--nn-track-color);
+}
+
+.nn-range:hover::-webkit-slider-runnable-track {
+  background: var(--nn-color);
+}
+
+.nn-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -3.6px;
+  border-radius: 10px;
+  background: var(--nn-m10);
+}
+
+.nn-range::-moz-range-track {
+  height: 12.8px;
+  border-radius: 10px;
+  background: var(--nn-track-color);
+}
+
+.nn-range:hover::-moz-range-track {
+  background: var(--nn-color);
+}
+
+.nn-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--nn-m10);
+}

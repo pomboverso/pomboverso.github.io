@@ -286,7 +286,7 @@ export default [
       '[p](This project is built to help players, analysts, and enthusiasts get a clearer view of evolving server data, elite players, and historical merges, all in one place.)',
     ],
     link: {
-      demo: 'p/lomdb/',
+      website: 'p/lomdb/',
       github: 'https://github.com/lomdb/lomdb.github.io',
     },
     license: license.gplv3,

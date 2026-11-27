@@ -1,0 +1,88 @@
+/* Popkern sections (from _img-gallery.scss and _popkern.scss). */
+
+/* ---------- cards: icons, colors, resources */
+.img-gallery {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  li,
+  .item > nn-row,
+  .item > pk-icon-card > nn-row {
+    display: inline-flex;
+    max-width: 100%;
+  }
+
+  .item {
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--color-foreground);
+    background-color: var(--color-palette);
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 25%);
+
+    > nn-row,
+    > pk-icon-card > nn-row {
+      width: 320px;
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 0 0 0.5rem;
+    }
+  }
+
+  .icon-item .preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+    background-color: var(--color-table-background-2);
+  }
+
+  .swatch .color {
+    border: 1px solid var(--color-border);
+    margin-bottom: 1rem;
+  }
+}
+
+/* ---------- ruler */
+main.section-popkern-ruler .mr-workarea {
+  nn-scroll-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  h2,
+  h3 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+    color: hsl(0 0% 50%);
+
+    span {
+      font-weight: 600;
+      color: #edcc0a;
+    }
+  }
+}
+
+/* ---------- color cube */
+.three-scene {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  canvas {
+    display: block;
+  }
+
+  p {
+    padding: 2rem;
+    text-align: center;
+  }
+}
