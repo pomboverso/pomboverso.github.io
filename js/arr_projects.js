@@ -411,10 +411,10 @@ export default [
     date: new Date('2018-09-04'),
     org: org.enovational,
     name: 'Formability',
-    completion: 2,
+    completion: 3,
     category: category.webApp,
-    preview: './img/formability.jpg',
-    // screenshots: [],
+    preview: './img/formability.jxl',
+    main: true,
     tags: [
       skill.vue2,
       skill.rails,
@@ -439,7 +439,7 @@ export default [
       'Ensure compliance with 508 and WCAG2 accessibility standards.',
     ],
     link: {
-      web: 'https://formability.com',
+       demo: 'p/formability/form_builder/',
     },
     license: license.propietary,
   },
