@@ -1,0 +1,136 @@
+/* Rules needed by the web component version: visibility states and the
+   transitions that jQuery used to animate. */
+
+/* Components only group markup and must not affect the layout. */
+ds-app,
+ds-header,
+ds-corner-buttons,
+ds-home,
+ds-attraction-pages,
+ds-about,
+ds-attraction-grid,
+ds-gallery,
+ds-sponsors,
+ds-faqs,
+ds-contact {
+  display: contents;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* loading screen */
+#cubierta {
+  top: 0;
+  transition: top 0.6s ease-in-out;
+}
+
+#cubierta.is-gone {
+  top: -100%;
+}
+
+/* pages */
+.modulo {
+  display: none;
+}
+
+.modulo.is-visible {
+  display: block;
+  animation: ds-fade 0.6s ease;
+}
+
+#cov {
+  transition: background-color 0.4s ease;
+}
+
+#cov.is-visible {
+  display: block;
+  animation: ds-fade 0.6s ease;
+}
+
+body:not([data-page="inicio"]) .inicio {
+  display: none;
+}
+
+body[data-page="inicio"] .fixR,
+body[data-page="inicio"] .inicio #arrow {
+  animation: ds-fade 0.6s ease;
+}
+
+@keyframes ds-fade {
+  from { opacity: 0; }
+}
+
+/* corner buttons */
+#go_home {
+  display: none;
+}
+
+#go_home.is-visible {
+  display: block;
+  animation: ds-fade 0.6s ease;
+}
+
+body[data-page="faqs"] #go_home {
+  display: none;
+}
+
+/* "Conocenos" collapsible blocks */
+div[id^="tog_"].is-open {
+  display: block;
+  animation: ds-fade 0.6s ease;
+}
+
+/* gallery */
+#fotos img {
+  width: 240px;
+  height: 180px;
+  margin: 6px;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+#fotos a:hover img {
+  opacity: 0.8;
+}
+
+/* contact form: the original ran in quirks mode, where fields measure their
+   padding and border inside the declared size */
+#form01 input,
+#form01 textarea {
+  box-sizing: border-box;
+}
+
+#form01 textarea {
+  display: block;
+  height: 93px;
+  margin-block: -2px -1px;
+}
+
+#form01 #err_2.is-visible {
+  display: table-row;
+}
+
+#msj_enviado.is-visible {
+  display: block;
+  cursor: pointer;
+  background-color: #000;
+}
+
+/* keyboard users can see where they are */
+[data-go]:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px dashed #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
