@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "../vendor/three/OrbitControls.js";
-import { wikiColors } from "../data/wiki-colors.js";
+import { randomColors } from "../lib/random-colors.js";
 import { store } from "../store.js";
 
 const rad = Math.PI / 180;
@@ -56,7 +56,7 @@ const createColorBoxes = () => {
   const group = new THREE.Group();
   const geometry = new THREE.BoxGeometry(1, 1, 1);
 
-  Object.values(wikiColors).forEach((color) => {
+  randomColors.forEach((color) => {
     const material = new THREE.MeshBasicMaterial({ color: color.hex });
     const mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(color.red - HALF, color.green, color.blue - HALF);
@@ -67,7 +67,7 @@ const createColorBoxes = () => {
   return group;
 };
 
-/** The wiki colors in RGB space. Drag to orbit, scroll to zoom. */
+/** The picked colors in RGB space. Drag to orbit, scroll to zoom. */
 class CubeView extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="three-scene"></div>`;
@@ -89,7 +89,7 @@ class CubeView extends HTMLElement {
     this.scene.position.y = (-MAX - 1) * 0.5;
 
     const camera = new THREE.PerspectiveCamera(75, 1, 0.1);
-    camera.position.set(0, 40, 0);
+    camera.position.set(0, 340, 0);
 
     this.controls = new OrbitControls(camera, renderer.domElement);
     this.controls.minPolarAngle = 75 * rad;

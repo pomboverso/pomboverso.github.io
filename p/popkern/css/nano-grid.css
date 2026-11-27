@@ -119,11 +119,11 @@ nn-row {
 }
 
 nn-row.nn-spaced {
-  margin-inline: calc(-1 * var(--nn-spacing));
+  gap: calc(-1 * var(--nn-spacing));
 }
 
 nn-row.nn-spaced > nn-column {
-  padding-inline: var(--nn-spacing);
+  gap: var(--nn-spacing);
 }
 
 nn-column {

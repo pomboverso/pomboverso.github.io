@@ -35,7 +35,7 @@ class IconCard extends HTMLElement {
         <nn-column nn-size="100%">
           <nn-row nn-spacing="0.25">
             ${variants}
-            <nn-column nn-size="1/1">
+            <nn-column nn-size="1/1" class="cta">
               <nn-btn nn-color="gold-tips" nn-text="Flip"></nn-btn>
             </nn-column>
           </nn-row>

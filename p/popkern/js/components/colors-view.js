@@ -1,9 +1,9 @@
-import { wikiColors, paletteColors } from "../data/wiki-colors.js";
+import { randomColors } from "../lib/random-colors.js";
 import { bkColors } from "../data/colors.js";
 import { contrastRatio } from "../lib/contrast.js";
 
 const sortedColors = () =>
-  Object.values({ ...wikiColors, ...paletteColors })
+  [...randomColors]
     .sort((a, b) => a.lightness - b.lightness)
     .sort((a, b) => a.hue - b.hue);
 

@@ -3,11 +3,11 @@ export const routes = {
     title: "Color Cube", icon: "cube",
     view: "pk-cube-view", panel: "pk-cube-panel",
   },
+  "popkern-colors": { title: "Colors", icon: "paint-brush", view: "pk-colors-view" },
   "popkern-icons": {
     title: "Icons", icon: "star",
     view: "pk-icons-view", panel: "pk-icons-panel",
   },
-  "popkern-colors": { title: "Colors", icon: "paint-brush", view: "pk-colors-view" },
   "popkern-ruler": { title: "Ruler", icon: "crop", view: "pk-ruler-view" },
 };
 

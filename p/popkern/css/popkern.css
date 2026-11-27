@@ -47,6 +47,20 @@
   }
 }
 
+main.section-popkern-icons {
+  .mr-workarea {
+    pk-icon-card {
+      p {
+        margin: 0;
+      }
+
+      .cta {
+        margin-block-start: .5rem;
+      }
+    }
+  }
+}
+
 /* ---------- ruler */
 main.section-popkern-ruler .mr-workarea {
   nn-scroll-area {

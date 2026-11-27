@@ -7,7 +7,7 @@ const state = {
   // Color Cube scene
   grid: true,
   pause: false,
-  lines: false,
+  lines: true,
   sceneRotation: 3,
 };
 

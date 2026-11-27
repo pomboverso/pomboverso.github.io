@@ -1,4 +1,5 @@
-import { isOn, swapClass } from "./helpers.js";
+import { isOn } from "./helpers.js";
+import { icons } from "../data/icons.js";
 
 const DIRECTIONS = { down: 0, left: 90, up: 180, right: 270 };
 
@@ -15,10 +16,8 @@ class Icon extends HTMLElement {
   }
 
   update() {
-    const glyph = this.getAttribute("nn-glyph");
-    const glyphClass = glyph ? `nn-icon-${glyph}` : "";
-    swapClass(this, this.glyphClass, glyphClass);
-    this.glyphClass = glyphClass;
+    const code = icons[this.getAttribute("nn-glyph")];
+    this.dataset.char = code ? String.fromCodePoint(parseInt(code, 16)) : "";
 
     const direction = this.getAttribute("nn-direction") || "down";
     const degrees = DIRECTIONS[direction] ?? Number(direction);
