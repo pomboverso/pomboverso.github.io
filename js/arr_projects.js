@@ -440,6 +440,7 @@ export default [
     ],
     link: {
        demo: 'p/formability/form_builder/',
+       tv_visualizer: 'p/formability/demo.html',
     },
     license: license.propietary,
   },
