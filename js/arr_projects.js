@@ -19,7 +19,7 @@ export default [
     ],
     link: {
       demo: 'p/iqra/',
-      github_source: 'https://github.com/rama-oi/iqra',
+      github: 'https://github.com/rama-oi/iqra',
     },
     license: license.gplv3,
   },
@@ -260,8 +260,7 @@ export default [
     main: true,
     completion: 3,
     category: category.website,
-    preview:
-      'img/rama.jxl',
+    preview: 'img/rama.jxl',
     tags: [skill.webComponents, skill.css, skill.js],
     description: [
       '[p](Small, focused Android apps built for speed and simplicity. No bloat, no tracking, no nonsense, just software that works.)',
@@ -287,7 +286,6 @@ export default [
     ],
     link: {
       website: 'p/lomdb/',
-      github: 'https://github.com/lomdb/lomdb.github.io',
     },
     license: license.gplv3,
   },
@@ -449,14 +447,17 @@ export default [
     date: new Date('2020-05-05'),
     org: org.enovational,
     name: 'Popkern',
-    completion: 1,
-    category: category.nodeModule,
-    // preview: '',
-    // screenshots: [],
+    completion: 3,
+    main: true,
+    category: category.webApp,
+    preview: 'img/popkern.jxl',
     tags: [skill.vue2, skill.rails, skill.scss, skill.js, skill.three],
     description: [
       '[blockquote](Enovational is a data-driven web and app development company that span a wide spectrum of audiences, technologies, and platforms, from consumer facing mobile apps to large government and enterprise custom web applications.)',
     ],
+    link: {
+      demo: 'p/popkern/',
+    },
     features: [
       [
         'Centralized Component Library',
@@ -467,15 +468,8 @@ export default [
         'Integrated as a Ruby Gem, Popkern offers built-in visual documentation to showcase and preview components, making it easier for developers and designers to collaborate.',
       ],
       [
-        'Node Module Distribution',
-        'All code is packaged into a Node module, ensuring easy integration and updates across projects.',
-      ],
-      [
         'Color Database with Contrast Testing',
         'Includes a robust color database that dynamically tests contrast ratios for accessibility across six different backgrounds (three for light mode and three for dark mode), ensuring compliance with WCAG standards and delivering an inclusive user experience.',
-      ],
-      [
-        'Serves as the backbone for unified design and development workflows, enhancing productivity and accessibility across the organization’s ecosystem.',
       ],
     ],
     license: license.propietary,
@@ -630,14 +624,14 @@ export default [
     date: new Date('2015-11-12'),
     org: org.apap,
     name: 'Mineriza a tu Familia',
-    completion: 2,
+    completion: 3,
     main: true,
     category: category.webApp,
     preview: './img/apap.jpg',
-    // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
     description: [
       '[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.)',
+      '[p](A customizable wallpaper creation app that allows users to design their own characters, and select the background to create personalized wallpapers.)'
     ],
     link: {
       demo: 'p/apap-mineriza-familia/',
