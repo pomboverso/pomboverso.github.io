@@ -11,7 +11,7 @@ export default [
     completion: 3,
     main: true,
     category: category.webApp,
-    preview: '/img/iqra.jxl',
+    preview: 'img/iqra.jxl',
     tags: [skill.webComponents, skill.css, skill.js],
     description: [
       '[p](A lightweight, browser-based Git client that runs locally on your machine and is accessible through your browser. The frontend uses native Web Components and modern CSS, without third-party libraries to keep dependencies to a minimum, while the backend was AI generated in Rust.)',
@@ -295,7 +295,7 @@ export default [
     name: 'Consumer App',
     completion: 2,
     category: category.webApp,
-    preview: './img/ondemand.png',
+    preview: 'img/ondemand.jxl',
     // screenshots: [],
     tags: [skill.vue3, skill.unoCss, skill.storybook, skill.js],
     description: [
@@ -346,7 +346,7 @@ export default [
     completion: 3,
     main: true,
     category: category.webApp,
-    preview: './img/instructors.jxl',
+    preview: 'img/instructors.jxl',
     tags: [skill.vue3, skill.unoCss, skill.storybook, skill.js],
     description: [
       '[blockquote](TeamUp is a fitness management software designed to empower service providers in franchises, studios, gyms, and boxes.)',
@@ -416,7 +416,7 @@ export default [
     name: 'Formability',
     completion: 3,
     category: category.webApp,
-    preview: './img/formability.jxl',
+    preview: 'img/formability.jxl',
     main: true,
     tags: [
       skill.vue2,
@@ -507,7 +507,7 @@ export default [
     name: 'MSEC Financial Disclosures Portal',
     completion: 1,
     category: category.webApp,
-    preview: './img/msec.jpg',
+    preview: 'img/msec.jxl',
     // screenshots: [],
     tags: [skill.bootstrap, skill.rails, skill.scss, skill.jQuery, skill.js],
     // description: ['[p]()', '[p]()'],
@@ -522,7 +522,7 @@ export default [
     name: 'Maryland OneStop',
     completion: 1,
     category: category.webApp,
-    preview: './img/onestop.jpg',
+    preview: 'img/onestop.jxl',
     // screenshots: [],
     tags: [skill.bootstrap, skill.rails, skill.scss, skill.jQuery, skill.js],
     // description: ['[p]()', '[p]()'],
@@ -574,7 +574,7 @@ export default [
     completion: 3,
     main: true,
     category: category.website,
-    preview: './img/drlogic.jpg',
+    preview: 'img/drlogic.jxl',
     // screenshots: [],
     tags: [skill.bootstrap, skill.rails, skill.scss, skill.jQuery, skill.js],
     description: [
@@ -631,7 +631,7 @@ export default [
     completion: 3,
     main: true,
     category: category.webApp,
-    preview: './img/apap.jpg',
+    preview: 'img/apap.jxl',
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
     description: [
       '[blockquote](Capital is a multidisciplinary creative agency based in Santo Domingo, Dominican Republic. the agency brings together artists, designers, and strategists to bridge the gap between creativity and business. Their work spans advertising, marketing strategy, and SEO, serving a diverse clientele that includes brands, cities, and NGOs.)',
@@ -648,7 +648,7 @@ export default [
     name: 'Retrobrindis',
     completion: 1,
     category: category.webApp,
-    preview: './img/retro.jpg',
+    preview: 'img/retro.jxl',
     // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
     description: [
@@ -693,7 +693,7 @@ export default [
     name: 'Detapa el Coro',
     completion: 1,
     category: category.webApp,
-    preview: './img/destapa.jpg',
+    preview: 'img/destapa.jxl',
     // screenshots: [],
     tags: [skill.pug, skill.scss, skill.jQuery, skill.js],
     description: [
@@ -723,7 +723,7 @@ export default [
     name: 'Descubria',
     completion: 2,
     category: category.website,
-    preview: './img/descubria.jpg',
+    preview: 'img/descubria.jxl',
     // screenshots: [],
     tags: [skill.html, skill.css, skill.jQuery, skill.js],
     description: [
