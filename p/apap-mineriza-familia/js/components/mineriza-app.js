@@ -32,11 +32,11 @@ class MinerizaApp extends HTMLElement {
 
 		root.innerHTML = compact(`
 			<aside class="loader" aria-hidden="true">
-				<img src="${asset("cargando.png")}" alt="">
+				<img src="${asset("cargando.jxl")}" alt="">
 			</aside>
 			<main>
 				<header>
-					<img src="${asset("logo.png")}" alt="APAP">
+					<img src="${asset("logo.jxl")}" alt="APAP">
 				</header>
 				<mineriza-home id="home" active></mineriza-home>
 				<mineriza-form id="form"></mineriza-form>

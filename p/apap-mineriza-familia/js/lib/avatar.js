@@ -13,8 +13,8 @@ const avatars = new WeakMap();
 export const layerSource = ({ gender, age }, part, number) =>
 	asset(
 		gender === "pet"
-			? `characters/pet/skin_${pad(number)}.png`
-			: `characters/${gender}/${age}/${part}_${pad(number)}.png`
+			? `characters/pet/skin_${pad(number)}.jxl`
+			: `characters/${gender}/${age}/${part}_${pad(number)}.jxl`
 	);
 
 export const loadImage = (source) => {

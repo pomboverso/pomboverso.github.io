@@ -137,7 +137,7 @@ export const arrange = ([adults, teens, children, pets]) => {
 export const renderScene = async (family) => {
 	const members = family.members;
 	const [background, avatars] = await Promise.all([
-		loadImage(asset(`background/bk_${pad(family.background)}.png`)),
+		loadImage(asset(`background/bk_${pad(family.background)}.jxl`)),
 		Promise.all(members.map(getAvatar))
 	]);
 	const canvas = createCanvas(SCENE_WIDTH, SCENE_HEIGHT);

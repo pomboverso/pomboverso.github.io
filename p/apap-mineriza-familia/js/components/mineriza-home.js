@@ -17,7 +17,7 @@ class MinerizaHome extends Screen {
 				<h1>¡Mineriza a toda tu familia!</h1>
 				<button class="btn" data-goto="form">Comenzar</button>
 			</div>
-			<img src="${asset("portada.png")}" alt="portada">
+			<img src="${asset("portada.jxl")}" alt="portada">
 		`);
 	}
 }

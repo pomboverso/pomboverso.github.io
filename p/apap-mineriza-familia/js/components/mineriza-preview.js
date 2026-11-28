@@ -39,7 +39,7 @@ class MinerizaPreview extends Screen {
 				${indexes
 					.map(
 						(index) =>
-							`<button class="pick" data-background="${index}" aria-label="fondo ${index}"><img src="${asset(`background/bk_${pad(index)}_pv.png`)}" alt=""></button>`
+							`<button class="pick" data-background="${index}" aria-label="fondo ${index}"><img src="${asset(`background/bk_${pad(index)}_pv.jxl`)}" alt=""></button>`
 					)
 					.join("")}
 			</div>

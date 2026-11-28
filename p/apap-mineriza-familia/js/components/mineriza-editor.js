@@ -65,11 +65,11 @@ class MinerizaEditor extends Screen {
 
 	thumbSource(part, number) {
 		if (this.pet) {
-			return asset(`characters/pet/skin_${pad(number)}_pv.png`);
+			return asset(`characters/pet/skin_${pad(number)}_pv.jxl`);
 		}
 
 		return part === "skin"
-			? asset(`characters/color_${pad(number)}.png`)
+			? asset(`characters/color_${pad(number)}.jxl`)
 			: layerSource(this, part, number);
 	}
 
