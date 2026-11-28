@@ -323,10 +323,6 @@ pv-search {
   background: var(--background-3);
   padding: var(--space-between-blocks);
   margin-block-end: var(--space-between-blocks);
-
-  img {
-    height: 370px;
-  }
 }
 
 nav {
