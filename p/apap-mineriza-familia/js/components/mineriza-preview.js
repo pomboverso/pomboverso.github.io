@@ -1,4 +1,5 @@
 import { asset, BACKGROUNDS, pad } from "../config.js";
+import { showScene } from "../lib/scene.js";
 import { compact, Screen } from "../lib/screen.js";
 import { loadStyles } from "../lib/styles.js";
 
@@ -9,8 +10,6 @@ const indexes = Array.from({ length: BACKGROUNDS }, (_, index) => index + 1);
 class MinerizaPreview extends Screen {
 	static styles = styles;
 
-	#selected = 1;
-
 	constructor() {
 		super();
 
@@ -19,7 +18,7 @@ class MinerizaPreview extends Screen {
 			const thumb = event.target.closest("[data-background]");
 
 			if (step) {
-				this.#select(this.#selected + Number(step.dataset.step));
+				this.#select(this.family.background + Number(step.dataset.step));
 			} else if (thumb) {
 				this.#select(Number(thumb.dataset.background));
 			}
@@ -29,10 +28,10 @@ class MinerizaPreview extends Screen {
 	render() {
 		this.shadowRoot.innerHTML = compact(`
 			<p>Selecciona el fondo de tu preferencia</p>
-			<div class="desktop">
+			<div class="stage">
 				<button class="icon triangle-left" data-step="-1" aria-label="fondo anterior"></button>
 				<div class="compos">
-					<img class="base" alt="">
+					<canvas role="img" aria-label="vista previa de tu familia"></canvas>
 				</div>
 				<button class="icon triangle-right" data-step="1" aria-label="fondo siguiente"></button>
 			</div>
@@ -50,21 +49,27 @@ class MinerizaPreview extends Screen {
 			</div>
 		`);
 
+	}
+
+	refresh() {
 		this.#paint();
 	}
 
 	#select(index) {
-		this.#selected = index > BACKGROUNDS ? 1 : index < 1 ? BACKGROUNDS : index;
+		this.family.background = index > BACKGROUNDS ? 1 : index < 1 ? BACKGROUNDS : index;
 		this.#paint();
 	}
 
 	#paint() {
 		const root = this.shadowRoot;
 
-		root.querySelector(".base").src = asset(`background/bk_${pad(this.#selected)}.png`);
+		showScene(root.querySelector("canvas"), this.family).catch(console.error);
 
 		for (const thumb of root.querySelectorAll("[data-background]")) {
-			thumb.setAttribute("aria-pressed", String(Number(thumb.dataset.background) === this.#selected));
+			thumb.setAttribute(
+				"aria-pressed",
+				String(Number(thumb.dataset.background) === this.family.background)
+			);
 		}
 	}
 }

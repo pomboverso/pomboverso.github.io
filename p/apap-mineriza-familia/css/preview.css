@@ -2,7 +2,6 @@ button.icon {
   font-size: 45pt;
   background-color: transparent;
   color: var(--yellow);
-  vertical-align: 203px;
 
   &:hover {
     color: #fff;
@@ -13,22 +12,19 @@ p {
   margin-bottom: 30px;
 }
 
+.stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .compos {
-  position: relative;
-  width: 782px;
-  height: 440px;
-  display: inline-block;
-  margin: auto;
+  width: min(782px, 100%);
 
-  img {
-    position: absolute;
-  }
-
-  .base {
-    top: 0;
-    left: 0;
-    height: 440px;
-    z-index: 0;
+  canvas {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
   }
 }
 
@@ -47,6 +43,11 @@ p {
       border-color: var(--yellow);
     }
   }
+
+  img {
+    display: block;
+    width: min(200px, 18cqw);
+  }
 }
 
 @container mineriza (width <= 1000px) {
@@ -54,7 +55,7 @@ p {
     display: block;
   }
 
-  .desktop {
+  .stage .icon {
     display: none;
   }
 }

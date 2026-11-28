@@ -1,4 +1,5 @@
-import { AGE_LABELS, AGES, asset, CHARACTERS, PART_LABELS, PARTS, SKINS, pad } from "../config.js";
+import { AGE_LABELS, AGES, asset, CHARACTERS, LAYOUT, PART_LABELS, PARTS, SKINS, pad } from "../config.js";
+import { layerSource } from "../lib/avatar.js";
 import { compact, Screen } from "../lib/screen.js";
 import { loadStyles } from "../lib/styles.js";
 
@@ -21,7 +22,12 @@ class MinerizaEditor extends Screen {
 			const control = event.target.closest(".controls [data-part]");
 			const age = event.target.closest("[data-age]");
 
-			if (option) {
+			if (event.target.closest("[data-add]")) {
+				const { gender, age } = this;
+
+				this.family.add({ gender, age, parts: this.#state });
+				this.go("choose");
+			} else if (option) {
 				this.#state[option.dataset.part] = Number(option.dataset.index);
 				this.#paint();
 			} else if (control) {
@@ -57,14 +63,6 @@ class MinerizaEditor extends Screen {
 		return this.pet ? "mascotas" : PART_LABELS[part];
 	}
 
-	layerSource(part, number) {
-		if (this.pet) {
-			return asset(`characters/pet/skin_${pad(number)}.png`);
-		}
-
-		return asset(`characters/${this.gender}/${this.age}/${part}_${pad(number)}.png`);
-	}
-
 	thumbSource(part, number) {
 		if (this.pet) {
 			return asset(`characters/pet/skin_${pad(number)}_pv.png`);
@@ -72,7 +70,7 @@ class MinerizaEditor extends Screen {
 
 		return part === "skin"
 			? asset(`characters/color_${pad(number)}.png`)
-			: this.layerSource(part, number);
+			: layerSource(this, part, number);
 	}
 
 	render() {
@@ -124,9 +122,15 @@ class MinerizaEditor extends Screen {
 					${controls}
 				</div>
 				<button class="btn" data-goto="choose">Cancelar</button>
-				<button class="btn" data-goto="choose">Agregar</button>
+				<button class="btn" data-add>Agregar</button>
 			</div>
 		`);
+
+		for (const [part, [left, top]] of Object.entries(LAYOUT[`${gender}-${age}`])) {
+			const layer = this.shadowRoot.querySelector(`.avatar .${part}`);
+
+			Object.assign(layer.style, { left: `${left}px`, top: `${top}px` });
+		}
 
 		this.reset();
 	}
@@ -147,7 +151,7 @@ class MinerizaEditor extends Screen {
 			const layer = root.querySelector(`.avatar .${part}`);
 
 			if (layer) {
-				layer.src = this.layerSource(part, number);
+				layer.src = layerSource(this, part, number);
 			}
 		}
 

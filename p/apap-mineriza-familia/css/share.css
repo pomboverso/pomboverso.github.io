@@ -1,5 +1,32 @@
-@container mineriza (width <= 500px) {
-  img {
-    width: 260px;
+.scene {
+  width: min(720px, 100%);
+  max-width: 720px;
+  margin-bottom: 30px;
+
+  canvas {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.box + .box {
+  margin-left: 30px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.status {
+  color: #fff;
+  margin-top: 20px;
+}
+
+@container mineriza (width <= 1400px) {
+  .box + .box {
+    display: block;
+    margin: auto;
   }
 }

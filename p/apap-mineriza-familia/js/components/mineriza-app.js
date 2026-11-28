@@ -1,4 +1,5 @@
 import { asset, EDITORS } from "../config.js";
+import { Family } from "../lib/family.js";
 import { iconsReady } from "../lib/icons.js";
 import { compact } from "../lib/screen.js";
 import { loadStyles } from "../lib/styles.js";
@@ -18,6 +19,7 @@ const pageLoaded = () =>
 
 class MinerizaApp extends HTMLElement {
 	#current = null;
+	#family = new Family();
 
 	connectedCallback() {
 		if (this.shadowRoot) {
@@ -47,6 +49,10 @@ class MinerizaApp extends HTMLElement {
 			</main>
 		`);
 
+		for (const screen of root.querySelector("main").children) {
+			screen.family = this.#family;
+		}
+
 		this.#current = root.getElementById("home");
 
 		root.addEventListener("mineriza-navigate", (event) => this.#navigate(event.detail));
@@ -70,6 +76,7 @@ class MinerizaApp extends HTMLElement {
 
 		next.reset?.();
 		next.active = true;
+		next.refresh?.();
 
 		this.#current = next;
 	}
