@@ -46,12 +46,14 @@ class MinerizaChoose extends Screen {
 								`<button class="${gender} icon" data-gender="${gender}" aria-label="${label}"></button>`
 						).join("")}
 					</div>
+					
+					<div class="family" aria-label="tu familia" hidden>
+						<p>Tu familia</p>
+						<ul></ul>
+					</div>
+
 					<button class="btn" data-goto="preview" disabled>Continuar</button>
 				</section>
-				<aside class="family" aria-label="tu familia" hidden>
-					<p>Tu familia</p>
-					<ul></ul>
-				</aside>
 			</div>
 		`);
 	}

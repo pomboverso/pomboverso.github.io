@@ -51,9 +51,10 @@ main {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 0;
+  z-index: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
